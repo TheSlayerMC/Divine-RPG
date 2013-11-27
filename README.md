@@ -4,18 +4,18 @@ Divine-RPG
 The official repository for Divine RPG
 
 Coders:
-The_Slayer
-Mazetar
-BossLetsPlays
-TLHPoE
-Joshenburg
+The_Slayer,
+Mazetar,
+BossLetsPlays,
+TLHPoE,
+Joshenburg.
 
 Modelers:
-DeclanUK
+DeclanUK.
 
 Wiki devs:
-\n SoccorStudd
-\n Insanity414All
+SoccorStudd,
+Insanity414All.
 
 Links:
 The_Slayer:
