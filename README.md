@@ -14,8 +14,8 @@ Modelers:
 DeclanUK
 
 Wiki devs:
-SoccorStudd
-Insanity414All
+\n SoccorStudd
+\n Insanity414All
 
 Links:
 The_Slayer:
