@@ -21,8 +21,8 @@ public class HelperBase {
 	
 	public static String picPrefix = Reference.MOD_ID + ":" + "textures/images/";
 	
-	public static String[] screenShots = {picPrefix + "dravite", picPrefix + "azurite"};
-	public static String logo = picPrefix + "logo";
+	public static String[] screenShots = {picPrefix + "dravite.png", picPrefix + "azurite.png"};
+	public static String logo = picPrefix + "logo.png";
 	
 	public static int HEAD = 0, BODY = 1, LEGS = 2, BOOTS = 3;
 	public static int itemID = 6666, blockID = 600, vetheaBlockID = 3000, vetheaItemID = 8888;

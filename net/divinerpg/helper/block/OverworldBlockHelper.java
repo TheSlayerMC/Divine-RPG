@@ -235,7 +235,6 @@ public class OverworldBlockHelper extends HelperBase {
     	
     	addBlock(RainbowWool, "Rainbow Wool");
 		addBlock(NetheriteBrick, "Netherite Brick");
-    	addBlock(AntiNetherPortal, "Anti-Hell Portal");
     	addBlock(AquaBricks, "Aqua Brick");
     	addBlock(ArlemiteBricks, "Arlemite Brick");
     	addBlock(DarkStoneBricks, "DarkStone Brick");
