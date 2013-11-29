@@ -187,4 +187,9 @@ public class ModLeaves extends LeavesBase
 		return 1;
 	}
 	
+	@Override
+	public int getRenderType() {
+		return 0;
+	}
+	
 }

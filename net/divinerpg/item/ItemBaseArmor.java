@@ -204,32 +204,6 @@ public class ItemBaseArmor extends ItemArmor implements ISpecialArmor{
 	}
 
 	@Override
-	public void onArmorTickUpdate(World world, EntityPlayer var3, ItemStack itemStack) {
-
-		if (var3.getCurrentItemOrArmor(4) != null && var3.getCurrentArmor(3) != null && var3.getCurrentItemOrArmor(2) != null && var3.getCurrentItemOrArmor(1) != null) {
-			ItemStack helmet = var3.getCurrentItemOrArmor(4);
-			ItemStack plate = var3.getCurrentItemOrArmor(3);
-			ItemStack legs = var3.getCurrentItemOrArmor(2);
-			ItemStack boots = var3.getCurrentItemOrArmor(1); 
-
-			if (helmet.getItem() == OverworldItemHelper.eliteRealmiteHelmet && plate.getItem() == OverworldItemHelper.eliteRealmiteBody && legs.getItem() == OverworldItemHelper.eliteRealmiteLegs && boots.getItem() == OverworldItemHelper.eliteRealmiteBoots) 
-			{
-				var3.fallDistance = 0.0F;
-			}
-
-			if(helmet.getItem() == OverworldItemHelper.krakenHelmet && plate.getItem() == OverworldItemHelper.krakenBody && legs.getItem() == OverworldItemHelper.krakenLegs && boots.getItem() == OverworldItemHelper.krakenBoots) 
-			{
-				var3.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 1, 1));
-			}
-
-			if (helmet.getItem() == OverworldItemHelper.angelicHelmet && plate.getItem() == OverworldItemHelper.angelicBody && legs.getItem() == OverworldItemHelper.angelicLegs && boots.getItem() == OverworldItemHelper.angelicBoots) 
-			{
-				var3.fallDistance = 0.0F;
-			}
-		}
-	}
-
-	@Override
 	public void registerIcons(IconRegister icon){
 		this.itemIcon = icon.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(5));
 	}

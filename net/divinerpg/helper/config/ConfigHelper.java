@@ -78,7 +78,7 @@ public class ConfigHelper extends HelperBase{
 	public static int AncientBricksID, DegradedBricksID, ArcaniumMetalID, ArcaniumPowerID, AncientStoneID, SoulStoneID, DungeonLampID;
 	public static int AncientTileID, SoulSludgeID, ParasectaAltarID, DramixAltarID, RoamerSpawnerID, DeathcryxSpawnerID, DeathHoundSpawnerID;
 	public static int RazorbackSpawnerID, LivingStatueSpawnerID, DungeonPrisonerSpawnerID, ArcaniteTubesID, ArcaniteRailsID, OreDoor1BlockID;
-	public static int KingStatueID, AncientStatueID, AyeracoStatueID, TwilightStatueID, VamacheronStatueID, DensosStatueID, DexStatueID, DramixStatueID, ParasectaStatueID;
+	public static int KingStatueID, AncientStatueID, AyeracoStatueID, TwilightStatueID, VamacheronStatueID, DensosStatueID, DexStatueID, DramixStatueID, ParasectaStatueID, IceSaplingID;
 	public static int SoulStatueID, WatcherStatueID, DraviteChestBlockID, fireStock2ID, pinFlyID, pinFly2ID, hitchakID, eucalyptusRootID, veiloID, lamonaID, aquamarineID, marsineID;
 	
 	public static int oreDoorItem1ID, oreDoor2ItemID, oreDoor3ItemID, oreDoor4ItemID, key1ID, key2ID, key3ID, key4ID, fireStockID;
@@ -151,16 +151,16 @@ public class ConfigHelper extends HelperBase{
 	public static int NetheriteHelmetID, NetheriteBodyID, NetheriteLegsID, NetheriteBootsID;
 	public static int infernoHelmetID, infernoBodyID, infernoLegsID, infernoBootsID;
 	public static int EnderHelmetID, EnderBodyID, EnderLegsID, EnderBootsID, BedrockHelmetID, BedrockBodyID, BedrockLegsID, BedrockBootsID;
-
+	public static int donutID, mealID, pizzaDoughID, pizzaID, boiledEggID, baconID, cheeseID;
 	
 	public static void blockConfig(){
-
+		
 		DraviteGrassID = addTerrainBlock("Dravite", "Dravite Grass");
 		DraviteDirtID = addTerrainBlock("Dravite", "Dravite Dirt");
 		AzuriteGrassID = addTerrainBlock("Azurite", "Azurite Grass");
 		AzuriteDirtID = addTerrainBlock("Azurite", "Azurite Dirt");
 		UviteGrassID = addTerrainBlock("Uvite", "Uvite Grass");
-		UviteDirtID = addTerrainBlock("Uvite", "Uvit eDirt"); 
+		UviteDirtID = addTerrainBlock("Uvite", "Uvite Dirt"); 
 		MythrilGrassID = addTerrainBlock("Mythril", "Mythril Grass");
 		MythrilDirtID = addTerrainBlock("Mythril", "Mythril Dirt");
 		AugiteGrassID = addTerrainBlock("Augite", "Augite Grass");
@@ -171,7 +171,6 @@ public class ConfigHelper extends HelperBase{
 		TwilightStoneID = addTerrainBlock("Twilight", "Twilight Stone");
 		ArcanaGrassID = addTerrainBlock("Arcana", "Arcana Grass");
 		ArcanaDirtID = addTerrainBlock("Arcana", "Arcana Dirt");
-		
 		
 		RupeeOreID = addBlock("Rupee Ore");
 		ArlemiteOreID = addBlock("Arlemite Ore");
@@ -401,6 +400,7 @@ public class ConfigHelper extends HelperBase{
 		SoulStatueID = addBlock("Soul Statue");
 		WatcherStatueID = addBlock("Watcher Statue");
 		DraviteChestBlockID = addBlock("Dravite Chest");
+		IceSaplingID = addBlock("Iceika Sapling");
 	}
 	
 	public static void itemConfig(){
@@ -814,5 +814,14 @@ public class ConfigHelper extends HelperBase{
 		weakArcanaPotionID = addItem("Weak Arcana Potion");
 		strongArcanaPotionID = addItem("Strong Arcana Potion");
 		staffOfEnrichmentID = addItem("Staff Of Enrichment");
+		donutID = addItem("Donut");
+		mealID = addItem("Dinner");
+		
+		pizzaDoughID = addItem("Pizza Dough");
+		pizzaID = addItem("Pizza");
+		boiledEggID = addItem("Boiled Egg");
+		baconID = addItem("Bacon");
+		cheeseID = addItem("Cheese");
+		
 	}
 }

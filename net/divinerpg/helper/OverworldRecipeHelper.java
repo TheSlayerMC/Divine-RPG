@@ -67,7 +67,6 @@ public class OverworldRecipeHelper {
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.ironLegs, 1), new Object[] {"xxx", "x x", "x x", 'x', Item.ingotIron});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.ironBoots, 1), new Object[] {"x x", "x x", 'x', Item.ingotIron});
 
-
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.enderHelmet, 1), new Object[] {"yyy", "y y", 'y', OverworldItemHelper.enderStone});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.enderBody, 1), new Object[] {"y y", "yyy", "yyy", 'y', OverworldItemHelper.enderStone});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.enderBoots, 1), new Object[] {"y y", "y y", 'y', OverworldItemHelper.enderStone});
@@ -78,6 +77,15 @@ public class OverworldRecipeHelper {
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.aquaticBoots, 1), new Object[] {"y y", "y y", 'y', OverworldItemHelper.aquaticStone});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.aquaticLegs, 1), new Object[] {"yyy", "y y", "y y", 'y', OverworldItemHelper.aquaticStone});
 
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.realmiteHelmet, 1), new Object[] {"yyy", "y y", 'y', OverworldItemHelper.realmiteIngot});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.realmiteBody, 1), new Object[] {"y y", "yyy", "yyy", 'y', OverworldItemHelper.realmiteIngot});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.realmiteBoots, 1), new Object[] {"y y", "y y", 'y', OverworldItemHelper.realmiteIngot});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.realmiteLegs, 1), new Object[] {"yyy", "y y", "y y", 'y', OverworldItemHelper.realmiteIngot});
+		
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.eliteRealmiteHelmet, 1), new Object[] {"yyy", "y y", 'y', OverworldBlockHelper.realmiteBlock});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.eliteRealmiteBody, 1), new Object[] {"y y", "yyy", "yyy", 'y', OverworldBlockHelper.realmiteBlock});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.eliteRealmiteBoots, 1), new Object[] {"y y", "y y", 'y', OverworldBlockHelper.realmiteBlock});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.eliteRealmiteLegs, 1), new Object[] {"yyy", "y y", "y y", 'y', OverworldBlockHelper.realmiteBlock});
 	}
 
 	public static void initItems() {

@@ -1,43 +1,79 @@
 package net.divinerpg.overworld.mobs;
 
 import net.divinerpg.helper.item.OverworldItemHelper;
-import net.divinerpg.mob.entity.EntityModMob;
 import net.divinerpg.mob.entity.item.EntityTripletProjectile;
-import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityFlying;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.stats.AchievementList;
 import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.ChunkCoordinates;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
-public class EntityEnderTriplets extends EntityModMob
+public class EntityEnderTriplets extends EntityFlying implements IMob
 {
-    public int courseChangeCooldown = 0;
+    public int courseChangeCooldown;
     public double waypointX;
     public double waypointY;
     public double waypointZ;
-    private Entity targetedEntity = null;
+    private Entity targetedEntity;
 
-    /** Cooldown time between target loss and new target aquirement. */
-    private int aggroCooldown = 0;
-    public int prevAttackCounter = 0;
-    public int attackCounter = 0;
+    private int aggroCooldown;
+    public int prevAttackCounter;
+    public int attackCounter;
 
-    /**
-     * randomly selected ChunkCoordinates in a 7x6x7 box around the bat (y offset -2 to 4) towards which it will fly.
-     * upon getting close a new target will be selected
-     */
-    private ChunkCoordinates currentFlightTarget;
 
-    public EntityEnderTriplets(World var1)
+    public EntityEnderTriplets(World par1World)
     {
-        super(var1);
+        super(par1World);
+        this.isImmuneToFire = true;
+        this.experienceValue = 10;
     }
-    
-    @Override
+
+    @SideOnly(Side.CLIENT)
+    public boolean func_110182_bF()
+    {
+        return this.dataWatcher.getWatchableObjectByte(16) != 0;
+    }
+
+    public boolean attackEntityFrom(DamageSource par1DamageSource, float par2)
+    {
+        if (this.isEntityInvulnerable())
+        {
+            return false;
+        }
+        else if ("fireball".equals(par1DamageSource.getDamageType()) && par1DamageSource.getEntity() instanceof EntityPlayer)
+        {
+            super.attackEntityFrom(par1DamageSource, 1000.0F);
+            ((EntityPlayer)par1DamageSource.getEntity()).triggerAchievement(AchievementList.ghast);
+            return true;
+        }
+        else
+        {
+            return super.attackEntityFrom(par1DamageSource, par2);
+        }
+    }
+
+    protected void entityInit()
+    {
+        super.entityInit();
+        this.dataWatcher.addObject(16, Byte.valueOf((byte)0));
+    }
+
+    protected void applyEntityAttributes()
+    {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(10.0D);
+    }
+
     protected void updateEntityActionState()
     {
         if (!this.worldObj.isRemote && this.worldObj.difficultySetting == 0)
@@ -47,12 +83,12 @@ public class EntityEnderTriplets extends EntityModMob
 
         this.despawnEntity();
         this.prevAttackCounter = this.attackCounter;
-        double var1 = this.waypointX - this.posX;
-        double var3 = this.waypointY - this.posY;
-        double var5 = this.waypointZ - this.posZ;
-        double var7 = var1 * var1 + var3 * var3 + var5 * var5;
+        double d0 = this.waypointX - this.posX;
+        double d1 = this.waypointY - this.posY;
+        double d2 = this.waypointZ - this.posZ;
+        double d3 = d0 * d0 + d1 * d1 + d2 * d2;
 
-        if (var7 < 1.0D || var7 > 3600.0D)
+        if (d3 < 1.0D || d3 > 3600.0D)
         {
             this.waypointX = this.posX + (double)((this.rand.nextFloat() * 2.0F - 1.0F) * 16.0F);
             this.waypointY = this.posY + (double)((this.rand.nextFloat() * 2.0F - 1.0F) * 16.0F);
@@ -62,13 +98,13 @@ public class EntityEnderTriplets extends EntityModMob
         if (this.courseChangeCooldown-- <= 0)
         {
             this.courseChangeCooldown += this.rand.nextInt(5) + 2;
-            var7 = (double)MathHelper.sqrt_double(var7);
+            d3 = (double)MathHelper.sqrt_double(d3);
 
-            if (this.isCourseTraversable(this.waypointX, this.waypointY, this.waypointZ, var7))
+            if (this.isCourseTraversable(this.waypointX, this.waypointY, this.waypointZ, d3))
             {
-                this.motionX += var1 / var7 * 0.1D;
-                this.motionY += var3 / var7 * 0.1D;
-                this.motionZ += var5 / var7 * 0.1D;
+                this.motionX += d0 / d3 * 0.1D;
+                this.motionY += d1 / d3 * 0.1D;
+                this.motionZ += d2 / d3 * 0.1D;
             }
             else
             {
@@ -93,14 +129,14 @@ public class EntityEnderTriplets extends EntityModMob
             }
         }
 
-        double var9 = 64.0D;
+        double d4 = 64.0D;
 
-        if (this.targetedEntity != null && this.targetedEntity.getDistanceSqToEntity(this) < var9 * var9)
+        if (this.targetedEntity != null && this.targetedEntity.getDistanceSqToEntity(this) < d4 * d4)
         {
-            double var11 = this.targetedEntity.posX - this.posX;
-            double var13 = this.targetedEntity.boundingBox.minY + (double)(this.targetedEntity.height / 2.0F) - (this.posY + (double)(this.height / 2.0F));
-            double var15 = this.targetedEntity.posZ - this.posZ;
-            this.renderYawOffset = this.rotationYaw = -((float)Math.atan2(var11, var15)) * 180.0F / (float)Math.PI;
+            double d5 = this.targetedEntity.posX - this.posX;
+            double d6 = this.targetedEntity.boundingBox.minY + (double)(this.targetedEntity.height / 2.0F) - (this.posY + (double)(this.height / 2.0F));
+            double d7 = this.targetedEntity.posZ - this.posZ;
+            this.renderYawOffset = this.rotationYaw = -((float)Math.atan2(d5, d7)) * 180.0F / (float)Math.PI;
 
             if (this.canEntityBeSeen(this.targetedEntity))
             {
@@ -114,13 +150,13 @@ public class EntityEnderTriplets extends EntityModMob
                 if (this.attackCounter == 20)
                 {
                     this.worldObj.playAuxSFXAtEntity((EntityPlayer)null, 1008, (int)this.posX, (int)this.posY, (int)this.posZ, 0);
-                    EntityTripletProjectile var17 = new EntityTripletProjectile(this.worldObj, this, var11, var13, var15);
-                    double var18 = 4.0D;
-                    Vec3 var20 = this.getLook(1.0F);
-                    var17.posX = this.posX + var20.xCoord * var18;
-                    var17.posY = this.posY + (double)(this.height / 2.0F) + 0.5D;
-                    var17.posZ = this.posZ + var20.zCoord * var18;
-                    this.worldObj.spawnEntityInWorld(var17);
+                    EntityTripletProjectile entitylargefireball = new EntityTripletProjectile(this.worldObj, this, d5, d6, d7);
+                    double d8 = 4.0D;
+                    Vec3 vec3 = this.getLook(1.0F);
+                    entitylargefireball.posX = this.posX + vec3.xCoord * d8;
+                    entitylargefireball.posY = this.posY + (double)(this.height / 2.0F) + 0.5D;
+                    entitylargefireball.posZ = this.posZ + vec3.zCoord * d8;
+                    this.worldObj.spawnEntityInWorld(entitylargefireball);
                     this.attackCounter = -40;
                 }
             }
@@ -141,129 +177,28 @@ public class EntityEnderTriplets extends EntityModMob
 
         if (!this.worldObj.isRemote)
         {
-            byte var21 = this.dataWatcher.getWatchableObjectByte(16);
-            byte var12 = (byte)(this.attackCounter > 10 ? 1 : 0);
+            byte b0 = this.dataWatcher.getWatchableObjectByte(16);
+            byte b1 = (byte)(this.attackCounter > 10 ? 1 : 0);
 
-            if (var21 != var12)
+            if (b0 != b1)
             {
-                this.dataWatcher.updateObject(16, Byte.valueOf(var12));
+                this.dataWatcher.updateObject(16, Byte.valueOf(b1));
             }
         }
     }
 
-    /**
-     * Called when the mob is falling. Calculates and applies fall damage.
-     */
-    protected void fall(float par1) {}
-
-    /**
-     * Takes in the distance the entity has fallen this tick and whether its on the ground to update the fall distance
-     * and deal fall damage if landing on the ground.  Args: distanceFallenThisTick, onGround
-     */
-    protected void updateFallState(double par1, boolean par3) {}
-
-    /**
-     * Moves the entity based on the specified heading.  Args: strafe, forward
-     */
-    @Override
-    public void moveEntityWithHeading(float par1, float par2)
-    {
-        if (this.isInWater())
-        {
-            this.moveFlying(par1, par2, 0.02F);
-            this.moveEntity(this.motionX, this.motionY, this.motionZ);
-            this.motionX *= 0.800000011920929D;
-            this.motionY *= 0.800000011920929D;
-            this.motionZ *= 0.800000011920929D;
-        }
-        else if (this.handleLavaMovement())
-        {
-            this.moveFlying(par1, par2, 0.02F);
-            this.moveEntity(this.motionX, this.motionY, this.motionZ);
-            this.motionX *= 0.5D;
-            this.motionY *= 0.5D;
-            this.motionZ *= 0.5D;
-        }
-        else
-        {
-            float var3 = 0.91F;
-
-            if (this.onGround)
-            {
-                var3 = 0.54600006F;
-                int var4 = this.worldObj.getBlockId(MathHelper.floor_double(this.posX), MathHelper.floor_double(this.boundingBox.minY) - 1, MathHelper.floor_double(this.posZ));
-
-                if (var4 > 0)
-                {
-                    var3 = Block.blocksList[var4].slipperiness * 0.91F;
-                }
-            }
-
-            float var8 = 0.16277136F / (var3 * var3 * var3);
-            this.moveFlying(par1, par2, this.onGround ? 0.1F * var8 : 0.02F);
-            var3 = 0.91F;
-
-            if (this.onGround)
-            {
-                var3 = 0.54600006F;
-                int var5 = this.worldObj.getBlockId(MathHelper.floor_double(this.posX), MathHelper.floor_double(this.boundingBox.minY) - 1, MathHelper.floor_double(this.posZ));
-
-                if (var5 > 0)
-                {
-                    var3 = Block.blocksList[var5].slipperiness * 0.91F;
-                }
-            }
-
-            this.moveEntity(this.motionX, this.motionY, this.motionZ);
-            this.motionX *= (double)var3;
-            this.motionY *= (double)var3;
-            this.motionZ *= (double)var3;
-        }
-    }
-    
-
-    /**
-     * Called when the mob's health reaches 0.
-     */
-    public void onDeath(DamageSource var1)
-    {
-        super.onDeath(var1);
-
-        if (!this.worldObj.isRemote)
-        {
-        	
-            Entity var3 = var1.getEntity();
-
-            if (var3 instanceof EntityPlayer)
-            {
-            	//((EntityPlayer) var3).addStat(AchievementPageDivineRPG.tripleDanger, 1);
-            }
-        }
-    }
-
-    /**
-     * returns true if this entity is by a ladder, false otherwise
-     */
-    public boolean isOnLadder()
-    {
-        return false;
-    }
-
-    /**
-     * True if the ghast has an unobstructed line of travel to the waypoint.
-     */
     private boolean isCourseTraversable(double par1, double par3, double par5, double par7)
     {
-        double var9 = (this.waypointX - this.posX) / par7;
-        double var11 = (this.waypointY - this.posY) / par7;
-        double var13 = (this.waypointZ - this.posZ) / par7;
-        AxisAlignedBB var15 = this.boundingBox.copy();
+        double d4 = (this.waypointX - this.posX) / par7;
+        double d5 = (this.waypointY - this.posY) / par7;
+        double d6 = (this.waypointZ - this.posZ) / par7;
+        AxisAlignedBB axisalignedbb = this.boundingBox.copy();
 
-        for (int var16 = 1; (double)var16 < par7; ++var16)
+        for (int i = 1; (double)i < par7; ++i)
         {
-            var15.offset(var9, var11, var13);
+            axisalignedbb.offset(d4, d5, d6);
 
-            if (!this.worldObj.getCollidingBoundingBoxes(this, var15).isEmpty())
+            if (!this.worldObj.getCollidingBoundingBoxes(this, axisalignedbb).isEmpty())
             {
                 return false;
             }
@@ -272,67 +207,33 @@ public class EntityEnderTriplets extends EntityModMob
         return true;
     }
 
-    /**
-     * Returns the item ID for the item the mob drops on death.
-     */
+    protected String getLivingSound()
+    {
+        return "mob.ghast.moan";
+    }
+
+    protected String getHurtSound()
+    {
+        return "mob.ghast.scream";
+    }
+
     protected int getDropItemId()
     {
         return OverworldItemHelper.enderShard.itemID;
     }
 
-    /**
-     * Drop 0-2 items of this living's type
-     */
     protected void dropFewItems(boolean par1, int par2)
     {
-        int var3;
-        int var4;
-        var3 = this.rand.nextInt(3 + par2);
-
-        for (var4 = 0; var4 < var3; ++var4)
-        {
             this.dropItem(OverworldItemHelper.enderShard.itemID, 2);
-        }
-
-        var3 = this.rand.nextInt(3 + par2);
-
-        for (var4 = 0; var4 < var3; ++var4)
-        {
-            this.dropItem(OverworldItemHelper.enderShard.itemID, 3);
-        }
     }
 
-    protected void dropRareDrop(int par1)
+    protected float getSoundVolume()
     {
-        switch (this.rand.nextInt(1))
-        {
-            case 0:
-                this.dropItem(Block.endPortalFrame.blockID, 1);
-                break;
-        }
+        return 10.0F;
     }
 
-    /**
-     * Teleport the enderman to a random nearby position
-     */
-    protected boolean teleportRandomly()
+    public boolean getCanSpawnHere()
     {
-    	return false;
-    }
-
-    /**
-     * Teleport the enderman to another entity
-     */
-    protected boolean teleportToEntity(Entity par1Entity)
-    {
-    	return false;
-    }
-
-    /**
-     * Teleport the enderman
-     */
-    protected boolean teleportTo(double par1, double par3, double par5)
-    {
-    	return false;
+        return this.rand.nextInt(20) == 0 && super.getCanSpawnHere() && this.worldObj.difficultySetting > 0;
     }
 }

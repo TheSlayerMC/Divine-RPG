@@ -171,16 +171,7 @@ public class ArmorEffectHandler  {
 			}*/
 
 		//Elite Realmite
-		else if (bootID == OverworldItemHelper.eliteRealmiteBoots.itemID
-					&& legID == OverworldItemHelper.eliteRealmiteLegs.itemID
-					&& chestID == OverworldItemHelper.eliteRealmiteBody.itemID
-					&& helmID == OverworldItemHelper.eliteRealmiteHelmet.itemID)
-			{
-				if (s == DamageSource.fall)
-				{
-					e.setCanceled(true);
-				}
-			}
+		
 
 		//Arlemite
 		else if (bootID == OverworldItemHelper.arlemiteBoots.itemID

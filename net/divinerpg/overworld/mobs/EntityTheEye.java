@@ -42,7 +42,7 @@ public class EntityTheEye extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.63000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(40D);
         this.setAttackDamage(17D);
     }
@@ -128,7 +128,7 @@ public class EntityTheEye extends EntityModMob
         if (this.entityToAttack instanceof EntityPlayerMP)
         {
             ((EntityPlayerMP)entityToAttack).addPotionEffect(new PotionEffect(Potion.blindness.id, 2 * 40, 2));
-            ((EntityPlayer) entityToAttack).triggerAchievement(AchievementPageDivineRPG.eyeOfEvil); //TODO when achivements
+            ((EntityPlayer) entityToAttack).triggerAchievement(AchievementPageDivineRPG.eyeOfEvil);
         }
     }
 

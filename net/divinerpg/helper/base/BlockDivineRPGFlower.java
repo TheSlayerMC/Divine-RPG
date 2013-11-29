@@ -16,6 +16,7 @@ public class BlockDivineRPGFlower extends BlockFlower
 
     public BlockDivineRPGFlower registerTexture(String texture){
     	name = texture;
+    	setUnlocalizedName(texture);
     	return this;
     }
     

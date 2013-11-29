@@ -6,6 +6,7 @@ import net.divinerpg.block.BlockBase;
 import net.divinerpg.helper.block.IceikaBlockHelper;
 import net.divinerpg.helper.block.OverworldBlockHelper;
 import net.divinerpg.helper.block.TwilightBlockHelper;
+import net.divinerpg.lib.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFire;
 import net.minecraft.block.material.Material;
@@ -457,8 +458,8 @@ public class BlockBlueFire extends BlockBase
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister)
 	{
-		this.iconArray = new Icon[] { par1IconRegister.registerIcon("fire_0"), par1IconRegister.registerIcon("fire_1") };
-		this.blockIcon = par1IconRegister.registerIcon("fire_0");
+		this.iconArray = new Icon[] { par1IconRegister.registerIcon(Reference.MOD_ID + ":" + "BlueFire_0"), par1IconRegister.registerIcon(Reference.MOD_ID + ":" + "BlueFire_1") };
+		this.blockIcon = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + "BlueFire_0");
 	}
 
 

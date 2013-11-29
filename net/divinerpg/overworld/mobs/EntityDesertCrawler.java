@@ -56,7 +56,7 @@ public class EntityDesertCrawler extends EntityModMob
     {
         super.applyEntityAttributes();
         this.setMaxHealth(60.0);
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.33000000417232513D);
         this.setAttackDamage(12F);
         this.setFollowRange(10);
     }

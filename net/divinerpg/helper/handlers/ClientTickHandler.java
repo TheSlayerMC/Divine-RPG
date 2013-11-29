@@ -9,7 +9,6 @@ import net.divinerpg.helper.block.IceikaBlockHelper;
 import net.divinerpg.helper.item.IceikaItemHelper;
 import net.divinerpg.helper.item.OverworldItemHelper;
 import net.divinerpg.lib.Reference;
-import net.divinerpg.lib.ResourceLocs;
 import net.divinerpg.misc.BossBar;
 import net.divinerpg.overworld.mobs.EntityAncient;
 import net.minecraft.client.Minecraft;
@@ -19,13 +18,16 @@ import net.minecraft.client.gui.GuiIngame;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.multiplayer.WorldClient;
-import net.minecraft.entity.boss.BossStatus;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
 import org.lwjgl.opengl.GL11;
 
@@ -36,7 +38,6 @@ import cpw.mods.fml.common.TickType;
 public class ClientTickHandler implements ITickHandler
 {
 	private static boolean initialized = false;
-
 
 	@Override
 	public void tickStart(EnumSet var1, Object ... mc) {
@@ -225,6 +226,9 @@ public class ClientTickHandler implements ITickHandler
 		Minecraft mc = Minecraft.getMinecraft();
 		EntityClientPlayerMP player = Minecraft.getMinecraft().thePlayer;
 		WorldClient world = mc.theWorld;
+		//DamageSource d;
+		
+		
 
 		if (player != null)
 		{
@@ -251,10 +255,18 @@ public class ClientTickHandler implements ITickHandler
 					&& helm.itemID == OverworldItemHelper.angelicHelmet.itemID)
 			{
 				player.capabilities.allowFlying = true;
+				player.fallDistance = 0;
 				//minecraftInstance.thePlayer.isImmuneToFire = true; //<--That line will make the player immune to fire.
 				//minecraftInstance.thePlayer.fallDistance = 0; //<-- That line will make the player take no fall damage.
 				//minecraftInstance.thePlayer.fireResistance(20); //<-- That line will make the player have less fire damage.
 				//minecraftInstance.thePlayer.capabilities.isFlying = true; //<-- That line may make the player fly, but I'm not entirely sure.
+			}
+			else if (boots.itemID == OverworldItemHelper.eliteRealmiteBoots.itemID
+					&& legs.itemID == OverworldItemHelper.eliteRealmiteLegs.itemID
+					&& chest.itemID == OverworldItemHelper.eliteRealmiteBody.itemID
+					&& helm.itemID == OverworldItemHelper.eliteRealmiteHelmet.itemID)
+			{
+				player.fallDistance = 0;
 			}
 			else if (boots.itemID == OverworldItemHelper.shadowBoots.itemID
 					&& legs.itemID == OverworldItemHelper.shadowLegs.itemID
@@ -262,6 +274,13 @@ public class ClientTickHandler implements ITickHandler
 					&& helm.itemID == OverworldItemHelper.shadowHelmet.itemID)
 			{
 				player.capabilities.setPlayerWalkSpeed(0.2F);
+			}
+			
+			else if(boots.itemID == OverworldItemHelper.krakenBoots.itemID
+					&& legs.itemID == OverworldItemHelper.krakenLegs.itemID
+					&& chest.itemID == OverworldItemHelper.krakenBody.itemID
+					&& helm.itemID == OverworldItemHelper.krakenHelmet.itemID){
+				player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 1, 1));
 			}
 			else if (boots.itemID == IceikaItemHelper.santaBoots.itemID
 					&& legs.itemID == IceikaItemHelper.santaLegs.itemID
@@ -292,6 +311,8 @@ public class ClientTickHandler implements ITickHandler
 			{
 				player.capabilities.setPlayerWalkSpeed(0.2F);
 			}*/
+			
+			
 			else if (boots.itemID == OverworldItemHelper.aquaticBoots.itemID
 					&& legs.itemID == OverworldItemHelper.aquaticLegs.itemID
 					&& chest.itemID == OverworldItemHelper.aquaticBody.itemID
