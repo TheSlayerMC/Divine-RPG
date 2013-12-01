@@ -4,15 +4,15 @@ import net.minecraft.util.ResourceLocation;
 
 public class ResourceLocs {
 	
-	public static String bossPrefix = Reference.MOD_ID + ":" + "/textures/gui/BossBars/";
+	public static String bossPrefix = Reference.MOD_ID + ":" + "textures/gui/BossBars/";
 
     /* TEMP MISSING TEXTURE */
-    public static ResourceLocation ADD_TEXTURE_HERE = new ResourceLocation(Reference.MOD_ID + ":" + "/textures/gui/Missing.png");
+    public static ResourceLocation ADD_TEXTURE_HERE = new ResourceLocation(Reference.MOD_ID + ":" + "textures/gui/Missing.png");
 
 
 
     /* GUI's */
-    public static ResourceLocation GUI_ARCANA_BAR = new ResourceLocation(Reference.MOD_ID + ":" + "/textures/gui/ArcanaBar.png");
+    public static ResourceLocation GUI_ARCANA_BAR = new ResourceLocation(Reference.MOD_ID + ":" + "textures/gui/ArcanaBar.png");
     public static ResourceLocation GUI_ANCIENT_ENTITY = new ResourceLocation(bossPrefix + "AncientEntity.png");
 
     

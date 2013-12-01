@@ -1,6 +1,6 @@
 package net.divinerpg.render.item;
 
-import net.divinerpg.render.entity.model.ModelDemonFurnace;
+import net.divinerpg.block.model.ModelDemonFurnace;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -17,7 +17,7 @@ public class RenderItemDemonFurnace implements IItemRenderer
 
     public RenderItemDemonFurnace()
     {
-        dramixAltar = new ModelDemonFurnace(1 / 16F);
+        dramixAltar = new ModelDemonFurnace();
     }
 
     @Override

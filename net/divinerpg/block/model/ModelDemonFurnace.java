@@ -1,10 +1,10 @@
-package net.divinerpg.render.entity.model;
+package net.divinerpg.block.model;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-public class ModelDemonFurnace extends ModelBase
+public class ModelDemonFurnace extends ModelBase implements ModelDivineBlock
 {
     //fields
     ModelRenderer Box;
@@ -15,11 +15,9 @@ public class ModelDemonFurnace extends ModelBase
     ModelRenderer Arm5;
     ModelRenderer Arm6;
 
-    public float scale;
 
-    public ModelDemonFurnace(float scale)
+    public ModelDemonFurnace()
     {
-        this.scale = scale;
 
         textureWidth = 64;
         textureHeight = 64;

@@ -20,16 +20,16 @@ public class ConfigHelper extends HelperBase{
 	}
 	
 	public static int addBlock(String name){
-		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG Blocks.cfg");
+		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getBlock(name, blockID++).getInt();
+		config.getBlock(name, blockID++ - (byte)256).getInt();
 		config.save();
 		return blockID++;
 	}
 	
 	public static int addTerrainBlock(String Cat, String Name){
-		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG Blocks.cfg");
+		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
 		config.getTerrainBlock(Cat, Name, genBlockID++, Cat).getInt();
@@ -38,10 +38,10 @@ public class ConfigHelper extends HelperBase{
 	}
 	
 	public static int addItem(String name){
-		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG Items.cfg");
+		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getItem(name, itemID++).getInt();
+		config.getItem(name, itemID++ - (byte)256).getInt();
 		config.save();
 		return itemID++;
 	}

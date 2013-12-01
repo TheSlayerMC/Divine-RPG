@@ -34,7 +34,7 @@ public class EntityFrost extends EntityModMob
         super.applyEntityAttributes();
         this.setMoveSpeed(0.53000000417232513D);
         this.setMaxHealth(80D);
-        this.setAttackDamage(10D);
+        this.setAttackDamage(5D);
     }
 
     protected void entityInit()

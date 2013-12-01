@@ -44,7 +44,8 @@ public class ArcanaBlockHelper extends HelperBase {
 	public static final Block arcaniteDirt = new ModDirt(x.ArcanaDirtID).registerTexture("ArcaniteGrass_Bottom").setUnlocalizedName("arcaniteDirt").setCreativeTab(DivineRPG.Blocks);
     public static final Block arcaniteGrass = new BlockArcaniteGrass(x.ArcanaGrassID).setUnlocalizedName("ArcaniteG").setCreativeTab(DivineRPG.Blocks);
     public static final Block arcaniumOre = new ModBlock(x.ArcaniumOreID).registerTexture("ArcaniumOre").setUnlocalizedName("ArcaniumOre").setCreativeTab(DivineRPG.Blocks);
-    public static final Block demonFurnace = new BlockDemonFurnace(x.DemonFurnaceID).setUnlocalizedName("demonFurnace").setCreativeTab(DivineRPG.Blocks);
+    public static final BlockDemonFurnace demonFurnace = (BlockDemonFurnace)new BlockDemonFurnace(x.DemonFurnaceID, false).setUnlocalizedName("demonFurnace").setCreativeTab(DivineRPG.Blocks);
+    public static final BlockDemonFurnace demonFurnaceOn = (BlockDemonFurnace)new BlockDemonFurnace(x.DemonFurnaceOnID, true).setUnlocalizedName("DemonFurnaceOn").setCreativeTab(null);
     public static final Block starBridgeOn = new BlockStarBridgeOn(x.StarBridgeOnID, true).registerTexture("StarBridgeOn").setUnlocalizedName("StarOn").setCreativeTab(null);
     public static final Block starBridge = new BlockStarBridge(x.StarBridgeID, false).registerTexture("StarBridge").setUnlocalizedName("Star").setCreativeTab(DivineRPG.Blocks);
     public static final BlockPortalArcanaFrame arcanaPortalFrame = (BlockPortalArcanaFrame) new BlockPortalArcanaFrame(x.ArcanaPortalFrameID).setUnlocalizedName("arcanaPortalFrame").setCreativeTab(DivineRPG.Blocks);
@@ -101,6 +102,7 @@ public class ArcanaBlockHelper extends HelperBase {
 	public static final Block marsine = new BlockMarsine(x.marsineID).setUnlocalizedName("marsine").setCreativeTab(null);
 
     public static void addNames(){
+    	addBlock(demonFurnaceOn, "Demon Furnace On");
     	addBlock(fireStock, "FireStock");
     	addBlock(fireStock2, "FireStock2");
     	addBlock(pinFly, "Pinfly");

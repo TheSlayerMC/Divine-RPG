@@ -179,6 +179,7 @@ public class EntityEnergyTomo extends EntityNiceMob
         for (var4 = 0; var4 < var3; ++var4)
         {
             this.dropItem(getDropItemId(), 1);
+            this.dropItem(TwilightItemHelper.enrichedMagicMeat.itemID, 2);
         }
 
         this.dropItem(getDropItemId(), 1);

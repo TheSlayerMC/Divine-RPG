@@ -181,7 +181,7 @@ public class EntityEnergyCadillion extends EntityNiceMob
         {
             this.dropItem(getDropItemId(), 1);
         }
-        this.dropItem(TwilightItemHelper.rawEmpoweredMeat.itemID, 1);
+        this.dropItem(TwilightItemHelper.enrichedMagicMeat.itemID, 1);
     }
 
     /**

@@ -39,7 +39,7 @@ public class DimensionConfigHelper {
 	public static boolean KeepLoadedAntiNether;
 
 	public static void configInit(FMLPreInitializationEvent event){
-		File file = new File(event.getModConfigurationDirectory(), "DivineRPG Dimension.cfg");
+		File file = new File(event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 
 		config.load();

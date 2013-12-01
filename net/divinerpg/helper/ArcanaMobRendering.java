@@ -18,6 +18,9 @@ import net.divinerpg.arcana.mobs.EntityRazorback;
 import net.divinerpg.arcana.mobs.EntityVatticus;
 import net.divinerpg.arcana.mobs.EntityWraith;
 import net.divinerpg.arcana.mobs.EntityZelus;
+import net.divinerpg.block.model.RenderDemonFurnace;
+import net.divinerpg.block.model.RenderDemonItem;
+import net.divinerpg.block.model.RenderStatue;
 import net.divinerpg.helper.block.ArcanaBlockHelper;
 import net.divinerpg.iceika.mobs.EntityRoamer;
 import net.divinerpg.lib.EntityResourceLocs;
@@ -28,6 +31,7 @@ import net.divinerpg.mob.entity.item.EntityMerikMissile;
 import net.divinerpg.mob.entity.item.EntityReflector;
 import net.divinerpg.mob.entity.item.EntitySparkler;
 import net.divinerpg.mob.entity.item.EntityStarfall;
+import net.divinerpg.overworld.block.tileentity.TileEntityDemonFurnace;
 import net.divinerpg.overworld.block.tileentity.TileEntityDramixAltar;
 import net.divinerpg.overworld.block.tileentity.TileEntityExtractor;
 import net.divinerpg.overworld.block.tileentity.TileEntityParasectaAltar;
@@ -107,5 +111,7 @@ public class ArcanaMobRendering
         MinecraftForgeClient.registerItemRenderer(ArcanaBlockHelper.extractor.blockID, new ItemExtractorRenderer());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDramixAltar.class, new RenderDramixAltar());
         MinecraftForgeClient.registerItemRenderer(ArcanaBlockHelper.dramixAltar.blockID, new ItemDramixAltarRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDemonFurnace.class, new RenderDemonFurnace());
+        MinecraftForgeClient.registerItemRenderer(ArcanaBlockHelper.demonFurnace.blockID, new RenderDemonItem());
 	}
 }

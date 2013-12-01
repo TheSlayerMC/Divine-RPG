@@ -1,8 +1,8 @@
 
 package net.divinerpg.render.entity;
 
+import net.divinerpg.block.model.ModelDemonFurnace;
 import net.divinerpg.overworld.block.tileentity.TileEntityDemonFurnace;
-import net.divinerpg.render.entity.model.ModelDemonFurnace;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -20,7 +20,7 @@ public class RenderDemonFurnace extends TileEntitySpecialRenderer
 
     public RenderDemonFurnace()
     {
-        modelDemonFurnace = new ModelDemonFurnace(scale);
+        modelDemonFurnace = new ModelDemonFurnace();
     }
     @Override
     public void renderTileEntityAt(TileEntity var1, double x, double y,

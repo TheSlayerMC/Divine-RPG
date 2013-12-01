@@ -157,8 +157,10 @@ public class TwilightItemHelper extends HelperBase  {
 	public static final Item TwilightApple = new ItemDivineRPGFood(y.TwilightAppleID, 4, 0.6F, false).registerTextures("TwilightApple").setUnlocalizedName("TA").setCreativeTab(DivineRPG.Misc);
 	public static final Item FuryArrow = new ItemDivineRPG(y.FuryArrowID).registerTextures("FuryArrow").setCreativeTab(DivineRPG.Misc).setUnlocalizedName("FuryArrow");
 	public static final Item draviteSparkles = new ItemDivineRPG(y.draviteSparklesID).registerTextures("DraviteSparkles").setUnlocalizedName("DraviteS").setCreativeTab(DivineRPG.Misc);
-
+	public static final Item enrichedMagicMeat = new ItemDivineRPGFood(y.enrichedMagicMeatID, 10, 1.5F, true).registerTextures("EnrichedMagicMeat").setCreativeTab(DivineRPG.Misc);
+	
 	public static void addNames(){
+		addItem(enrichedMagicMeat, "Enriched Magic Meat");
 		addItem(DraviteShickaxe, "Dravite Shickaxe");
 		addItem(AzuriteShickaxe, "Azurite Shickaxe");
 		addItem(UviteShickaxe, "Uvite Shickaxe");

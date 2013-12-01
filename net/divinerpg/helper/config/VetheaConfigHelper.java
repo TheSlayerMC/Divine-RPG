@@ -245,26 +245,26 @@ public class VetheaConfigHelper extends HelperBase{
 
 	public static void initConfig(FMLPreInitializationEvent event){
 		Event = event;
-		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG Vethea.cfg");
+		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		
-		config.load();
+		//config.load();
 		blockConfig();
 		itemConfig();
-		config.save();
+		//config.save();
 	}
 	
 	public static int addBlock(String Name){
-		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG Vethea.cfg");
+		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getBlock(Name, vetheaBlockID++).getInt();
+		config.getBlock(Name, vetheaBlockID++ - (byte)256).getInt();
 		config.save();
 		return vetheaBlockID++;
 	}
 	
 	public static int addTerrainBlock(String Cat, String Name){
-		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG Vethea.cfg");
+		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
 		config.getTerrainBlock(Cat, Name, genBlockID++, Cat).getInt();
@@ -273,10 +273,10 @@ public class VetheaConfigHelper extends HelperBase{
 	}
 	
 	public static int addItem(String name){
-		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG Vethea.cfg");
+		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getItem(name, vetheaItemID++).getInt();
+		config.getItem(name, vetheaItemID++ - (byte)256).getInt();
 		config.save();
 		return vetheaItemID++;
 	}

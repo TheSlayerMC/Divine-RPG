@@ -24,9 +24,6 @@ public class EntitySoulStealer extends EntityZombie
     public EntitySoulStealer(World var1)
     {
         super(var1);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(30); // Attack
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(900); // MaxHP
         float moveSpeed = 0.5F;
 		this.tasks.addTask(1, new EntityAISwimming(this));
 		this.targetTasks.addTask(3, new EntityAIHurtByTarget(this, true));
@@ -43,6 +40,14 @@ public class EntitySoulStealer extends EntityZombie
     public int getTotalArmorValue()
     {
         return 10;
+    }
+    
+    @Override
+    protected void applyEntityAttributes() {
+    	super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(30); // Attack
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(900); // MaxHP
     }
 
     @Override
