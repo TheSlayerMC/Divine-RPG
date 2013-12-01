@@ -23,13 +23,13 @@ public class ItemWatcher extends ItemDivineRPG {
 					var5.setPosition(par4, par5 + 1, par6);
 					par3World.spawnEntityInWorld(var5);
 					var4++;
-					
+					player.inventory.consumeInventoryItem(this.itemID);
 				}
 			}
 		}
 		if(par3World.isRemote)
 			--par1ItemStack.stackSize;
-		player.inventory.consumeInventoryItem(this.itemID);
+		//player.inventory.consumeInventoryItem(this.itemID);
 
 		return true;
 	}

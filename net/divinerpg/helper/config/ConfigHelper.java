@@ -114,7 +114,7 @@ public class ConfigHelper extends HelperBase{
 	public static int UviteShovelID, UviteAxeID, UvitePickaxeID, DivineShovelID, DivineAxeID, DivinePickaxeID;
 	public static int BlueFireBowID, bedrockMaulID, soundOfMusicID, greenShardID, shurikenID, namkormiraID;
 	public static int slimeSwordID,shadowBowID, crabClawCannonID, frostCannonID, frostSwordID, serenadeOfDeathID;
-	public static int divineswordID, sandSlashID, blueShardID, iceShardID, yellowShardID, serenadeStrikerID, serenadeOfLifeID;
+	public static int divineswordID, sandSlashID, iceShardID, yellowShardID, serenadeStrikerID, serenadeOfLifeID;
 	public static int enderSwordID, enderSwordYellowID, enderSwordGreenID, enderSwordRedID, enderSwordBlueID;
 	public static int enderSwordBlackID, bluefirebowID, rupeeID, tomatoID, tomatoSeedsID, purpleFireID;
 	public static int jackOManBootsID, jackOManLegsID, jackOManBodyID, jackOManHeadID, scytheID, sharkAnchorID, healingStoneID;
@@ -417,7 +417,7 @@ public class ConfigHelper extends HelperBase{
 		frostSwordID = addItem("Frost Sword");
 		divineswordID = addItem("Divine Sword");
 		sandSlashID = addItem("Sand Slash");
-		blueShardID = addItem("Ice Shard");
+		iceShardID = addItem("Ice Shard");
 		yellowShardID = addItem("Divine Shard");
 		enderSwordID = addItem("Ender Sword");
 		enderSwordBlueID = addItem("Ender Sword Blue");

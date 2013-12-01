@@ -25,12 +25,13 @@ public class ItemInfernalFlame extends ItemDivineRPG {
 					var5.setPosition(par4, par5 + 1, par6);
 					par3World.spawnEntityInWorld(var5);
 					var4++;
+					par2EntityPlayer.inventory.consumeInventoryItem(this.itemID);
 				}
 			}
 		}
 		if(par3World.isRemote)
 			--par1ItemStack.stackSize;
-		par2EntityPlayer.inventory.consumeInventoryItem(this.itemID);
+		//par2EntityPlayer.inventory.consumeInventoryItem(this.itemID);
 		
 		return true;
 	}

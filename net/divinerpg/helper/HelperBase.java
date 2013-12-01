@@ -1,7 +1,6 @@
 package net.divinerpg.helper;
 
 import net.divinerpg.helper.config.ConfigHelper;
-import net.divinerpg.helper.config.ItemConfigHelper;
 import net.divinerpg.helper.config.VetheaConfigHelper;
 import net.divinerpg.lib.Reference;
 import net.minecraft.block.Block;
@@ -9,7 +8,6 @@ import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.EnumHelper;
-import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 

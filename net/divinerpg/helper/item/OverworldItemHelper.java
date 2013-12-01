@@ -64,7 +64,7 @@ public class OverworldItemHelper extends HelperBase {
 	public static final Item netheriteIngot = new ItemDivineRPG(y.netheriteID).registerTextures("NetheriteIngot").setUnlocalizedName("NetheriteIngot").setCreativeTab(DivineRPG.Raw);
 
 	public static final Item jungleShard = new ItemDivineRPG(y.greenShardID).registerTextures("JungleShards").setUnlocalizedName("Jungle").setCreativeTab(DivineRPG.Raw);
-	public static final Item iceShard = new ItemDivineRPG(y.blueShardID).registerTextures("IceShards").setUnlocalizedName("Ice").setCreativeTab(DivineRPG.Raw);    
+	public static final Item iceShard = new ItemDivineRPG(y.iceShardID).registerTextures("IceShards").setUnlocalizedName("IceShard").setCreativeTab(DivineRPG.Raw);    
 	public static final Item moltenShard = new ItemDivineRPG(y.redShardID).registerTextures("MoltenShards").setUnlocalizedName("Molten").setCreativeTab(DivineRPG.Raw);
 	public static final Item divineShard = new ItemDivineRPG(y.yellowShardID).registerTextures("DivineShards").setUnlocalizedName("Divine").setCreativeTab(DivineRPG.Raw);
 	public static final Item enderShard = new ItemDivineRPG(y.purpleShardID).registerTextures("EnderShards").setUnlocalizedName("Ender").setCreativeTab(DivineRPG.Raw);
