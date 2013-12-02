@@ -4,12 +4,14 @@ import java.util.Random;
 
 import net.divinerpg.DivineRPG;
 import net.divinerpg.helper.block.ArcanaBlockHelper;
+import net.divinerpg.helper.handlers.GuiHandler;
 import net.divinerpg.overworld.block.tileentity.TileEntityMoonlightFurnace;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -172,7 +174,7 @@ public class BlockMoonlightFurnace extends BlockContainer
 
             if (var10 != null)
             {
-                par5EntityPlayer.openGui(DivineRPG.instance, 10, par1World, par2, par3, par4);
+                par5EntityPlayer.openGui(DivineRPG.instance, GuiHandler.MoonLight, par1World, par2, par3, par4);
             }
 
             return true;
@@ -219,9 +221,10 @@ public class BlockMoonlightFurnace extends BlockContainer
     /**
      * Called when the block is placed in the world.
      */
-    public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLiving par5EntityLiving)
+    @Override
+    public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLivingBase par5EntityLivingBase, ItemStack par6ItemStack)
     {
-        int var6 = MathHelper.floor_double(par5EntityLiving.rotationYaw * 4.0F / 360.0F + 0.5D) & 3;
+        int var6 = MathHelper.floor_double(par5EntityLivingBase.rotationYaw * 4.0F / 360.0F + 0.5D) & 3;
 
         if (var6 == 0)
         {

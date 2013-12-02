@@ -5,17 +5,20 @@ import java.util.Random;
 
 import net.divinerpg.DivineRPG;
 import net.divinerpg.helper.block.ArcanaBlockHelper;
+import net.divinerpg.helper.handlers.GuiHandler;
 import net.divinerpg.overworld.block.tileentity.TileEntityGreenlightFurnace;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
@@ -125,30 +128,6 @@ public class BlockGreenlightFurnace extends BlockContainer
     @SideOnly(Side.CLIENT)
 
     /**
-     * Retrieves the block texture to use based on the display side. Args: iBlockAccess, x, y, z, side
-     */
-    public Icon getBlockTexture(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5)
-    {
-        if (par5 == 1)
-        {
-            //return this.blockIndexInTexture + 2;
-        }
-        else if (par5 == 0)
-        {
-            //return this.blockIndexInTexture + 2;
-        }
-        else
-        {
-            // int var6 = par1IBlockAccess.getBlockMetadata(par2, par3, par4);
-            //return par5 != var6 ? this.blockIndexInTexture : (this.isActive ? this.blockIndexInTexture + 1 : this.blockIndexInTexture - 1);
-        }
-        return null;
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
-
-    /**
      * A randomly called display update to be able to add particles or other items for display
      */
     public void randomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random)
@@ -186,14 +165,6 @@ public class BlockGreenlightFurnace extends BlockContainer
     }
 
     /**
-     * Returns the block texture based on the side being looked at.  Args: side
-     */
-    // public int getBlockTextureFromSide(int par1)
-    // {
-    //     return par1 == 1 ? this.blockIndexInTexture + 2 : (par1 == 0 ? this.blockIndexInTexture + 2 : (par1 == 3 ? this.blockIndexInTexture - 1 : this.blockIndexInTexture));
-    // }
-
-    /**
      * Called upon block activation (right click on the block.)
      */
     @Override
@@ -207,7 +178,7 @@ public class BlockGreenlightFurnace extends BlockContainer
 
             if (var10 != null)
             {
-                par5EntityPlayer.openGui(DivineRPG.instance, 2, par1World, par2, par3, par4);
+                par5EntityPlayer.openGui(DivineRPG.instance, GuiHandler.GreenLight, par1World, par2, par3, par4);
             }
 
             return true;
@@ -254,28 +225,28 @@ public class BlockGreenlightFurnace extends BlockContainer
     /**
      * Called when the block is placed in the world.
      */
-    public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLiving par5EntityLiving)
+    public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLivingBase par5EntityLivingBase, ItemStack par6ItemStack)
     {
-        int var6 = MathHelper.floor_double(par5EntityLiving.rotationYaw * 4.0F / 360.0F + 0.5D) & 3;
+        int l = MathHelper.floor_double((double)(par5EntityLivingBase.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
 
-        if (var6 == 0)
+        if (l == 0)
         {
-            par1World.setBlockMetadataWithNotify(par2, par3, par4, 2, 3);
+            par1World.setBlockMetadataWithNotify(par2, par3, par4, 2, 2);
         }
 
-        if (var6 == 1)
+        if (l == 1)
         {
-            par1World.setBlockMetadataWithNotify(par2, par3, par4, 5, 3);
+            par1World.setBlockMetadataWithNotify(par2, par3, par4, 5, 2);
         }
 
-        if (var6 == 2)
+        if (l == 2)
         {
-            par1World.setBlockMetadataWithNotify(par2, par3, par4, 3, 3);
+            par1World.setBlockMetadataWithNotify(par2, par3, par4, 3, 2);
         }
 
-        if (var6 == 3)
+        if (l == 3)
         {
-            par1World.setBlockMetadataWithNotify(par2, par3, par4, 4, 3);
+            par1World.setBlockMetadataWithNotify(par2, par3, par4, 4, 2);
         }
     }
 

@@ -126,7 +126,7 @@ public class OverworldItemHelper extends HelperBase {
 	public static final Item divineWoodPickaxe = new ToolPickaxe(y.divineWoodPickID, divineWood).registerItemTexture("DivineWoodPickaxe").setUnlocalizedName("DivineWoodPickaxe").setCreativeTab(DivineRPG.Tools);
 	public static final Item divineWoodHoe = new ToolHoe(y.divineWoodHoeID, divineWood).registerItemTexture("DivineWoodHoe").setUnlocalizedName("DivineWoodHoe").setCreativeTab(DivineRPG.Tools);
 	public static final Item divineWoodShovel = new ToolShovel(y.divineWoodShovelID, divineWood).registerItemTexture("DivineWoodShovel").setUnlocalizedName("DivineWoodShovel").setCreativeTab(DivineRPG.Tools);
-	public static final Item divineWoodSword = new ToolSword(y.divineWoodSwordID, divineWood).registerItemTexture("DivineWoodSword").setUnlocalizedName("DivineWoodSword").setCreativeTab(DivineRPG.Swords);
+	//public static final Item divineWoodSword = new ToolSword(y.divineWoodSwordID, divineWood).registerItemTexture("DivineWoodSword").setUnlocalizedName("DivineWoodSword").setCreativeTab(DivineRPG.Swords);
 
 	public static final Item cyclopseEye = new ItemDivineRPG(y.cyclopseEyeID).registerTextures("CyclopseEye").setUnlocalizedName("CyclopseEye").setCreativeTab(DivineRPG.Raw);
 	public static final Item cyclopseStaff = new ItemCyclopseStaff(y.cyclopseStaffID, 17, 1, 2, Sound.Staff, Sound.Staff).registerTextures("CyclopianStaff").setUnlocalizedName("CyclopseStaff").setCreativeTab(DivineRPG.Projectile);
@@ -365,7 +365,7 @@ public class OverworldItemHelper extends HelperBase {
 		addItem(divineWoodPickaxe, "Divine Wooden Pickaxe");
 		addItem(divineWoodHoe, "Divine Wooden Hoe");
 		addItem(divineWoodShovel, "Divine Wooden Shovel");
-		addItem(divineWoodSword, "Divine Wooden Sword");
+		//addItem(divineWoodSword, "Divine Wooden Sword");
 		addItem(infernoSword , "Inferno Sword");
 		addItem(bedrockSword , "Bedrock Sword");
 		addItem(sharkFin , "Shark Fin");

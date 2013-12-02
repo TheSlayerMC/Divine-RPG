@@ -30,6 +30,7 @@ public class ItemWatcher extends ItemDivineRPG {
 		if(par3World.isRemote)
 			--par1ItemStack.stackSize;
 		//player.inventory.consumeInventoryItem(this.itemID);
+		player.addChatMessage("The Watcher can only be spawned in The Nether");
 
 		return true;
 	}

@@ -38,8 +38,8 @@ public class EntityCyclops extends EntityModMob
 	protected void applyEntityAttributes()
 	{
 		super.applyEntityAttributes();
-		this.setMaxHealth(400.0D);
-		this.setAttackDamage(5.0D);
+		this.setMaxHealth(280.0D);
+		this.setAttackDamage(6.0D);
 		this.setMoveSpeed(0.5D);
 	}
 

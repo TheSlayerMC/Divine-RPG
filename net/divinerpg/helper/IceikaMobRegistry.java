@@ -27,7 +27,7 @@ public class IceikaMobRegistry
         ModMobRegistry.registerEntity(EntityFractite.class, "Fractite");
         ModMobRegistry.registerEntity(EntityGlacide.class, "Glacide");
         ModMobRegistry.registerEntity(EntityHastreus.class, "Hastreus");
-        ModMobRegistry.registerEntity(EntityFrostArcher.class, "Frostarcher");
+        ModMobRegistry.registerEntity(EntityFrostArcher.class, "Frost Archer");
         ModMobRegistry.registerEntity(EntityRollum.class, "Rollum");
         ModMobRegistry.registerEntity(EntityWorkshopTickerer.class, "Workshop Tinkerer");
         ModMobRegistry.registerEntity(EntityWorkshopMerchant.class, "Workshop Merchant");

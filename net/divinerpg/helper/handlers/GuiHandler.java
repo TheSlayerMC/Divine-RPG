@@ -25,6 +25,12 @@ public class GuiHandler implements IGuiHandler {
 	    public static final int INFUSION_TABLE = guiID++;
 	    public static final int DREAM_LAMP = guiID++;
 	    public static final int HUNGER = guiID++;
+	    public static final int DemonFurnace = guiID++;
+	    public static final int GreenLight = guiID++;
+	    public static final int Molten = guiID++;
+	    public static final int MoonLight = guiID++;
+	    public static final int Oceanfire = guiID++;
+	    public static final int Whitefire = guiID++;
 
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
@@ -40,8 +46,29 @@ public class GuiHandler implements IGuiHandler {
         if(entity instanceof TileEntityExtractor)
             return new ContainerExtractinator(player.inventory, (TileEntityExtractor) world.getBlockTileEntity(x, y, z));
 
-        if(entity instanceof TileEntityWhitefireFurnace)
+        if(ID == Whitefire){
             return new ContainerWhitefireFurnace(player.inventory, (TileEntityWhitefireFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == DemonFurnace){
+            return new ContainerDemonFurnace(player.inventory, (TileEntityDemonFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == GreenLight){
+            return new ContainerGreenlightFurnace(player.inventory, (TileEntityGreenlightFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == Molten){
+            return new ContainerMoltenFurnace(player.inventory, (TileEntityMoltenFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == MoonLight){
+            return new ContainerMoonlightFurnace(player.inventory, (TileEntityMoonlightFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == Oceanfire){
+            return new ContainerOceanfireFurnace(player.inventory, (TileEntityOceanfireFurnace) world.getBlockTileEntity(x, y, z));
+        }
 
         if(entity instanceof TileEntityDreamLamp){
             return new ContainerDreamLamp(player.inventory, (TileEntityDreamLamp) world.getBlockTileEntity(x, y, z));
@@ -98,9 +125,29 @@ public class GuiHandler implements IGuiHandler {
         else if(entity instanceof TileEntityExtractor){
             return new GuiExtractinator(player.inventory, (TileEntityExtractor) world.getBlockTileEntity(x, y, z));
 		}
-        
-        else if(entity instanceof TileEntityWhitefireFurnace){
+
+        if(ID == Whitefire){
             return new GuiWhitefireFurnace(player.inventory, (TileEntityWhitefireFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == DemonFurnace){
+            return new GuiDemonFurnace(player.inventory, (TileEntityDemonFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == GreenLight){
+            return new GuiGreenlightFurnace(player.inventory, (TileEntityGreenlightFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == Molten){
+            return new GuiMoltenFurnace(player.inventory, (TileEntityMoltenFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == MoonLight){
+            return new GuiMoonlightFurnace(player.inventory, (TileEntityMoonlightFurnace) world.getBlockTileEntity(x, y, z));
+        }
+        
+        if(ID == Oceanfire){
+            return new GuiOceanfireFurnace(player.inventory, (TileEntityOceanfireFurnace) world.getBlockTileEntity(x, y, z));
         }
         
         else if(entity instanceof TileEntityDreamLamp){

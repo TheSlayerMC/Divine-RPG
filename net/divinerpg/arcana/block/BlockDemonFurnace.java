@@ -5,10 +5,13 @@ import java.util.Random;
 import net.divinerpg.DivineRPG;
 import net.divinerpg.helper.base.BlockDivineRPGContainer;
 import net.divinerpg.helper.block.ArcanaBlockHelper;
+import net.divinerpg.helper.handlers.GuiHandler;
 import net.divinerpg.overworld.block.tileentity.TileEntityDemonFurnace;
+import net.divinerpg.overworld.block.tileentity.TileEntityStatue;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -146,13 +149,41 @@ public class BlockDemonFurnace extends BlockDivineRPGContainer
 
             if (var10 != null)
             {
-                par5EntityPlayer.openGui(DivineRPG.instance, 10, par1World, par2, par3, par4);
+                par5EntityPlayer.openGui(DivineRPG.instance, GuiHandler.DemonFurnace, par1World, par2, par3, par4);
             }
 
             return true;
         }
     }
+    
+    @Override
+    public int getRenderType() {
+        return -1;
+    }
+    
+    @Override
+    public boolean renderAsNormalBlock() {
+        return false;
+    }
+    
+    @Override
+    public boolean isOpaqueCube() {
+        return false;
+    }
+    
+    @Override
+    public void onBlockPlacedBy(World w, int x, int y, int z, EntityLivingBase entity, ItemStack item) {
 
+        int rotation = ((MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3) + 2) % 4;
+       
+        if (rotation == 3)
+            rotation = 1;
+        else if (rotation == 1)
+            rotation = 3;
+        
+        w.setBlockMetadataWithNotify(x, y, z, rotation, 3);
+    }
+    
     /**
      * Update which block ID the furnace is using depending on whether or not it is burning
      */

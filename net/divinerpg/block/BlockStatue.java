@@ -45,7 +45,7 @@ public class BlockStatue extends Block {
     
     @Override
     public boolean renderAsNormalBlock() {
-        return true;
+        return false;
     }
     
     @Override

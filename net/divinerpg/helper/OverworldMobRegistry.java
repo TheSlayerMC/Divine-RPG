@@ -149,7 +149,7 @@ public class OverworldMobRegistry {
 		ModDungeonHooks.addDungeonMob("Jungle Dramcryx", 200);
 		/**
 		 * Testing mobs
-		 * */
+		 * *
 		ModDungeonHooks.addDungeonMob("Cave Crawler", 200);
 		ModDungeonHooks.addDungeonMob("Wild Fire", 200);
 		ModDungeonHooks.addDungeonMob("Scorcher", 200);
@@ -165,6 +165,6 @@ public class OverworldMobRegistry {
 		ModDungeonHooks.addDungeonMob("Shark", 200);
 		ModDungeonHooks.addDungeonMob("Crab", 200);
 		ModDungeonHooks.addDungeonMob("Frost", 200);
-		ModDungeonHooks.addDungeonMob("Ice Man", 200);
+		ModDungeonHooks.addDungeonMob("Ice Man", 200);*/
 	}
 }

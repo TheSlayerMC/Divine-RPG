@@ -11,6 +11,7 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.inventory.SlotFurnace;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
+import net.minecraft.tileentity.TileEntityFurnace;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -25,7 +26,7 @@ public class ContainerMoltenFurnace extends Container
     {
         this.furnace = var2;
         this.addSlotToContainer(new Slot(var2, 0, 56, 17));
-        this.addSlotToContainer(new Slot(var2, 1, 56, 53));
+        //this.addSlotToContainer(new Slot(var2, 1, 56, 53));
         this.addSlotToContainer(new SlotFurnace(var1.player, var2, 2, 116, 35));
         int var3;
 
@@ -111,62 +112,75 @@ public class ContainerMoltenFurnace extends Container
         return this.furnace.isUseableByPlayer(var1);
     }
 
-    @Override
     public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2)
     {
-        ItemStack var3 = null;
-        Slot var4 = (Slot)this.inventorySlots.get(par2);
+        ItemStack itemstack = null;
+        Slot slot = (Slot)this.inventorySlots.get(par2);
 
-        if (var4 != null && var4.getHasStack())
+        if (slot != null && slot.getHasStack())
         {
-            ItemStack var5 = var4.getStack();
-            var3 = var5.copy();
+            ItemStack itemstack1 = slot.getStack();
+            itemstack = itemstack1.copy();
 
             if (par2 == 2)
             {
-                if (!this.mergeItemStack(var5, 3, 39, true))
+                if (!this.mergeItemStack(itemstack1, 3, 39, true))
+                {
                     return null;
+                }
 
-                var4.onSlotChange(var5, var3);
+                slot.onSlotChange(itemstack1, itemstack);
             }
             else if (par2 != 1 && par2 != 0)
             {
-                if (FurnaceRecipes.smelting().getSmeltingResult(var5) != null)
+                if (FurnaceRecipes.smelting().getSmeltingResult(itemstack1) != null)
                 {
-                    if (!this.mergeItemStack(var5, 0, 1, false))
+                    if (!this.mergeItemStack(itemstack1, 0, 1, false))
+                    {
                         return null;
+                    }
                 }
-                else if (TileEntityMoltenFurnace.isItemFuel(var5))
+                else if (TileEntityFurnace.isItemFuel(itemstack1))
                 {
-                    if (!this.mergeItemStack(var5, 1, 2, false))
+                    if (!this.mergeItemStack(itemstack1, 1, 2, false))
+                    {
                         return null;
+                    }
                 }
                 else if (par2 >= 3 && par2 < 30)
                 {
-                    if (!this.mergeItemStack(var5, 30, 39, false))
+                    if (!this.mergeItemStack(itemstack1, 30, 39, false))
+                    {
                         return null;
+                    }
                 }
-                else if (par2 >= 30 && par2 < 39 && !this.mergeItemStack(var5, 3, 30, false))
+                else if (par2 >= 30 && par2 < 39 && !this.mergeItemStack(itemstack1, 3, 30, false))
+                {
                     return null;
+                }
             }
-            else if (!this.mergeItemStack(var5, 3, 39, false))
-                return null;
-
-            if (var5.stackSize == 0)
+            else if (!this.mergeItemStack(itemstack1, 3, 39, false))
             {
-                var4.putStack((ItemStack)null);
+                return null;
+            }
+
+            if (itemstack1.stackSize == 0)
+            {
+                slot.putStack((ItemStack)null);
             }
             else
             {
-                var4.onSlotChanged();
+                slot.onSlotChanged();
             }
 
-            if (var5.stackSize == var3.stackSize)
+            if (itemstack1.stackSize == itemstack.stackSize)
+            {
                 return null;
+            }
 
-            var4.onPickupFromSlot(par1EntityPlayer, var5);
+            slot.onPickupFromSlot(par1EntityPlayer, itemstack1);
         }
 
-        return var3;
+        return itemstack;
     }
 }

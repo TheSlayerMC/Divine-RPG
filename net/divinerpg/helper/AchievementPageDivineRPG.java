@@ -13,8 +13,8 @@ import net.minecraftforge.common.AchievementPage;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
-public class AchievementPageDivineRPG 
-{
+public class AchievementPageDivineRPG  {
+	
     public static final Achievement divineInervention = (new Achievement(50, "divineintervention", 0, 3, OverworldItemHelper.watchingEye, null)).registerAchievement();
     public static final Achievement	divinePlan = (new Achievement(51, "divineplan", 1, 4, OverworldItemHelper.divineSword, divineInervention)).registerAchievement();
     public static final Achievement liesWithin = (new Achievement(52, "lieswithin", 0, 5, ArcanaBlockHelper.arcanaPortalFrame, null)).registerAchievement();
@@ -31,12 +31,12 @@ public class AchievementPageDivineRPG
     public static final Achievement whenPigsFly = (new Achievement(63, "whenpigsfly", 3, 2, OverworldItemHelper.angelicHelmet, divineInervention)).registerAchievement();
     public static final Achievement offKey = (new Achievement(64, "offKey", 6, 0, OverworldItemHelper.soundOfMusic, null)).registerAchievement();
    // public static final Achievement skyHigh = (new Achievement(65, "65", 3, 5, OverworldBlockHelper.elevantium, liesWithin)).registerAchievement();
-    //public static final Achievement	allHellLoose = (new Achievement(66, "allhellloose", 3, 10, OverworldItemHelper.stormSword, liesWithin)).registerAchievement();
-    //public static final Achievement enrichment = (new Achievement(67, "enrichment", 3, 7, ArcanaItemHelper.staffOfEnrichment, liesWithin)).registerAchievement();
+    //public static final Achievement allHellLoose = (new Achievement(66, "allhellloose", 3, 10, OverworldItemHelper.stormSword, liesWithin)).registerAchievement();
+    public static final Achievement enrichment = (new Achievement(67, "enrichment", 3, 7, ArcanaItemHelper.staffOfEnrichment, liesWithin)).registerAchievement();
     public static final Achievement hoterthanHell = (new Achievement(68, "hotterthanHell", 3, 9, ArcanaBlockHelper.heatTrapsOn, liesWithin)).registerAchievement();
-   // public static final Achievement	mealToRemember = (new Achievement(69, "mealToRemember", 1, 0, OverworldItemHelper.dinner, null)).registerAchievement();
-    //public static final Achievement yuk = (new Achievement(70, "yuk", 3, 8, ArcanaItemHelper.weakArcanaPotion, liesWithin)).registerAchievement();
-    //public static final Achievement littleCreature = (new Achievement(71, "littlecreature", 3, 6, ArcanaItemHelper.seimerSpawner, liesWithin)).registerAchievement();
+    public static final Achievement	mealToRemember = (new Achievement(69, "mealToRemember", 1, 0, OverworldItemHelper.dinner, null)).registerAchievement();
+    public static final Achievement yuk = (new Achievement(70, "yuk", 3, 8, ArcanaItemHelper.weakArcanaPotion, liesWithin)).registerAchievement();
+    public static final Achievement littleCreature = (new Achievement(71, "littlecreature", 3, 6, ArcanaItemHelper.seimerSpawner, liesWithin)).registerAchievement();
     public static final Achievement	halloweenSpirit = (new Achievement(72, "halloweenspirit", 4, 0, OverworldItemHelper.scythe, null)).registerAchievement();
     public static final Achievement oneLamp = (new Achievement(73, "onelamp", 2, 4, OverworldBlockHelper.DraviteLamp, possibilities)).registerAchievement();
     public static final Achievement feedingOnTheFish = (new Achievement(74, "feedingonthefish", 3, 0, OverworldItemHelper.sharkFin, null)).registerAchievement();
@@ -50,8 +50,8 @@ public class AchievementPageDivineRPG
 			divineInervention, liesWithin, friendOrFoe,
 			/*tenHeadsIsBetterThanOne,*/ perfectlyCorrupted,
 			totalDemonization, greatBirdFire, dungeonMaster,
-			eyeOfEvil, tripleDanger, possibilities, /*enrichment,*/ hoterthanHell, /*mealToRemember, yuk,
-			littleCreature,*/ halloweenSpirit,
+			eyeOfEvil, tripleDanger, possibilities, enrichment, hoterthanHell, mealToRemember, yuk,
+			littleCreature, halloweenSpirit,
 			oneLamp, feedingOnTheFish, arrowToTheKnee, frozenLand, frozenGoods, /*lilGift,*/
 			lilTinkerin, 
 			/*skyHigh,*/ whenPigsFly, offKey, /*allHellLoose,*/ darkAnotherDay);
@@ -60,6 +60,59 @@ public class AchievementPageDivineRPG
     	AchievementPage.registerAchievementPage(divinerpgpage);
     	//addAchievementName("Default name", "The actual name");
     	//addAchievementDesc("Default name", "The description");
+    	addAchievementName("divineintervention", "Divine Intervention");
+    	addAchievementName("possibilities", "Possibilities");
+    	addAchievementName("friendorfoe", "Friend or foe?");
+    	addAchievementName("darkanotherday", "Dark another day");
+    	addAchievementName("whenpigsfly", "When pigs fly");
+    	addAchievementName("offKey", "Off key");
+    	addAchievementName("enrichment", "Enrichment");
+    	addAchievementName("littlecreature", "Little creature");
+    	addAchievementName("halloweenspirit", "Halloween Spirit");
+    	addAchievementName("onelamp", "One lamp");
+    	addAchievementName("feedingonthefish", "Feeding on the fish");
+    	addAchievementName("arrototheknee", "Arrow to the knee");
+    	addAchievementName("hotterthanHell", "Hotter than hell");
+    	addAchievementName("mealToRemember", "Meal To Remember");
+    	addAchievementName("yuk", "Yuk!");
+    	addAchievementName("frozenland", "Frozen land");
+    	addAchievementName("frozengoods", "Frozen goods");
+    	addAchievementName("liltinkerin", "Lil' tinkerin");
+    	addAchievementName("divineplan", "Divine plan");
+    	addAchievementName("lieswithin", "Lies within");
+    	addAchievementName("perfectlycorrupted", "Perfectly corrupted");
+    	addAchievementName("totaldemonization", "Total demonization");
+    	addAchievementName("evildisease", "Evil disease");
+    	addAchievementName("dungeonMaster", "Dungeon master");
+    	addAchievementName("eyeOfEvil", " An eye of evil");
+    	addAchievementName("tripleDanger", "Triplet danger");
+    	
+    	addAchievementDesc("divineintervention", "Spawn The Watcher");
+    	addAchievementDesc("possibilities", "");
+    	addAchievementDesc("friendorfoe", "Kill a bunny");
+    	addAchievementDesc("darkanotherday", "");
+    	addAchievementDesc("whenpigsfly", "");
+    	addAchievementDesc("offKey", "Shoot a Sound Of Music");
+    	addAchievementDesc("enrichment", "");
+    	addAchievementDesc("littlecreature", "Spawn a Golem Of Rejuv'");
+    	addAchievementDesc("halloweenspirit", "Trade with a Jack-O-Man");
+    	addAchievementDesc("onelamp", "");
+    	addAchievementDesc("feedingonthefish", "");
+    	addAchievementDesc("arrototheknee", "");
+    	addAchievementDesc("frozenland", "Enter the Iceika dimension");
+    	addAchievementDesc("frozengoods", "");
+    	addAchievementDesc("liltinkerin", "Trade with a Tinkerer");
+    	addAchievementDesc("divineplan", "");
+    	addAchievementDesc("lieswithin", "Enter The Dungeon Of Arcana");
+    	addAchievementDesc("perfectlycorrupted", "Use the Altar Of Corruption");
+    	addAchievementDesc("totaldemonization", "Use the Demon Furnace");
+    	addAchievementDesc("evildisease", "Kill the Parasecta");
+    	addAchievementDesc("dungeonMaster", "Kill the Dramix");
+    	addAchievementDesc("eyeOfEvil", "Look into the eye of The Eye");
+    	addAchievementDesc("tripleDanger", "Kill an Ender Triplet");
+    	addAchievementDesc("hotterthanHell", "Step on a hot block in Arcana");
+    	addAchievementDesc("mealToRemember", "Eat a chicken dinner");
+    	addAchievementDesc("yuk", "Use an arcana potion");
     }
     
     /** 

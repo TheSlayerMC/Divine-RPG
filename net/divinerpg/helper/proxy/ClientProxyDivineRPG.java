@@ -1,5 +1,6 @@
 package net.divinerpg.helper.proxy;
 
+import net.divinerpg.DivineRPG;
 import net.divinerpg.helper.ArcanaMobRegistry;
 import net.divinerpg.helper.ArcanaMobRendering;
 import net.divinerpg.helper.IceikaMobRegistry;
@@ -11,8 +12,10 @@ import net.divinerpg.helper.TwilightMobRendering;
 import net.divinerpg.helper.VetheaMobRegistry;
 import net.divinerpg.helper.VetheaMobRendering;
 import net.divinerpg.helper.handlers.ClientTickHandler;
+import net.divinerpg.helper.handlers.GuiHandler;
 import net.divinerpg.helper.handlers.SoundHandler;
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.TickRegistry;
 import cpw.mods.fml.relauncher.Side;
 
@@ -26,6 +29,7 @@ public class ClientProxyDivineRPG extends CommonProxyDivineRPG {
 		IceikaMobRendering.init();
 		VetheaMobRendering.init();
 		MinecraftForge.EVENT_BUS.register(new SoundHandler());
+		NetworkRegistry.instance().registerGuiHandler(DivineRPG.instance, new GuiHandler());
 	}
 
 	@Override

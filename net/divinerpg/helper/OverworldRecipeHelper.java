@@ -202,7 +202,7 @@ public class OverworldRecipeHelper {
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.divineWoodHoe, 1), new Object[] {" PP", " S ", " S ", 'S', OverworldItemHelper.divineStick, 'P', OverworldBlockHelper.DivinePlank});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.divineWoodPickaxe, 1), new Object[] {"PPP", " S ", " S ", 'S', OverworldItemHelper.divineStick, 'P', OverworldBlockHelper.DivinePlank});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.divineWoodShovel, 1), new Object[] {" P ", " S ", " S ", 'S', OverworldItemHelper.divineStick, 'P', OverworldBlockHelper.DivinePlank});
-		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.divineWoodSword, 1), new Object[] {" P ", " P ", " S ", 'S', OverworldItemHelper.divineStick, 'P', OverworldBlockHelper.DivinePlank});
+		//GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.divineWoodSword, 1), new Object[] {" P ", " P ", " S ", 'S', OverworldItemHelper.divineStick, 'P', OverworldBlockHelper.DivinePlank});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.divineStick, 4), new Object[] {"S", "S", 'S', OverworldBlockHelper.DivinePlank});
 		GameRegistry.addShapelessRecipe(new ItemStack(OverworldBlockHelper.DivinePlank, 4), new Object[] {OverworldBlockHelper.DivineLog});
 

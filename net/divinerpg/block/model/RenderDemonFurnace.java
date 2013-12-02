@@ -30,12 +30,12 @@ public class RenderDemonFurnace extends TileEntitySpecialRenderer
         this.renderAModelAt((TileEntityDemonFurnace)var1, x, y, z, tick);
     }
 
-    public void renderAModelAt(TileEntityDemonFurnace tileentity1, double x, double y, double z, float f)
+    public void renderAModelAt(TileEntityDemonFurnace te, double x, double y, double z, float f)
     {
         GL11.glPushMatrix();
         GL11.glTranslated((float)x + 0.5F, (float)y + 0.5F, (float)z + 0.5F);
 
-        if(ArcanaBlockHelper.demonFurnace.isActive) {
+        if(te.isBurning()) {
             this.bindTexture(ON);
         } else {
             this.bindTexture(OFF);

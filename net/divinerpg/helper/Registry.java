@@ -54,7 +54,6 @@ public class Registry {
 
 	public static void addMisc() {
 		harvestLevelHelper.init();
-		NetworkRegistry.instance().registerGuiHandler(DivineRPG.instance, new GuiHandler());
 		System.out.print("[DIVINE RPG] Registering Misc Things!");
 	}
 

@@ -23,7 +23,7 @@ public class ConfigHelper extends HelperBase{
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getBlock(name, blockID++ - (byte)256).getInt();
+		config.getBlock(name + "ID", blockID++ - (byte)256).getInt();
 		config.save();
 		return blockID++;
 	}
@@ -32,7 +32,7 @@ public class ConfigHelper extends HelperBase{
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getTerrainBlock(Cat, Name, genBlockID++, Cat).getInt();
+		config.getTerrainBlock(Cat, Name + "ID", genBlockID++, Cat).getInt();
 		config.save();
 		return genBlockID++;
 	}
@@ -41,7 +41,7 @@ public class ConfigHelper extends HelperBase{
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getItem(name, itemID++ - (byte)256).getInt();
+		config.getItem(name + "ID", itemID++).getInt();
 		config.save();
 		return itemID++;
 	}
@@ -404,10 +404,16 @@ public class ConfigHelper extends HelperBase{
 	}
 	
 	public static void itemConfig(){
+		tomatoID = addItem("Tomato");
 		bedrockMaulID = addItem("Bedrock Maul");
 		soundOfMusicID = addItem("Sound Of Music");
 		greenShardID = addItem("Jungle Shard");
+		redShardID = addItem("Molten Shard");
+        corruptedShardsID = addItem("Corrupted Shards");
+        iceShardID = addItem("Ice Shard");
+		yellowShardID = addItem("Divine Shard");
 		shurikenID = addItem("Shuriken");
+		rupeeID = addItem("Rupee Ingot");
 		namkormiraID = addItem("Namkormira");
 		serenadeStrikerID = addItem("Serenade Striker");
 		slimeSwordID = addItem("Slime Sword");
@@ -417,8 +423,6 @@ public class ConfigHelper extends HelperBase{
 		frostSwordID = addItem("Frost Sword");
 		divineswordID = addItem("Divine Sword");
 		sandSlashID = addItem("Sand Slash");
-		iceShardID = addItem("Ice Shard");
-		yellowShardID = addItem("Divine Shard");
 		enderSwordID = addItem("Ender Sword");
 		enderSwordBlueID = addItem("Ender Sword Blue");
 		enderSwordBlackID = addItem("Ender Sword Black");
@@ -426,8 +430,6 @@ public class ConfigHelper extends HelperBase{
 		enderSwordRedID = addItem("Ender Sword Red");
 		enderSwordYellowID = addItem("Ender Sword Yellow");
 		BlueFireBowID = addItem("BlueFire Bow");
-		rupeeID = addItem("Rupee Ingot");
-		tomatoID = addItem("Tomato");
 		tomatoSeedsID = addItem("Tomato Seeds");
 		purpleFireID = addItem("Purple Fire");
 		jackOManBootsID = addItem("Jack O Man Boots");
@@ -457,9 +459,7 @@ public class ConfigHelper extends HelperBase{
         angelicHeadID = addItem("Angelic Head");
         angelicLegsID = addItem("Angelic Legs");
         angelicBootsID = addItem("Angelic Boots");
-        purpleShardID = addItem("eNDER Shard");
-        redShardID = addItem("Molten Shard");
-        corruptedShardsID = addItem("Corrupted Shards");
+        purpleShardID = addItem("Ender Shard");
         moltenSwordID = addItem("Molten Sword");
         bedrockSwordID = addItem("Bedrock Sword");
         bloodGemID = addItem("Blood Gem");
@@ -541,7 +541,7 @@ public class ConfigHelper extends HelperBase{
 		divineWoodPickID = addItem("Divie Wood Pick");
 		divineWoodHoeID = addItem("Divine Wood Hoe");
 		divineWoodShovelID = addItem("Divine Wood Shovel");
-		divineWoodSwordID = addItem("Divine Wood Sword");
+		//divineWoodSwordID = addItem("Divine Wood Sword");//TODO Re add when ID stops conflicting with rupee ingot
 		cyclopseEyeID = addItem("Cyclops Eye");
 		cyclopseBowID = addItem("Cyclops Bow");
 		cyclopseStaffID = addItem("Cyclopian Staff");

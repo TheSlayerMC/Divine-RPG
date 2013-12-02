@@ -113,5 +113,6 @@ public class ArcanaMobRendering
         MinecraftForgeClient.registerItemRenderer(ArcanaBlockHelper.dramixAltar.blockID, new ItemDramixAltarRenderer());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDemonFurnace.class, new RenderDemonFurnace());
         MinecraftForgeClient.registerItemRenderer(ArcanaBlockHelper.demonFurnace.blockID, new RenderDemonItem());
+        MinecraftForgeClient.registerItemRenderer(ArcanaBlockHelper.demonFurnaceOn.blockID, new RenderDemonItem());
 	}
 }

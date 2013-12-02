@@ -32,6 +32,7 @@ public class ItemInfernalFlame extends ItemDivineRPG {
 		if(par3World.isRemote)
 			--par1ItemStack.stackSize;
 		//par2EntityPlayer.inventory.consumeInventoryItem(this.itemID);
+		par2EntityPlayer.addChatMessage("The King Of Scorchers can only be spawned in The Nether");
 		
 		return true;
 	}
