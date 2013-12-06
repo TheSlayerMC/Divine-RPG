@@ -57,7 +57,7 @@ public class EntityVamacheron extends EntityModMob implements IBossDisplayData
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.63000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(5000D);
         this.setAttackDamage(39D);
     }

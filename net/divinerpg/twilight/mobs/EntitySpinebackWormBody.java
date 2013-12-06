@@ -52,7 +52,7 @@ public class EntitySpinebackWormBody extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.83000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(1D);
         this.setAttackDamage(1D);
     }

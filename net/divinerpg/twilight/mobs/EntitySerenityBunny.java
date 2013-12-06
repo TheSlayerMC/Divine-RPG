@@ -39,9 +39,6 @@ public class EntitySerenityBunny extends EntityTameable
     {
         super(var1);
         double moveSpeed = 0.3;
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(moveSpeed);
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(10); // MaxHP
-
         this.setSize(0.5F, 0.5F);
         this.experienceValue = 40;
         this.getNavigator().setAvoidsWater(true);
@@ -75,6 +72,14 @@ public class EntitySerenityBunny extends EntityTameable
         return true;
     }
 
+	   @Override
+    protected void applyEntityAttributes()
+    {
+        super.applyEntityAttributes();
+                this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.40D);
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(10); // MaxHP
+    }
+	
     /**
      * Determines if an entity can be despawned, used on idle far away entities
      */

@@ -19,9 +19,7 @@ public class EntityMythrilFiend extends EntityZombie
     public EntityMythrilFiend(World var1)
     {
         super(var1);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(39); // Attack
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(800); // MaxHP
+
         float moveSpeed = 0.5F;
 		this.tasks.addTask(1, new EntityAISwimming(this));
 		this.targetTasks.addTask(3, new EntityAIHurtByTarget(this, true));
@@ -31,6 +29,14 @@ public class EntityMythrilFiend extends EntityZombie
 		this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
 	}
 
+	    @Override
+    protected void applyEntityAttributes()
+    {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(39); // Attack
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(800); // MaxHP
+    }
 
     /**
      * Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue

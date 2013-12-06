@@ -33,7 +33,7 @@ public class EntityJungleBat extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(100D);
         this.setAttackDamage(20D);
     }

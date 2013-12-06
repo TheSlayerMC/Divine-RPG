@@ -52,7 +52,7 @@ public class EntityWhale extends EntityWaterAttackingMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.63000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(800D);
         this.setAttackDamage(13D);
     }

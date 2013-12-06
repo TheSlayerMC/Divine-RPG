@@ -43,7 +43,7 @@ public class EntityCori2 extends EntityModMob
     {
         super.applyEntityAttributes();
         this.setMaxHealth(50.0D);
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setAttackDamage(20D);
     }
 

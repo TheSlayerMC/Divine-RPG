@@ -28,7 +28,7 @@ public class EntityGrue extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.56000000417232513D);
+        this.setMoveSpeed(0.46000000417232513D);
         this.setMaxHealth(1D);
         this.setAttackDamage(0D);
     }

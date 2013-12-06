@@ -35,7 +35,7 @@ public class EntityReyvor extends EntityModMob implements IBossDisplayData, IRan
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.33000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(5000D);
         this.setAttackDamage(30D);
     }

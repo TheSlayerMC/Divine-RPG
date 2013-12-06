@@ -22,9 +22,7 @@ public class EntityMythrilArcher extends EntityEnergyArcher
     public EntityMythrilArcher(World var1)
     {
         super(var1);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.25); // speed
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(30); // Attack
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(430); // MaxHP
+
         this.setSize(2.0F, 5.0F);
         float moveSpeed = 0.5F;
 		this.tasks.addTask(1, new EntityAISwimming(this));
@@ -35,7 +33,14 @@ public class EntityMythrilArcher extends EntityEnergyArcher
 		this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
 	}
 
-
+    @Override
+    protected void applyEntityAttributes()
+    {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.25); // speed
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(30); // Attack
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(430); // MaxHP
+    }
 
     /**
      * Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue

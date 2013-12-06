@@ -30,7 +30,7 @@ public class EntityEnergyTomo extends EntityNiceMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.33000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(700D);
         this.setAttackDamage(31D);
     }

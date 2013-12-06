@@ -35,7 +35,7 @@ public class EntityWildFire extends EntityModMob implements IRangedAttackMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.63000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(100D);
         this.setAttackDamage(13D);
     }

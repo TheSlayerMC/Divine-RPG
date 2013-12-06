@@ -48,8 +48,7 @@ public class EntityMoonWolf extends EntityTameable
         super(var1);
 
         float moveSpeed = 0.56F;
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(moveSpeed); // speed
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(200); // MaxHP
+
         this.setSize(0.6F, 0.8F);
         this.getNavigator().setAvoidsWater(true);
         this.tasks.addTask(1, new EntityAISwimming(this));
@@ -67,6 +66,14 @@ public class EntityMoonWolf extends EntityTameable
         this.targetTasks.addTask(4, new EntityAITargetNonTamed(this, EntitySheep.class, 200, false));
     }
 
+	    @Override
+    protected void applyEntityAttributes()
+    {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.56F); // speed
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(200); // MaxHP
+    }
+	
     /**
      * Returns true if the newer Entity AI code should be run
      */

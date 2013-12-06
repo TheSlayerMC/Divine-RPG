@@ -33,7 +33,7 @@ public class EntityScorcher extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(300D);
         this.setAttackDamage(10D);
     }

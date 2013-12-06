@@ -17,7 +17,7 @@ public class EntityJungleDramcryx extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.63000000417232513D);
+        this.setMoveSpeed(0.33000000417232513D);
         this.setMaxHealth(100D);
         this.setAttackDamage(19D);
     }

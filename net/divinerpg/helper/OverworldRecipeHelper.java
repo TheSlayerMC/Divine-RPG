@@ -86,6 +86,27 @@ public class OverworldRecipeHelper {
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.eliteRealmiteBody, 1), new Object[] {"y y", "yyy", "yyy", 'y', OverworldBlockHelper.realmiteBlock});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.eliteRealmiteBoots, 1), new Object[] {"y y", "y y", 'y', OverworldBlockHelper.realmiteBlock});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.eliteRealmiteLegs, 1), new Object[] {"yyy", "y y", "y y", 'y', OverworldBlockHelper.realmiteBlock});
+		
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.netheriteHelmet, 1), new Object[] {"nnn", "y y", "n n", 'y', OverworldItemHelper.shadowBar, 'n', OverworldItemHelper.netheriteChunk});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.netheriteBody, 1), new Object[] {"nyn", "nyn", " n ", 'y', OverworldItemHelper.shadowBar, 'n', OverworldItemHelper.netheriteChunk});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.netheriteBoots, 1), new Object[] {"y y", "n n", 'y', OverworldItemHelper.shadowBar, 'n', OverworldItemHelper.netheriteChunk});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.netheriteLegs, 1), new Object[] {"yyy", "n n", "y y", 'y', OverworldItemHelper.shadowBar, 'n', OverworldItemHelper.netheriteChunk});
+		
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.rupeeHelmet, 1), new Object[] {"yyy", "yyy", " y ", 'y', OverworldItemHelper.rupeeIngot});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.rupeeBody, 1), new Object[] {"y y", "yyy", "yyy", 'y', OverworldItemHelper.rupeeIngot});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.rupeeBoots, 1), new Object[] {"y y", "y y", 'y', OverworldItemHelper.rupeeIngot});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.rupeeLegs, 1), new Object[] {"yyy", "y y", "y y", 'y', OverworldItemHelper.rupeeIngot});
+		
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.arlemiteHelmet, 1), new Object[] {"yyy", "iii", " y ", 'y', OverworldItemHelper.arlemiteIngot, 'i', Item.ingotIron});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.arlemiteBody, 1), new Object[] {"i i", "yyy", "iii", 'y', OverworldItemHelper.arlemiteIngot, 'i', Item.ingotIron});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.arlemiteBoots, 1), new Object[] {"y y", "i i", 'y', OverworldItemHelper.arlemiteIngot, 'i', Item.ingotIron});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.arlemiteLegs, 1), new Object[] {"yyy", "i i", "y y", 'y', OverworldItemHelper.arlemiteIngot, 'i', Item.ingotIron});
+	
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.krakenHelmet, 1), new Object[] {"yyy", "yyy", " y ", 'y', OverworldItemHelper.krakenScale});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.krakenBody, 1), new Object[] {"y y", "yyy", "yyy", 'y', OverworldItemHelper.krakenScale});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.krakenBoots, 1), new Object[] {"y y", "y y", 'y', OverworldItemHelper.krakenScale});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.krakenLegs, 1), new Object[] {"yyy", "y y", "y y", 'y', OverworldItemHelper.krakenScale});
+		
 	}
 
 	public static void initItems() {
@@ -133,6 +154,7 @@ public class OverworldRecipeHelper {
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.crabAnchor, 1), new Object[] {"yyy", "yxy", " x ", 'y', OverworldItemHelper.crabClaw , 'x', OverworldItemHelper.aquaticStone});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.bowHeadAnchor, 1), new Object[] {"yyy", "yxy", " x ", 'y', OverworldItemHelper.whaleFin , 'x', OverworldItemHelper.aquaticStone});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.sharkAnchor, 1), new Object[] {"yyy", "yxy", " x ", 'y', OverworldItemHelper.sharkFin , 'x', OverworldItemHelper.aquaticStone});
+		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.bloodGemSword, 1), new Object[] {"g", "g", "s", 'g', OverworldItemHelper.bloodGem , 's', Item.stick});
 
 
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.bedrockSword, 1), new Object[] {" y ", " y ", " x ", 'x', Item.stick, 'y', Block.bedrock});

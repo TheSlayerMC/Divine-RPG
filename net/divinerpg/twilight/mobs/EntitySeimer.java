@@ -36,7 +36,7 @@ public class EntitySeimer extends EntityTameable
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.56D); // speed
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.46D); // speed
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(150); // MaxHP
     }
 

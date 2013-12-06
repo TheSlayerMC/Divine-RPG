@@ -45,9 +45,9 @@ public class EntitySoulStealer extends EntityZombie
     @Override
     protected void applyEntityAttributes() {
     	super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(30); // Attack
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(900); // MaxHP
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23D); // speed
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(30D); // Attack
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(900D); // MaxHP
     }
 
     @Override

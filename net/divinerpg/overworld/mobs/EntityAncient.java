@@ -39,7 +39,7 @@ public class EntityAncient extends EntityModMob implements IBossDisplayData
     {
         super.applyEntityAttributes();
         this.setMaxHealth(4000.0D);
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setAttackDamage(16D);
     }
 

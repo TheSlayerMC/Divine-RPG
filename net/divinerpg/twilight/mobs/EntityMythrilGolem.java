@@ -20,9 +20,7 @@ public class EntityMythrilGolem extends EntityZombie
     public EntityMythrilGolem(World var1)
     {
         super(var1);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(35); // Attack
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(1400); // MaxHP
+
         this.setSize(1.5F, 3.0F);
         float moveSpeed = 0.5F;
 		this.tasks.addTask(1, new EntityAISwimming(this));
@@ -32,6 +30,15 @@ public class EntityMythrilGolem extends EntityZombie
 		this.tasks.addTask(9, new EntityAILookIdle(this));
 		this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
 	}
+	
+	    @Override
+    protected void applyEntityAttributes()
+    {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(35); // Attack
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(1400); // MaxHP
+    }
 
     /**
      * Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue

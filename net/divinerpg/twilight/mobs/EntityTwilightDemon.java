@@ -42,7 +42,7 @@ public class EntityTwilightDemon extends EntityZombie implements IBossDisplayDat
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.56D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.46D);
         this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(45); // Attack
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(6800); // MaxHP
     }

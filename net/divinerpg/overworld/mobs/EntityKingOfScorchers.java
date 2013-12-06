@@ -30,7 +30,7 @@ public class EntityKingOfScorchers extends EntityModMob implements IBossDisplayD
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.63000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(6000D);
         this.setAttackDamage(30D);
     }

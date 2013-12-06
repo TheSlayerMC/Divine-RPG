@@ -47,7 +47,7 @@ public class EntityAyeraco extends EntityModMob implements IBossDisplayData
     {
         super.applyEntityAttributes();
         this.setMaxHealth(1000.0D);
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setAttackDamage(48D);
     }
 

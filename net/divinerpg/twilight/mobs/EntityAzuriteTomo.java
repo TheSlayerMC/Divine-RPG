@@ -33,7 +33,7 @@ public class EntityAzuriteTomo extends EntityModMob
     {
         super.applyEntityAttributes();
         this.setMaxHealth(300.0D);
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setAttackDamage(35D);
     }
 

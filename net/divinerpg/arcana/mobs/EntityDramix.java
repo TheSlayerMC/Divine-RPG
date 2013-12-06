@@ -37,7 +37,7 @@ public class EntityDramix extends EntityModMob implements IBossDisplayData
         super(var1);
         if(isInvi == true)
         {
-          this.setMoveSpeed(0.63000000417232513D); 
+          this.setMoveSpeed(0.43000000417232513D); 
         }
         if(isInvi == false)
         {
@@ -53,7 +53,7 @@ public class EntityDramix extends EntityModMob implements IBossDisplayData
     {
         super.applyEntityAttributes();
         this.setMaxHealth(5000.0D);
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setAttackDamage(39D);
     }
     

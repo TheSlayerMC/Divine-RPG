@@ -25,7 +25,7 @@ public class Registry {
 		OverworldMobRegistry.init();
 		VetheaMobRegistry.init();
 		ArcanaMobRegistry.init();
-		System.out.print("[DIVINE RPG] Registering Entitys!");
+		System.out.println("[DIVINE RPG] Registering Entitys!");
 	}
 
 	public static void addItems() {
@@ -34,7 +34,7 @@ public class Registry {
 		IceikaItemHelper.addNames();
 		TwilightItemHelper.addNames();
 		VetheaItemHelper.addNames();
-		System.out.print("[DIVINE RPG] Registering Items!");
+		System.out.println("[DIVINE RPG] Registering Items!");
 	}
 
 	public static void addBlocks() {
@@ -43,34 +43,34 @@ public class Registry {
 		IceikaBlockHelper.addNames();
 		TwilightBlockHelper.addNames();
 		VetheaBlockHelper.addNames();
-		System.out.print("[DIVINE RPG] Registering Blocks!");
+		System.out.println("[DIVINE RPG] Registering Blocks!");
 	}
 
 	public static void addEventBus() {
 		MinecraftForge.EVENT_BUS.register(new ExplosiveArrowHitHandler());
 		MinecraftForge.EVENT_BUS.register(new ArmorEffectHandler());
-		System.out.print("[DIVINE RPG] Registering Even Bus!");
+		System.out.println("[DIVINE RPG] Registering Event Bus!");
 	}
 
 	public static void addMisc() {
 		harvestLevelHelper.init();
-		System.out.print("[DIVINE RPG] Registering Misc Things!");
+		System.out.println("[DIVINE RPG] Registering Block Harvest Levels!");
 	}
 
 	public static void addWorldGen() {
 		WorldGenHelper.init();
 		DimensionRegistry.init();
-		System.out.print("[DIVINE RPG] Registering World Generation!");
+		System.out.println("[DIVINE RPG] Registering World Generation!");
 	}
 
 	public static void addRecipes() {
 		RecipeHelper.init();
-		System.out.print("[DIVINE RPG] Registering Recipes!");
+		System.out.println("[DIVINE RPG] Registering Recipes!");
 	}
 
 	public static void addTileEntitys() {
 		TileEntityRegistry.init();
-		System.out.print("[DIVINE RPG] Registering TileEntitys!");
+		System.out.println("[DIVINE RPG] Registering TileEntitys!");
 	}
 
 }

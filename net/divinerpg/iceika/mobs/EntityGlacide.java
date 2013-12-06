@@ -32,7 +32,7 @@ public class EntityGlacide extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.56000000417232513D);
+        this.setMoveSpeed(0.46000000417232513D);
         this.setMaxHealth(140D);
         this.setAttackDamage(25D);
     }

@@ -38,7 +38,7 @@ public class EntityEnergyArcher extends EntityModMob implements IRangedAttackMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.33000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(430D);
         this.setAttackDamage(30D);
     }

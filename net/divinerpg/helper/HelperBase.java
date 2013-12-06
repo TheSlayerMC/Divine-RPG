@@ -105,8 +105,8 @@ public class HelperBase {
 	public static EnumArmorMaterial aquatic = EnumHelper.addArmorMaterial("Aquastrive", 200, new int[] { 6, 7, 6, 6 }, 10);
 	public static EnumArmorMaterial angelic = EnumHelper.addArmorMaterial("Angelic", 200, new int[] {3, 4, 3, 2}, 22);
 	public static EnumArmorMaterial eliteRealmite = EnumHelper.addArmorMaterial("Elite Realmite", 200, new int[] { 4, 4, 4, 3 }, 10);
-	public static EnumArmorMaterial diamond = EnumHelper.addArmorMaterial("Diamond", 200, new int[] { 3, 4, 3, 2 }, 10);
-	public static EnumArmorMaterial iron = EnumHelper.addArmorMaterial("Iron", 200, new int[] { 1, 2, 2, 1 }, 10);
+	public static EnumArmorMaterial diamond = EnumHelper.addArmorMaterial("Diamond", 33, new int[]{3, 8, 6, 3}, 10);
+	public static EnumArmorMaterial iron = EnumHelper.addArmorMaterial("Iron", 15, new int[]{2, 6, 5, 2}, 9);
 	public static EnumArmorMaterial grim = EnumHelper.addArmorMaterial("grim", 200, new int[] {3, 5, 3, 2}, 22);
 	public static EnumArmorMaterial jack = EnumHelper.addArmorMaterial("jack", 200, new int[] {3, 5, 3, 2}, 22);
 	public static EnumArmorMaterial ender = EnumHelper.addArmorMaterial("Ender", 200, new int[] { 7, 7, 6, 6 }, 10);

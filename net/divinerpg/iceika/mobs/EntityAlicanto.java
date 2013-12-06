@@ -33,7 +33,7 @@ public class EntityAlicanto extends EntityModMob
     {
         super.applyEntityAttributes();
         this.setMaxHealth(100.0D);
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setAttackDamage(20D);
     }
 

@@ -16,13 +16,19 @@ public class EntityNesro extends EntityZombie
     public EntityNesro(World var1)
     {
         super(var1);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(20); // Attack
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(800); // MaxHP
+
         this.yOffset = 0.0F;
         this.slimeJumpDelay = this.rand.nextInt(20) + 10;
     }
 
+	    @Override
+    protected void applyEntityAttributes()
+    {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setAttribute(0.23); // speed
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setAttribute(20); // Attack
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setAttribute(800); // MaxHP
+    }
 
     /**
      * Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue

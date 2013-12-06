@@ -48,7 +48,7 @@ public class EntityRoamer extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.13000000417232513D);
+        this.setMoveSpeed(0.33000000417232513D);
         this.setMaxHealth(280D);
         this.setAttackDamage(33D);
     }

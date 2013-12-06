@@ -42,7 +42,7 @@ public class EntityRotatick extends EntityModMob
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.setMoveSpeed(0.53000000417232513D);
+        this.setMoveSpeed(0.43000000417232513D);
         this.setMaxHealth(55D);
         this.setAttackDamage(18D);
     }
