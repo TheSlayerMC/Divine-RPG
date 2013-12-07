@@ -85,10 +85,10 @@ public class ArcanaBlockHelper extends HelperBase {
     public static final BlockPortalArcana arcanaPortal = (BlockPortalArcana) new BlockPortalArcana(x.ArcanaPortalID).registerTexture("ArcanaPortal").setUnlocalizedName("arcanaPortal").setBlockUnbreakable().setCreativeTab(DivineRPG.Blocks);
     public static final Block blockOfLight = new BlockOfLight(x.blockOfLightID).registerTexture("BlockOfLight").setUnlocalizedName("light").setCreativeTab(DivineRPG.Blocks);
     
-    public static final Block oreDoor1 = new BlockOreDoor1(x.OreDoor1BlockID, Material.wood).setCreativeTab(null).setUnlocalizedName("OreDoor1").setBlockUnbreakable().setResistance(6000000.0F);
-    public static final Block oreDoor2 = new BlockOreDoor2(x.OreDoor2BlockID, Material.wood).setCreativeTab(null).setUnlocalizedName("OreDoor2").setBlockUnbreakable().setResistance(6000000.0F);
-    public static final Block oreDoor3 = new BlockOreDoor3(x.OreDoor3BlockID, Material.wood).setCreativeTab(null).setUnlocalizedName("OreDoor3").setBlockUnbreakable().setResistance(6000000.0F);
-    public static final Block oreDoor4 = new BlockOreDoor4(x.OreDoor4BlockID, Material.wood).setCreativeTab(null).setUnlocalizedName("OreDoor4").setBlockUnbreakable().setResistance(6000000.0F);
+    public static final Block oreDoor1 = new BlockOreDoor1(x.OreDoor1BlockID, Material.iron).setCreativeTab(null).setUnlocalizedName("OreDoor1").setBlockUnbreakable().setResistance(6000000.0F);
+    public static final Block oreDoor2 = new BlockOreDoor2(x.OreDoor2BlockID, Material.iron).setCreativeTab(null).setUnlocalizedName("OreDoor2").setBlockUnbreakable().setResistance(6000000.0F);
+    public static final Block oreDoor3 = new BlockOreDoor3(x.OreDoor3BlockID, Material.iron).setCreativeTab(null).setUnlocalizedName("OreDoor3").setBlockUnbreakable().setResistance(6000000.0F);
+    public static final Block oreDoor4 = new BlockOreDoor4(x.OreDoor4BlockID, Material.iron).setCreativeTab(null).setUnlocalizedName("OreDoor4").setBlockUnbreakable().setResistance(6000000.0F);
 
     public static final Block fireStock = new BlockFireStock(x.fireStockID).registerTexture("Firestock_Bottom").setUnlocalizedName("FireStock").setCreativeTab(null);
     public static final Block fireStock2 = new BlockFireStock(x.fireStock2ID).registerTexture("Firestock_Top").setUnlocalizedName("FireStock2").setCreativeTab(null);

@@ -12,6 +12,7 @@ import net.divinerpg.arcana.item.ItemFyracryxSpawner;
 import net.divinerpg.arcana.item.ItemGolemOfRejuvSpawner;
 import net.divinerpg.arcana.item.ItemGrenade;
 import net.divinerpg.arcana.item.ItemGrenadeLauncher;
+import net.divinerpg.arcana.item.ItemKey;
 import net.divinerpg.arcana.item.ItemLamona;
 import net.divinerpg.arcana.item.ItemMeriksMissile;
 import net.divinerpg.arcana.item.ItemOrbOfLight;
@@ -98,15 +99,15 @@ public class ArcanaItemHelper extends HelperBase  {
     public static final Item tarBucket = new ItemTarBucket(y.tarBucketID, OverworldBlockHelper.Tar.blockID).registerTextures("BucketOfTar").setUnlocalizedName("tarBucket").setCreativeTab(DivineRPG.Misc);
 	public static final Item arcaniumBucket = new ItemTarBucket(x.arcaniumBucketID, 0).registerTextures("ArcaniumBucket").setUnlocalizedName("arcaniumBucket").setCreativeTab(DivineRPG.Misc);
 
-	public static final Item key = new ItemDivineRPG(y.key1ID).registerTextures("Key").setUnlocalizedName("Key").setCreativeTab(DivineRPG.Misc);
-	public static final Item key1 = new ItemDivineRPG(y.key2ID).registerTextures("Key1").setUnlocalizedName("Key").setCreativeTab(DivineRPG.Misc);
-	public static final Item key2 = new ItemDivineRPG(y.key3ID).registerTextures("Key2").setUnlocalizedName("Key").setCreativeTab(DivineRPG.Misc);
-	public static final Item key3 = new ItemDivineRPG(y.key4ID).registerTextures("Key3").setUnlocalizedName("Key").setCreativeTab(DivineRPG.Misc);
+	public static final Item key = new ItemKey(y.key1ID).registerTextures("Key").setUnlocalizedName("Key1").setCreativeTab(DivineRPG.Misc);
+	public static final Item key1 = new ItemKey(y.key2ID).registerTextures("Key1").setUnlocalizedName("Key2").setCreativeTab(DivineRPG.Misc);
+	public static final Item key2 = new ItemKey(y.key3ID).registerTextures("Key2").setUnlocalizedName("Key3").setCreativeTab(DivineRPG.Misc);
+	public static final Item key3 = new ItemKey(y.key4ID).registerTextures("Key3").setUnlocalizedName("Key4").setCreativeTab(DivineRPG.Misc);
 
-	public static final Item OreDoor1 = new ItemOreDoor1(y.oreDoorItem1ID, Material.wood).registerTextures("OreDoor1").setUnlocalizedName("OreDoor1").setCreativeTab(DivineRPG.Blocks);
-	public static final Item OreDoor2 = new ItemOreDoor2(y.oreDoor2ItemID, Material.wood).registerTextures("OreDoor2").setUnlocalizedName("OreDoor2").setCreativeTab(DivineRPG.Blocks);
-	public static final Item OreDoor3 = new ItemOreDoor3(y.oreDoor3ItemID, Material.wood).registerTextures("OreDoor3").setUnlocalizedName("OreDoor3").setCreativeTab(DivineRPG.Blocks);
-	public static final Item OreDoor4 = new ItemOreDoor4(y.oreDoor4ItemID, Material.wood).registerTextures("OreDoor4").setUnlocalizedName("OreDoor4").setCreativeTab(DivineRPG.Blocks);
+	public static final Item OreDoor1 = new ItemOreDoor1(y.oreDoorItem1ID, Material.iron).registerTextures("OreDoor1").setUnlocalizedName("OreDoor1").setCreativeTab(DivineRPG.Blocks);
+	public static final Item OreDoor2 = new ItemOreDoor2(y.oreDoor2ItemID, Material.iron).registerTextures("OreDoor2").setUnlocalizedName("OreDoor2").setCreativeTab(DivineRPG.Blocks);
+	public static final Item OreDoor3 = new ItemOreDoor3(y.oreDoor3ItemID, Material.iron).registerTextures("OreDoor3").setUnlocalizedName("OreDoor3").setCreativeTab(DivineRPG.Blocks);
+	public static final Item OreDoor4 = new ItemOreDoor4(y.oreDoor4ItemID, Material.iron).registerTextures("OreDoor4").setUnlocalizedName("OreDoor4").setCreativeTab(DivineRPG.Blocks);
 
 	public static final Item arcanium = new ItemDivineRPG(y.arcaniumID).registerTextures("Arcanium").setUnlocalizedName("acanium").setCreativeTab(DivineRPG.Raw);
 	public static final Item collectorFragments = new ItemDivineRPG(y.collectorFragmentsID).registerTextures("CollectorFragment").setUnlocalizedName("collectorFragments").setCreativeTab(DivineRPG.Raw);

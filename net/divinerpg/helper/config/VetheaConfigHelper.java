@@ -10,239 +10,6 @@ public class VetheaConfigHelper extends HelperBase{
 	
 	static FMLPreInitializationEvent Event;
 	
-	public static int teakerSwordID;
-    public static int amthirmisSwordID;
-    public static int darvenSwordID;
-    public static int cermileSwordID;
-    public static int pardimalSwordID;
-    public static int quadroticSwordID;
-    public static int karosSwordID;
-    public static int heliosisSwordID;
-    public static int arksianeSwordID;
-    
-    public static int teakerHammerID;
-    public static int amthirmisHammerID;
-    public static int darvenHammerID;
-    public static int cermileHammerID;
-    public static int pardimalHammerID;
-    public static int quadroticHammerID;
-    public static int karosHammerID;
-    public static int heliosisHammerID;
-    public static int arksianeHammerID;
-    
-    public static int teakerBowID;
-    public static int amthirmisBowID;
-    public static int darvenBowID;
-    public static int cermileBowID;
-    public static int pardimalBowID;
-    public static int quadroticBowID;
-    public static int karosBowID;
-    public static int heliosisBowID;
-    public static int arksianeBowID;
-    
-    public static int teakerCannonID;
-    public static int amthirmisCannonID;
-    public static int darvenCannonID;
-    public static int cermileCannonID;
-    public static int pardimalCannonID;
-    public static int quadroticCannonID;
-    public static int karosCannonItemID;
-    public static int heliosisCannonID;
-    public static int arksianeCannonID;
-    
-    public static int teakerClawID;
-    public static int amthirmisClawID;
-    public static int darvenClawID;
-    public static int cermileClawID;
-    public static int pardimalClawID;
-    public static int quadroticClawID;
-    public static int karosClawID;
-    public static int heliosisClawID;
-    public static int arksianeClawID;
-    
-    public static int teakerDiskID;
-    public static int amthirmisDiskID;
-    public static int darvenDiskID;
-    public static int cermileDiskID;
-    public static int pardimalDiskID;
-    public static int quadroticDiskID;
-    public static int karosDiskID;
-    public static int heliosisDiskID;
-    public static int arksianeDiskID;
-
-    public static int acidfireID;
-    public static int vetheanArrowID;
-    public static int vetheanArrow2ID;
-    public static int vetheanWarArrowID;
-    public static int vetheanWrathArrowID;
-    
-
-    public static int vetheanHammerTemplateID;
-    public static int vetheanBackswordTemplateID;
-    public static int vetheanBowTemplateID;
-    public static int vetheanCannonTemplateID;
-    public static int vetheanClawTemplateID;
-    public static int vetheanDiskTemplateID;
-    public static int vetheanStaffTemplateID;
-
-    public static int vetheanDegradedTemplateID;
-    public static int vetheanFinishedTemplateID;
-    public static int vetheanGlisteningTemplateID;
-    public static int vetheanDemonizedTemplateID;
-    public static int vetheanTormentedTemplateID;
-    
-    public static int honeysuckleID;
-    public static int dreamCarrotID;
-    public static int dreamMelonID;
-    public static int dreamPieID;
-    public static int dreamCakeID;
-    
-    public static int teakerLumpID;
-    public static int amthirmisLumpID;
-    public static int darvenLumpID;
-    public static int cermileLumpID;
-    public static int pardimalLumpID;
-    public static int quadroticLumpID;
-    public static int karosLumpID;
-    public static int heliosisLumpID;
-    public static int arksianeLumpID;
-
-    public static int dreamSweetsID;
-    public static int dreamSoursID;
-    
-
-    public static int degradedHelmetMeleeID;
-    public static int degradedHelmetRangedID;
-    public static int degradedHelmetArcanaID;
-    public static int degradedChestID;
-    public static int degradedLegsID;
-    public static int degradedBootsID;
-
-    public static int finishedHelmetMeleeID;
-    public static int finishedHelmetRangedID;
-    public static int finishedHelmetArcanaID;
-    public static int finishedChestID;
-    public static int finishedLegsID;
-    public static int finishedBootsID;
-
-    public static int glisteningHelmetMeleeID;
-    public static int glisteningHelmetRangedID;
-    public static int glisteningHelmetArcanaID;
-    public static int glisteningChestID;
-    public static int glisteningLegsID;
-    public static int glisteningBootsID;
-
-    public static int demonizedHelmetMeleeID;
-    public static int demonizedHelmetRangedID;
-    public static int demonizedHelmetArcanaID;
-    public static int demonizedChestID;
-    public static int demonizedLegsID;
-    public static int demonizedBootsID;
-
-    public static int tormentedHelmetMeleeID;
-    public static int tormentedHelmetRangedID;
-    public static int tormentedHelmetArcanaID;
-    public static int tormentedChestID;
-    public static int tormentedLegsID;
-    public static int tormentedBootsID;
-    
-
-    public static int dirtyPearlsID;
-    public static int cleanPearlsID;
-    public static int polishedPearlsID;
-    public static int shinyPearlsID;
-    
-    public static int honeychunkID;
-    public static int rockChunksID;
-    public static int fyrossomID;
-    public static int heivaBeltID;
-    public static int mooncloudID;
-    public static int wormChunksID;
-    public static int vhraakTeethID;
-    
-    public static int dreamflintID;
-    public static int moonclockID;
-    public static int spinebackChunkID;
-
-    public static int spinebackCannonID;
-    public static int spinebackDiscID;
-    public static int spinebackHammerID;
-    public static int spinebackStaffID;
-    
-    public static int barredDoorItemID;
-
-    public static int everlightID;
-    public static int everbrightID;
-    public static int evernightID;
-    public static int eversightID;
-    public static int everfightID;
-
-    public static int everArrowID;
-    
-    public static int teakerStaffID;
-    public static int amthirmisStaffID;
-    public static int darvenStaffID;
-    public static int cermileStaffID;
-    public static int pardimalStaffID;
-    public static int quadroticStaffID;
-    public static int karosStaffID;
-    public static int heliosisStaffID;
-    public static int arksianeStaffID;
-        
-    public static int dreamPowderID;
-    
-    public static int vetheaPortalID;
-    public static int dreamstoneID;
-    public static int dreamgrassID;
-    public static int dreamdirtID;
-    public static int dreamwoodID;
-    public static int dreamwoodLeavesID;
-    public static int dreambricksID;
-    public static int dreambricks2ID;
-    public static int lunastoneID;
-    public static int lunabricksID;
-    public static int metalCagingID;
-    public static int dreamlampID;
-    public static int dreamlampOnID;
-    public static int weedwoodVineID;
-    public static int blossomingWeedwoodVineID;
-    public static int cryptWallID;
-    public static int smoothGlassID;
-    public static int villageLampID;
-    public static int infusionTableID;
-    public static int cellLampID;
-    public static int barredDoorID;
-    public static int firecrystalID;
-    public static int firelightID;
-    public static int hyrewoodID;
-    public static int mintwoodLeavesID;
-    public static int firewallID;
-    public static int karosHeatTileRedID;
-    public static int karosHeatTileGreenID;
-    public static int karosCannonID;
-    public static int helioticBeamID;
-    public static int cryptFloorID;
-    public static int firewoodID;
-    public static int bacterialAcidID;
-    public static int blockAcidID;
-    public static int hallWallID;
-    public static int wreckAltarID;
-    public static int raglokAltarID;
-    public static int karosAltarID;
-    public static int lunicAltarID;
-    public static int hiveWallID;
-    public static int quadroticAltarID;
-    public static int everstoneID;
-    public static int lunicAcidID;
-    public static int firewoodLeavesID;
-    public static int hyrewoodLeavesID;
-    public static int gemtopGreenID, DreamGrassID, DreamDirtID,
-    gemtopPurpleID, greenDulahID, yellowDulahID, mintwoodID, lightFirewoodLeavesID,
-    cracklespikeID, ferniteID, bulatobeID, shineGrassID, shimmerID, dreamglowID, hyrewoodVineID,
-    chamberWallID, chamberWall1ID, chamberWall2ID, darkEverstoneID, whiteEverstoneID,
-    karosBricksID, karosBricks2ID, hungerstone1ID, hungerstone2ID, biphronSpawnerID, gorgosionSpawnerID,
-    duoSpawnerID, twinsSpawnerID, vermenousSpawnerID, dreamwreckerSpawnerID, lorgaSpawnerID, purpleFireID;
-
 	public static void initConfig(FMLPreInitializationEvent event){
 		Event = event;
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
@@ -254,16 +21,54 @@ public class VetheaConfigHelper extends HelperBase{
 		//config.save();
 	}
 	
+	public static int vetheaPortalID, dreamstoneID, dreamgrassID, dreamdirtID, 
+	dreamwoodID, dreamwoodLeavesID, dreambricksID, dreambricks2ID, lunastoneID, lunabricksID, 
+	metalCagingID, dreamlampID, dreamlampOnID, weedwoodVineID, blossomingWeedwoodVineID, cryptWallID, 
+	smoothGlassID, villageLampID, infusionTableID, cellLampID, barredDoorID, firecrystalID, 
+	firelightID, hyrewoodID, mintwoodLeavesID, firewallID, karosHeatTileRedID, karosHeatTileGreenID, 
+	karosCannonID, helioticBeamID, cryptFloorID, firewoodID, bacterialAcidID, blockAcidID, hallWallID, 
+	wreckAltarID, raglokAltarID, karosAltarID, lunicAltarID, hiveWallID, quadroticAltarID, 
+	everstoneID, lunicAcidID, firewoodLeavesID, hyrewoodLeavesID, gemtopGreenID, DreamGrassID, DreamDirtID, 
+	gemtopPurpleID, greenDulahID, yellowDulahID, mintwoodID, lightFirewoodLeavesID, 
+	cracklespikeID, ferniteID, bulatobeID, shineGrassID, shimmerID, dreamglowID, hyrewoodVineID, 
+	chamberWallID, chamberWall1ID, chamberWall2ID, darkEverstoneID, whiteEverstoneID, 
+	karosBricksID, karosBricks2ID, hungerstone1ID, hungerstone2ID, biphronSpawnerID, gorgosionSpawnerID, 
+	duoSpawnerID, twinsSpawnerID, vermenousSpawnerID, dreamwreckerSpawnerID, lorgaSpawnerID, purpleFireID;
+	
+	public static int teakerSwordID, amthirmisSwordID, darvenSwordID, cermileSwordID, pardimalSwordID, quadroticSwordID, karosSwordID, 
+	heliosisSwordID, arksianeSwordID, teakerHammerID, amthirmisHammerID, darvenHammerID, cermileHammerID, pardimalHammerID, 
+	quadroticHammerID, karosHammerID, heliosisHammerID, arksianeHammerID, teakerBowID, amthirmisBowID, darvenBowID, 
+	cermileBowID, pardimalBowID, quadroticBowID, karosBowID, heliosisBowID, arksianeBowID, teakerCannonID, 
+	amthirmisCannonID, darvenCannonID, cermileCannonID, pardimalCannonID, quadroticCannonID, karosCannonItemID, 
+	heliosisCannonID, arksianeCannonID, teakerClawID, amthirmisClawID, darvenClawID, cermileClawID, pardimalClawID, 
+	quadroticClawID, karosClawID, heliosisClawID, arksianeClawID, teakerDiskID, amthirmisDiskID, darvenDiskID, 
+	cermileDiskID, pardimalDiskID, quadroticDiskID, karosDiskID, heliosisDiskID, arksianeDiskID, acidfireID, 
+	vetheanArrowID, vetheanArrow2ID, vetheanWarArrowID, vetheanWrathArrowID, vetheanHammerTemplateID, vetheanBackswordTemplateID, 
+	vetheanBowTemplateID, vetheanCannonTemplateID, vetheanClawTemplateID, vetheanDiskTemplateID, vetheanStaffTemplateID, 
+	vetheanDegradedTemplateID, vetheanFinishedTemplateID, vetheanGlisteningTemplateID, vetheanDemonizedTemplateID, 
+	vetheanTormentedTemplateID, honeysuckleID, dreamCarrotID, dreamMelonID, dreamPieID, dreamCakeID, teakerLumpID, 
+	amthirmisLumpID, darvenLumpID, cermileLumpID, pardimalLumpID, quadroticLumpID, karosLumpID, heliosisLumpID, 
+	arksianeLumpID, dreamSweetsID, dreamSoursID, degradedHelmetMeleeID, degradedHelmetRangedID, degradedHelmetArcanaID, 
+	degradedChestID, degradedLegsID, degradedBootsID, finishedHelmetMeleeID, finishedHelmetRangedID, finishedHelmetArcanaID, 
+	finishedChestID, finishedLegsID, finishedBootsID, glisteningHelmetMeleeID, glisteningHelmetRangedID, glisteningHelmetArcanaID, 
+	glisteningChestID, glisteningLegsID, glisteningBootsID, demonizedHelmetMeleeID, demonizedHelmetRangedID, demonizedHelmetArcanaID, 
+	demonizedChestID, demonizedLegsID, demonizedBootsID, tormentedHelmetMeleeID, tormentedHelmetRangedID, tormentedHelmetArcanaID, 
+	tormentedChestID, tormentedLegsID, tormentedBootsID, dirtyPearlsID, cleanPearlsID, polishedPearlsID, shinyPearlsID, 
+	honeychunkID, rockChunksID, fyrossomID, heivaBeltID, mooncloudID, wormChunksID, vhraakTeethID, cdreamflintID, moonclockID, 
+	spinebackChunkID, spinebackCannonID, spinebackDiscID, spinebackHammerID, spinebackStaffID, barredDoorItemID, everlightID, 
+	everbrightID, evernightID, eversightID, everfightID, everArrowID, teakerStaffID, amthirmisStaffID, cermileStaffID, pardimalStaffID, 
+	quadroticStaffID, karosStaffID, heliosisStaffID, arksianeStaffID, dreamPowderID, dreamflintID, darvenStaffID;
+	
 	public static int addBlock(String Name){
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getBlock(Name, vetheaBlockID++ - (byte)256).getInt();
+		config.getBlock(Name, vetheaBlockID++ - 256).getInt();
 		config.save();
-		return vetheaBlockID++;
+		return vetheaBlockID++ - 256;
 	}
 	
-	public static int addTerrainBlock(String Cat, String Name){
+	 public static int addTerrainBlock(String Cat, String Name){
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
@@ -272,248 +77,247 @@ public class VetheaConfigHelper extends HelperBase{
 		return genBlockID++;
 	}
 	
-	public static int addItem(String name){
+	 public static int addItem(String name){
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getItem(name, vetheaItemID++ - (byte)256).getInt();
+		config.getItem(name, vetheaItemID++ - 256).getInt();
 		config.save();
-		return vetheaItemID++;
+		return vetheaItemID++ - 256;
 	}
 	
 	public static void blockConfig(){
 		DreamGrassID = addTerrainBlock("Vethea", "Dream Grass");
 		DreamDirtID = addTerrainBlock("Vethea", "Dream Dirt");
-		
-		dreamstoneID = addBlock("DreamStone");
-    	vetheaPortalID = addBlock("vetheaPortal");
-        dreamwoodID = addBlock("dreamwood");
-        dreamwoodLeavesID = addBlock("dreamwoodLeaves");
-        dreambricksID = addBlock("dreambricks");
-        lunastoneID = addBlock("lunastone");
-        lunabricksID = addBlock("lunabricks");
-        metalCagingID = addBlock("metalCaging");
-        dreamlampID = addBlock("dreamlamp");
-        dreamlampOnID = addBlock("dreamlampOn");
-        weedwoodVineID = addBlock("weedwoodVine");
-        blossomingWeedwoodVineID = addBlock("blossomingWeedwoodVine");
-        cryptWallID = addBlock("cryptWall");
-        smoothGlassID = addBlock("smoothGlass");
-        villageLampID = addBlock("villageLamp");
-        infusionTableID = addBlock("infusionTable");
-        cellLampID = addBlock("cellLamp");
-        barredDoorID = addBlock("barredDoor");
-        firecrystalID = addBlock("firecrystal");
-        firelightID = addBlock("firelight");
-        hyrewoodID = addBlock("hyrewood");
-        mintwoodLeavesID = addBlock("mintwoodLeaves");
-        firewallID = addBlock("firewall");
-        karosHeatTileRedID = addBlock("karosHeatTileRed");
-        karosHeatTileGreenID = addBlock("karosHeatTileGreen");
-        karosCannonID = addBlock("karosCannon");
-        helioticBeamID = addBlock("helioticBeam");
-        cryptFloorID = addBlock("cryptFloor");
-        firewoodID = addBlock("firewood");
-        chamberWallID = addBlock("chamberWall");
-        chamberWall1ID = addBlock("chamberWall1");
-        chamberWall2ID = addBlock("chamberWall2");
-        bacterialAcidID = addBlock("bacterialAcid");
-        gemtopPurpleID = addBlock("gemtops");
-        yellowDulahID = addBlock("yellowDulah");
-        blockAcidID = addBlock("acidBlock");
-        hallWallID = addBlock("hallWall");
-        wreckAltarID = addBlock("wreckAltar");
-        raglokAltarID = addBlock("raglokAltar");
-        karosAltarID = addBlock("karosAltar");
-        lunicAltarID = addBlock("lunicAltar");
-        hiveWallID = addBlock("hiveWall");
-        quadroticAltarID = addBlock("quadroticAltar");
-        everstoneID = addBlock("everstone");
-        lunicAcidID = addBlock("lunicAcid");
-        firewoodLeavesID = addBlock("firewoodLeaves");
-        hyrewoodLeavesID = addBlock("hyrewoodLeaves");
-        gemtopGreenID = addBlock("gemtopsGreen");
-        greenDulahID = addBlock("greenDulah");
-        mintwoodID = addBlock("mintwood");
-        lightFirewoodLeavesID = addBlock("lightFirerwoodLeaves");
-        cracklespikeID = addBlock("cracklespike");
-        ferniteID = addBlock("fernite");
-        bulatobeID = addBlock("bulatobe");
-        shineGrassID = addBlock("shineGrass");
-        shimmerID = addBlock("shimmer");
-        dreamglowID = addBlock("dreamglow");
-        hyrewoodVineID = addBlock("hyrewoodVine");
-        dreambricks2ID = addBlock("dreambricks2");
-        whiteEverstoneID = addBlock("whiteEverstone");
-        darkEverstoneID = addBlock("darkEverstone");
-        karosBricksID = addBlock("karosBricks");
-        karosBricks2ID = addBlock("karosBricks2");
-        biphronSpawnerID = addBlock("briphronSpawner");
-        gorgosionSpawnerID = addBlock("gorgosionSpawner");
-        twinsSpawnerID = addBlock("twinsSpawner");
-        duoSpawnerID = addBlock("duoSpawner");
-        vermenousSpawnerID = addBlock("vermenousSpawner");
-        dreamwreckerSpawnerID = addBlock("dreamwreckerSpawner");
-        lorgaSpawnerID = addBlock("lorgaSpawner");
-        hungerstone1ID = addBlock("hungerstone1");
-        hungerstone2ID = addBlock("hungerstone2");
-        purpleFireID = addBlock("PurpleFire");
         
+		dreamstoneID = addBlock("Dream Stone");
+		vetheaPortalID = addBlock("Vethea Portal");
+		dreamwoodID = addBlock("Dreamwood Log");
+		dreamwoodLeavesID = addBlock("Dreamwood Leaves");
+		dreambricksID = addBlock("Dream Bricks");
+		lunastoneID = addBlock("Luna Stone");
+		lunabricksID = addBlock("Luna Bricks");
+		metalCagingID = addBlock("Metal Caging");
+		dreamlampID = addBlock("Dream Lamp");
+		dreamlampOnID = addBlock("Dream Lamp On");
+		weedwoodVineID = addBlock("Weedwood Vine");
+		blossomingWeedwoodVineID = addBlock("Blossoming Weedwood Vine");
+		cryptWallID = addBlock("Crypt Wall");
+		smoothGlassID = addBlock("Smooth Glass");
+		villageLampID = addBlock("Village Lamp");
+		infusionTableID = addBlock("Infusion Table");
+		cellLampID = addBlock("Cell Lamp");
+		barredDoorID = addBlock("Barred Door");
+		firecrystalID = addBlock("Fire Crystal");
+		firelightID = addBlock("Fire Light");
+		hyrewoodID = addBlock("Hyrewood Log");
+		mintwoodLeavesID = addBlock("Mintwood Leaves");
+		firewallID = addBlock("Firewall");
+		karosHeatTileRedID = addBlock("Karos Heat Tile Red");
+		karosHeatTileGreenID = addBlock("Karos Heat Tile Green");
+		karosCannonID = addBlock("Karos Cannon");
+		helioticBeamID = addBlock("Heliotic Beam");
+		cryptFloorID = addBlock("Crypt Floor");
+		firewoodID = addBlock("Firewood Log");
+		chamberWallID = addBlock("Chamber Wall");
+		chamberWall1ID = addBlock("Chamber Wall 1");
+		chamberWall2ID = addBlock("Chamber Wall 2");
+		bacterialAcidID = addBlock("Bacterial Acid");
+		gemtopPurpleID = addBlock("Gemtop Purple");
+		yellowDulahID = addBlock("Yellow Dulah");
+		blockAcidID = addBlock("Block Acid");
+		hallWallID = addBlock("Hall Wall");
+		wreckAltarID = addBlock("Wreck Altar");
+		raglokAltarID = addBlock("Raglock Altar");
+		karosAltarID = addBlock("Karos Altar");
+		lunicAltarID = addBlock("Lunic Altar");
+		hiveWallID = addBlock("Hive Wall");
+		quadroticAltarID = addBlock("Quadrotic Altar");
+		everstoneID = addBlock("Everstone");
+		lunicAcidID = addBlock("Lunic Acid");
+		firewoodLeavesID = addBlock("Firewood Leaves");
+		hyrewoodLeavesID = addBlock("Hyrewood Leaves");
+		gemtopGreenID = addBlock("Gemtop Green");
+		greenDulahID = addBlock("Green Dulah");
+		mintwoodID = addBlock("Mintwood Log");
+		lightFirewoodLeavesID = addBlock("Light Firewood Leaves");
+		cracklespikeID = addBlock("Crackle Spike");
+		ferniteID = addBlock("Fernite");
+		bulatobeID = addBlock("Bulbatobe");
+		shineGrassID = addBlock("Shine Grass");
+		shimmerID = addBlock("Shimmer");
+		dreamglowID = addBlock("Dream Glow");
+		hyrewoodVineID = addBlock("Hyrewood Vine");
+		dreambricks2ID = addBlock("Dream Bricks 2");
+		whiteEverstoneID = addBlock("White Everstone");
+		darkEverstoneID = addBlock("Dark Everstone");
+		karosBricksID = addBlock("Karos Bricks");
+		karosBricks2ID = addBlock("Karos Bricks");
+		biphronSpawnerID = addBlock("Biphron Spawner");
+		gorgosionSpawnerID = addBlock("Gorgosin Spawner");
+		twinsSpawnerID = addBlock("Twins Spawner");
+		duoSpawnerID = addBlock("Duo Spawner");
+		vermenousSpawnerID = addBlock("Vermenous Spawner");
+		dreamwreckerSpawnerID = addBlock("Dreamwrecker Spawner");
+		lorgaSpawnerID = addBlock("Lorga Spawner");
+		hungerstone1ID = addBlock("Hungerstone 1");
+		hungerstone2ID = addBlock("Hungerstone 2");
+		purpleFireID = addBlock("Purple Fire");
 	}
 	
 	public static void itemConfig(){
-		teakerDiskID = addItem("TeakerDisk");
-        amthirmisDiskID = addItem("amthirmisDisk");
-        darvenDiskID = addItem("darvenDisk");
-        cermileDiskID = addItem("cermileDisk");
-        pardimalDiskID = addItem("pardimalDisk");
-        quadroticDiskID = addItem("quadroticDisk");
-        karosDiskID = addItem("karosDisk");
-        heliosisDiskID = addItem("heliosisDisk");
-        arksianeDiskID = addItem("arksianeDisk");
-        teakerHammerID = addItem("teakerHammer");
-        amthirmisHammerID = addItem("AmthirmisHammer");
-        darvenHammerID = addItem("darvenHammer");
-        cermileHammerID = addItem("cermileHammer");
-        pardimalHammerID = addItem("pardimalHammer");
-        quadroticHammerID = addItem("quadroticHammer");
-        karosHammerID = addItem("karosHammer");
-        heliosisHammerID = addItem("heliosisHammer");
-        arksianeHammerID = addItem("arksianeHammer");       
-        teakerSwordID = addItem("teakerSword");
-        amthirmisSwordID = addItem("AmthirmisSword");
-        darvenSwordID = addItem("darvenSword");
-        cermileSwordID = addItem("cermileSword");
-        pardimalSwordID = addItem("pardimalSword");
-        quadroticSwordID = addItem("quadroticSword");
-        karosSwordID = addItem("karosSword");
-        heliosisSwordID = addItem("heliosisSword");
-        arksianeSwordID = addItem("arksianeSword");       
-        teakerClawID = addItem("teakerClaw");
-        amthirmisClawID = addItem("AmthirmisClaw");
-        darvenClawID = addItem("darvenClaw");
-        cermileClawID = addItem("cermileClaw");
-        pardimalClawID = addItem("pardimalClaw");
-        quadroticClawID = addItem("quadroticClaw");
-        karosClawID = addItem("karosClaw");
-        heliosisClawID = addItem("heliosisClaw");
-        arksianeClawID = addItem("arksianeClaw");       
-        teakerCannonID = addItem("teakerCannon");
-        amthirmisCannonID = addItem("AmthirmisCannon");
-        darvenCannonID = addItem("darvenCannon");
-        cermileCannonID = addItem("cermileCannon");
-        pardimalCannonID = addItem("pardimalCannon");
-        quadroticCannonID = addItem("quadroticCannon");
-        karosCannonItemID = addItem("karosCannon");
-        heliosisCannonID = addItem("heliosisCannon");
-        arksianeCannonID = addItem("arksianeCannon");      
-        acidfireID = addItem("acidfire");    
-        teakerBowID = addItem("teakerBow");
-        amthirmisBowID = addItem("AmthirmisBow");
-        darvenBowID = addItem("darvenBow");
-        cermileBowID = addItem("cermileBow");
-        pardimalBowID = addItem("pardimalBow");
-        quadroticBowID = addItem("quadroticBow");
-        karosBowID = addItem("karosBow");
-        heliosisBowID = addItem("heliosisBow");
-        arksianeBowID = addItem("arksianeBow");
-        vetheanArrowID = addItem("vetheanArrow");
-        vetheanArrow2ID = addItem("vetheanArrow2");
-        vetheanWarArrowID = addItem("vetheanWarArrow");
-        vetheanWrathArrowID = addItem("vetheanWrathArrow");
-        vetheanHammerTemplateID = addItem("vetheanHammerTemplate");
-        vetheanBackswordTemplateID = addItem("vetheanBackswordTemplate");
-        vetheanBowTemplateID = addItem("vetheanBowTemplate");
-        vetheanCannonTemplateID = addItem("vetheanCannonTemplate");
-        vetheanClawTemplateID = addItem("vetheanClawTemplate");
-        vetheanDiskTemplateID = addItem("vetheanDiskTemplate");
-        vetheanStaffTemplateID = addItem("vetheanStaffTemplate");
-        vetheanDegradedTemplateID = addItem("vetheanDegradedTemplate");
-        vetheanFinishedTemplateID = addItem("vetheanFinishedTemplate");
-        vetheanGlisteningTemplateID = addItem("vetheanGlisteningTemplate");
-        vetheanDemonizedTemplateID = addItem("vetheanDemonizedTemplate");
-        vetheanTormentedTemplateID = addItem("vetheanTormentedTemplate");
-        honeysuckleID = addItem("honeysuckle");
-        dreamCarrotID = addItem("dreamCarrot");
-        dreamMelonID = addItem("dreamMelon");
-        dreamPieID = addItem("dreamPie");
-        dreamCakeID = addItem("dreamCake");  
-        teakerLumpID = addItem("teakerLump");
-        amthirmisLumpID = addItem("AmthirmisLump");
-        darvenLumpID = addItem("darvenLump");
-        cermileLumpID = addItem("cermileLump");
-        pardimalLumpID = addItem("pardimalLump");
-        quadroticLumpID = addItem("quadroticLump");
-        karosLumpID = addItem("karosLump");
-        heliosisLumpID = addItem("heliosisLump");
-        arksianeLumpID = addItem("arksianeLump");
-        dreamSweetsID = addItem("dreamSweets");
-        dreamSoursID = addItem("dreamSours");       
-        degradedHelmetMeleeID = addItem("degradedHelmetMelee");
-        degradedHelmetRangedID = addItem("degradedHelmetRanged");
-        degradedHelmetArcanaID = addItem("degradedHelmetArcana");
-        degradedChestID = addItem("degradedChest");
-        degradedLegsID = addItem("degradedLegs");
-        degradedBootsID = addItem("degradedBoots");
-        finishedHelmetMeleeID = addItem("finishedHelmetMelee");
-        finishedHelmetRangedID = addItem("finishedHelmetRanged");
-        finishedHelmetArcanaID = addItem("finishedHelmetArcana");
-        finishedChestID = addItem("finishedChest");
-        finishedLegsID = addItem("finishedLegs");
-        finishedBootsID = addItem("finishedBoots");
-        glisteningHelmetMeleeID = addItem("glisteningHelmetMelee");
-        glisteningHelmetRangedID = addItem("glisteningHelmetRanged");
-        glisteningHelmetArcanaID = addItem("glisteningHelmetArcana");
-        glisteningChestID = addItem("glisteningChest");
-        glisteningLegsID = addItem("glisteningLegs");
-        glisteningBootsID = addItem("glisteningBoots");
-        demonizedHelmetMeleeID = addItem("demonizedHelmetMelee");
-        demonizedHelmetRangedID = addItem("demonizedHelmetRanged");
-        demonizedHelmetArcanaID = addItem("demonizedHelmetArcana");
-        demonizedChestID = addItem("demonizedChest");
-        demonizedLegsID = addItem("demonizedLegs");
-        demonizedBootsID = addItem("demonizedBoots");
-        tormentedHelmetMeleeID = addItem("tormentedHelmetMelee");
-        tormentedHelmetRangedID = addItem("tormentedHelmetRanged");
-        tormentedHelmetArcanaID = addItem("tormentedHelmetArcana");
-        tormentedChestID = addItem("tormentedChest");
-        tormentedLegsID = addItem("tormentedLegs");
-        tormentedBootsID = addItem("tormentedBoots");
-        dirtyPearlsID = addItem("dirtyPearls");
-        cleanPearlsID = addItem("cleanPearls");
-        polishedPearlsID = addItem("polishedPearls");
-        shinyPearlsID = addItem("shinyPearls");
-        honeychunkID = addItem("honeychunk");
-        rockChunksID = addItem("rockChunks");
-        fyrossomID = addItem("fyrossom");
-        heivaBeltID = addItem("heivaBelt");
-        mooncloudID = addItem("mooncloud");
-        wormChunksID = addItem("wormChunks");
-        vhraakTeethID = addItem("vhraakTeeth");
-        dreamflintID = addItem("dreamflint");
-        moonclockID = addItem("moonclock");
-        spinebackChunkID = addItem("spinebackChunk");
-        spinebackCannonID = addItem("spinebackCannon");
-        spinebackDiscID = addItem("spinebackDisc");
-        spinebackHammerID = addItem("spinebackHammer");
-        spinebackStaffID = addItem("spinebackStaff");
-        everlightID = addItem("everlight");
-        everbrightID = addItem("everbright");
-        evernightID = addItem("evernight");
-        eversightID = addItem("eversight");
-        everfightID = addItem("everfight");
-        everArrowID = addItem("everArrow");
-        teakerStaffID = addItem("teakerStaff");
-        amthirmisStaffID = addItem("AmthirmisStaff");
-        darvenStaffID = addItem("darvenStaff");
-        cermileStaffID = addItem("cermileStaff");
-        pardimalStaffID = addItem("pardimalStaff");
-        quadroticStaffID = addItem("quadroticStaff");
-        karosStaffID = addItem("karosStaff");
-        heliosisStaffID = addItem("heliosisStaff");
-        arksianeStaffID = addItem("arksianeStaff");
-        dreamPowderID = addItem("DreamPowder");
-		barredDoorItemID = addItem("BarredDoorItem");
+		teakerDiskID = addItem("Teaker Disk");
+		amthirmisDiskID = addItem("Amthirmis Disk");
+		darvenDiskID = addItem("Darven Disk");
+		cermileDiskID = addItem("Cermile Disk");
+		pardimalDiskID = addItem("Pardimal Disk");
+		quadroticDiskID = addItem("Quadrotic Disk");
+		karosDiskID = addItem("Karos Disk");
+		heliosisDiskID = addItem("Heliosis Disk");
+		arksianeDiskID = addItem("Arkisane Disk");
+		teakerHammerID = addItem("Teaker Hammer");
+		amthirmisHammerID = addItem("Amthirmis Hammer");
+		darvenHammerID = addItem("Darven Hammer");
+		cermileHammerID = addItem("Cermile Hammer");
+		pardimalHammerID = addItem("Pardimal Hammer");
+		quadroticHammerID = addItem("Quadrotic Hammer");
+		karosHammerID = addItem("Karos Hammer");
+		heliosisHammerID = addItem("Heliosis Hammer");
+		arksianeHammerID = addItem("Arskiane Hammer");
+		teakerSwordID = addItem("Teaker Sword");
+		amthirmisSwordID = addItem("Amthirmus Sword");
+		darvenSwordID = addItem("Darven Sword");
+		cermileSwordID = addItem("Cermile Sword");
+		pardimalSwordID = addItem("Pardimal Sword");
+		quadroticSwordID = addItem("Quadrotic Sword");
+		karosSwordID = addItem("Karos Sword");
+		heliosisSwordID = addItem("Heliosis Sword");
+		arksianeSwordID = addItem("Arsiane Sword");
+		teakerClawID = addItem("Teaker Claw");
+		amthirmisClawID = addItem("Amthirmis Claw");
+		darvenClawID = addItem("Darven Claw");
+		cermileClawID = addItem("Cermile Claw");
+		pardimalClawID = addItem("Pardimal Claw");
+		quadroticClawID = addItem("Quadrotic Claw");
+		karosClawID = addItem("Karos Claw");
+		heliosisClawID = addItem("Heliosis Claw");
+		arksianeClawID = addItem("Arksiane Claw");
+		teakerCannonID = addItem("Teaker Cannon");
+		amthirmisCannonID = addItem("Amthirmis Cannon");
+		darvenCannonID = addItem("Darven Cannon");
+		cermileCannonID = addItem("Cermile Cannon");
+		pardimalCannonID = addItem("Pardimal");
+		quadroticCannonID = addItem("Quadrotic Cannon");
+		karosCannonItemID = addItem("Karos Cannon Item");
+		heliosisCannonID = addItem("Heliosis Cannon");
+		arksianeCannonID = addItem("Arskiane Cannon");
+		acidfireID = addItem("Acid Fire");
+		teakerBowID = addItem("Teaker Bow");
+		amthirmisBowID = addItem("Amthirmis");
+		darvenBowID = addItem("Darven Bow");
+		cermileBowID = addItem("Cermile Bow");
+		pardimalBowID = addItem("Pardimal Bow");
+		quadroticBowID = addItem("Quadrotic Bow");
+		karosBowID = addItem("Karos Bow");
+		heliosisBowID = addItem("Heliosis Bow");
+		arksianeBowID = addItem("Arskaine Bow");
+		vetheanArrowID = addItem("Vethean Arrow");
+		vetheanArrow2ID = addItem("Vethean Arrow 2");
+		vetheanWarArrowID = addItem("Vethean War Arrow");
+		vetheanWrathArrowID = addItem("Vethean Wrath Arrow");
+		vetheanHammerTemplateID = addItem("Vethean Hammer Template");
+		vetheanBackswordTemplateID = addItem("Vethean BackSword Template");
+		vetheanBowTemplateID = addItem("Vethean Bow Template");
+		vetheanCannonTemplateID = addItem("Vethean Cannon Template");
+		vetheanClawTemplateID = addItem("Vethean Claw Template");
+		vetheanDiskTemplateID = addItem("Vethean Disk Template");
+		vetheanStaffTemplateID = addItem("Vethean Staff Template");
+		vetheanDegradedTemplateID = addItem("Vethean Degraded Template");
+		vetheanFinishedTemplateID = addItem("Vethean Finished Template");
+		vetheanGlisteningTemplateID = addItem("Vethean Glisterning Template");
+		vetheanDemonizedTemplateID = addItem("Vethean Demonized Template");
+		vetheanTormentedTemplateID = addItem("Vethean Tormented Template");
+		honeysuckleID = addItem("Honey Suckle");
+		dreamCarrotID = addItem("Dream Carrot");
+		dreamMelonID = addItem("Dream Melon");
+		dreamPieID = addItem("Dream Pie");
+		dreamCakeID = addItem("Dream Cake");
+		teakerLumpID = addItem("Teaker Lump");
+		amthirmisLumpID = addItem("Amthirmis Lump");
+		darvenLumpID = addItem("Darven Lump");
+		cermileLumpID = addItem("Cermile Lump");
+		pardimalLumpID = addItem("Pardimal Lump");
+		quadroticLumpID = addItem("Quadrotic Lump");
+		karosLumpID = addItem("Karos Lump");
+		heliosisLumpID = addItem("Heliosis Lump");
+		arksianeLumpID = addItem("Arksiane Lump");
+		dreamSweetsID = addItem("Dream Sweets");
+		dreamSoursID = addItem("Dream Sours");
+		degradedHelmetMeleeID = addItem("Degraded Helmet Melee");
+		degradedHelmetRangedID = addItem("Degraded Helmet Ranged");
+		degradedHelmetArcanaID = addItem("Degraded Helmet Arcana");
+		degradedChestID = addItem("Degraded Body");
+		degradedLegsID = addItem("Degraded Legs");
+		degradedBootsID = addItem("Degraded Boots");
+		finishedHelmetMeleeID = addItem("Finished Helmet Melee");
+		finishedHelmetRangedID = addItem("Finished Helmet Ranged");
+		finishedHelmetArcanaID = addItem("Finished Helmet Arcana");
+		finishedChestID = addItem("Finished Body");
+		finishedLegsID = addItem("Dinished Legs");
+		finishedBootsID = addItem("Finished Boots");
+		glisteningHelmetMeleeID = addItem("Glisterning Helmet Melee");
+		glisteningHelmetRangedID = addItem("Glisterning Helmet Ranged");
+		glisteningHelmetArcanaID = addItem("Glisterning Helmet Arcana");
+		glisteningChestID = addItem("Glisterning Body");
+		glisteningLegsID = addItem("Glisterning Legs");
+		glisteningBootsID = addItem("Glisterning Boots");
+		demonizedHelmetMeleeID = addItem("Demonized Helmet Melee");
+		demonizedHelmetRangedID = addItem("Demonized Helmet Ranged");
+		demonizedHelmetArcanaID = addItem("Demonized Helmet Arcana");
+		demonizedChestID = addItem("Demonized Body");
+		demonizedLegsID = addItem("Demonized Legs");
+		demonizedBootsID = addItem("Demonized Boots");
+		tormentedHelmetMeleeID = addItem("Tormented Helmet Melee");
+		tormentedHelmetRangedID = addItem("Tormented Helmet Ranged");
+		tormentedHelmetArcanaID = addItem("Tormented Helmet Arcana");
+		tormentedChestID = addItem("Tormented Body");
+		tormentedLegsID = addItem("Tormented Legs");
+		tormentedBootsID = addItem("Tormented Boots");
+		dirtyPearlsID = addItem("Dirty Pearls");
+		cleanPearlsID = addItem("Clean Pearls");
+		polishedPearlsID = addItem("Polished Pearls");
+		shinyPearlsID = addItem("Shiny Pearls");
+		honeychunkID = addItem("Honey Chunk");
+		rockChunksID = addItem("Rock Chunk");
+		fyrossomID = addItem("Fyrossom");
+		heivaBeltID = addItem("Heiva Belt");
+		mooncloudID = addItem("Moon Cloud");
+		wormChunksID = addItem("Worm Chunks");
+		vhraakTeethID = addItem("Vhraak Teeth");
+		dreamflintID = addItem("Dream Flint");
+		moonclockID = addItem("Moon Clock");
+		spinebackChunkID = addItem("Spineback Chunk");
+		spinebackCannonID = addItem("Spineback Cannon");
+		spinebackDiscID = addItem("Spineback Disk");
+		spinebackHammerID = addItem("Spineback Hammer");
+		spinebackStaffID = addItem("Spineback Staff");
+		everlightID = addItem("Everlight");
+		everbrightID = addItem("Everbright");
+		evernightID = addItem("Evernight");
+		eversightID = addItem("Eversight");
+		everfightID = addItem("Everfright");
+		everArrowID = addItem("Ever Arrow");
+		teakerStaffID = addItem("Teaker Staff");
+		amthirmisStaffID = addItem("Amthirmis Staff");
+		darvenStaffID = addItem("Darven Staff");
+		cermileStaffID = addItem("Cermile Staff");
+		pardimalStaffID = addItem("Pardimal Staff");
+		quadroticStaffID = addItem("Quadrotic Staff");
+		karosStaffID = addItem("Karos Staff");
+		heliosisStaffID = addItem("Heliosis Staff");
+		arksianeStaffID = addItem("Arksiane Staff");
+		dreamPowderID = addItem("Dream Power");
+		barredDoorItemID = addItem("Barred Door Item");
 	}
 	
 }
