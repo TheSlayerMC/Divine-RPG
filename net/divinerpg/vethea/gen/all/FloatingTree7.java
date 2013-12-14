@@ -27,11 +27,11 @@ public class FloatingTree7 extends WorldGenerator
 		world.setBlock(i + 1, j + 2, k + 1, VetheaBlockHelper.dreamStone.blockID);
 		world.setBlock(i + 1, j + 2, k + 2, VetheaBlockHelper.dreamStone.blockID);
 		world.setBlock(i + 1, j + 3, k + 1, VetheaBlockHelper.mintwood.blockID);
-		world1.setBlockWithMetadata(i + 1, j + 4, k + 1, VetheaBlockHelper.mintwood.blockID, 4);
+		world.setBlock(i + 1, j + 4, k + 1, VetheaBlockHelper.mintwood.blockID, 4, 0x02);
 		world.setBlock(i + 2, j + 2, k + 1, VetheaBlockHelper.dreamStone.blockID);
-		world1.setBlockWithMetadata(i + 2, j + 4, k + 1, VetheaBlockHelper.mintwood.blockID, 4);
+		world.setBlock(i + 2, j + 4, k + 1, VetheaBlockHelper.mintwood.blockID, 4, 0x02);
 		world.setBlock(i + 3, j + 1, k + 1, VetheaBlockHelper.mintwoodLeaves.blockID);
-		world1.setBlockWithMetadata(i + 3, j + 4, k + 1, VetheaBlockHelper.mintwood.blockID, 4);
+		world.setBlock(i + 3, j + 4, k + 1, VetheaBlockHelper.mintwood.blockID, 4, 0x02);
 		world.setBlock(i + 4, j + 0, k + 1, VetheaBlockHelper.mintwoodLeaves.blockID);
 		world.setBlock(i + 4, j + 1, k + 0, VetheaBlockHelper.mintwoodLeaves.blockID);
 		world.setBlock(i + 4, j + 1, k + 1, VetheaBlockHelper.mintwood.blockID);
