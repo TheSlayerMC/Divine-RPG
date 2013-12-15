@@ -6,6 +6,7 @@ import net.divinerpg.helper.HelperBase;
 import net.divinerpg.helper.block.OverworldBlockHelper;
 import net.divinerpg.helper.handlers.DivineRPGPacketHandler;
 import net.divinerpg.helper.item.OverworldItemHelper;
+import net.divinerpg.helper.item.TwilightItemHelper;
 import net.divinerpg.helper.item.VetheaItemHelper;
 import net.divinerpg.helper.proxy.CommonProxyDivineRPG;
 import net.divinerpg.lib.Reference;
@@ -44,7 +45,7 @@ public class DivineRPG extends HelperBase{
 	};    
 	public static final CreativeTabs Projectile = new CreativeTabs("Projectiles"){
 		public ItemStack getIconItemStack() { 
-			return new ItemStack(VetheaItemHelper.arksianeStaff);
+			return new ItemStack(OverworldItemHelper.scythe);
 		}
 	};  
 	public static final CreativeTabs Spawn = new CreativeTabs("Spawner"){
@@ -69,7 +70,7 @@ public class DivineRPG extends HelperBase{
 	};
 	public static final CreativeTabs Swords = new CreativeTabs("Swords"){
 		public ItemStack getIconItemStack() { 
-			return new ItemStack(OverworldItemHelper.enderSword);
+			return new ItemStack(TwilightItemHelper.HaliteBlade);
 		}
 	};
 	public static final CreativeTabs Misc = new CreativeTabs("Misc."){

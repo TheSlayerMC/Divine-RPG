@@ -63,9 +63,9 @@ public class VetheaConfigHelper extends HelperBase{
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getBlock(Name, vetheaBlockID++ - 256).getInt();
+		config.getBlock(Name, vetheaBlockID++).getInt();
 		config.save();
-		return vetheaBlockID++ - 256;
+		return vetheaBlockID++;
 	}
 	
 	 public static int addTerrainBlock(String Cat, String Name){
@@ -81,9 +81,9 @@ public class VetheaConfigHelper extends HelperBase{
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getItem(name, vetheaItemID++ - 256).getInt();
+		config.getItem(name, vetheaItemID++).getInt();
 		config.save();
-		return vetheaItemID++ - 256;
+		return vetheaItemID++;
 	}
 	
 	public static void blockConfig(){

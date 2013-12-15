@@ -240,7 +240,7 @@ public class OverworldRecipeHelper {
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.arlemiteAxe, 1), new Object[] {"xx ", "xy ", " y ", 'x', OverworldItemHelper.arlemiteIngot, 'y', Item.stick});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.arlemiteShovel, 1), new Object[] {" x ", " y ", " y ", 'x', OverworldItemHelper.arlemiteIngot, 'y', Item.stick});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.arlemiteHoe, 1), new Object[] {"xx ", " y ", " y ", 'x', OverworldItemHelper.arlemiteIngot, 'y', Item.stick});
-		GameRegistry.addShapelessRecipe(new ItemStack(OverworldItemHelper.arlemiteShickaxe, 1), new Object[] {OverworldItemHelper.arlemiteHoe, OverworldItemHelper.arlemiteShovel, OverworldItemHelper.rupeePickaxe, OverworldItemHelper.rupeeAxe});
+		GameRegistry.addShapelessRecipe(new ItemStack(OverworldItemHelper.arlemiteShickaxe, 1), new Object[] {OverworldItemHelper.arlemiteHoe, OverworldItemHelper.arlemiteShovel, OverworldItemHelper.arlemitePickaxe, OverworldItemHelper.arlemiteAxe});
 
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.rupeePickaxe, 1), new Object[] {"xxx", " y ", " y ", 'x', OverworldItemHelper.rupeeIngot, 'y', Item.stick});
 		GameRegistry.addRecipe(new ItemStack(OverworldItemHelper.rupeeAxe, 1), new Object[] {"xx ", "xy ", " y ", 'x', OverworldItemHelper.rupeeIngot, 'y', Item.stick});

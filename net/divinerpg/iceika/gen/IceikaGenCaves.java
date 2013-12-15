@@ -180,7 +180,7 @@ public class IceikaGenCaves extends MapGenBase
                                             {
                                                 if (var58 < 10)
                                                 {
-                                                    var5[var56] = (byte)Block.lavaMoving.blockID;
+                                                    var5[var56] = (byte)Block.waterMoving.blockID;
                                                 }
                                                 else
                                                 {

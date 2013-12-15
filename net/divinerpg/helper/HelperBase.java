@@ -22,7 +22,7 @@ public class HelperBase {
 	public static String logo = picPrefix + "logo.png";
 	
 	public static int HEAD = 0, BODY = 1, LEGS = 2, BOOTS = 3;
-	public static int itemID = 5555, blockID = 700, vetheaBlockID = 3000, vetheaItemID = 6666;
+	public static int itemID = 4000, blockID = 700, vetheaBlockID = 3000, vetheaItemID = 6666;
 	public static int genBlockID = 180;
 	
     public static void addBlock(Block block, String Name){

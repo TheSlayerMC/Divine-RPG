@@ -12,6 +12,10 @@ public class ConfigHelper extends HelperBase{
 
 	static FMLPreInitializationEvent Event;
 
+	public static int id;
+	public static int block;
+	public static int gen;
+	
 	public static void initConfig(FMLPreInitializationEvent event){
 		Event = event;
 
@@ -23,27 +27,27 @@ public class ConfigHelper extends HelperBase{
 		File file = new File(Event.getModConfigurationDirectory(),  "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getBlock(name+"ID", blockID++ - 256).getInt();
+		block = config.getBlock(name, 700).getInt();
 		config.save();
-		return blockID++ - 256;
+		return block++;
 	}
 
 	public static int addTerrainBlock(String Cat,  String Name){
 		File file = new File(Event.getModConfigurationDirectory(),  "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getTerrainBlock(Cat,  Name + "ID",  genBlockID++,  Cat).getInt();
+		gen = config.getTerrainBlock(Cat,  Name,  170,  Cat).getInt();
 		config.save();
-		return genBlockID++;
+		return gen++;
 	}
 
 	public static int addItem(String name){
 		File file=new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getItem(name + "ID", itemID++ - 256).getInt();
+		id = config.getItem(name, 6666).getInt();
 		config.save();
-		return itemID++ - 256;
+		return id++;
 	}
 
 	public static int  IceStoneID,  TwilightStoneID, DraviteGrassID, DraviteDirtID, AzuriteGrassID, AzuriteDirtID, UviteGrassID;
