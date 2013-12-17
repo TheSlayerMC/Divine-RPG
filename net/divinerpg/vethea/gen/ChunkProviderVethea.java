@@ -157,15 +157,6 @@ public class ChunkProviderVethea implements IChunkProvider
 	float[] parabolicField;
 	int[][] field_73219_j = new int[32][32];
 
-	{
-		/*caveGenerator = TerrainGen.getModdedMapGen(caveGenerator, EventType.CAVE);
-		strongholdGenerator = (MapGenStronghold) TerrainGen.getModdedMapGen(strongholdGenerator, EventType.STRONGHOLD);
-		villageGenerator = (MapGenVillage) TerrainGen.getModdedMapGen(villageGenerator, EventType.VILLAGE);
-		mineshaftGenerator = (MapGenMineshaft) TerrainGen.getModdedMapGen(mineshaftGenerator, EventType.MINESHAFT);
-		scatteredFeatureGenerator = (MapGenScatteredFeature) TerrainGen.getModdedMapGen(scatteredFeatureGenerator, EventType.SCATTERED_FEATURE);
-		ravineGenerator = TerrainGen.getModdedMapGen(ravineGenerator, EventType.RAVINE);*/
-	}
-
 	public ChunkProviderVethea(World par1World, long par2, boolean par4)
 	{
 		this.worldObj = par1World;

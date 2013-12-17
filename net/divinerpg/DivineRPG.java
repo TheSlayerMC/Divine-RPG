@@ -89,10 +89,10 @@ public class DivineRPG extends HelperBase{
 		event.getModMetadata().authorList.add("DivineRPG-Team");
 		event.getModMetadata().description = "Many new worlds to discover in this mod!"; //TODO extend description
 		event.getModMetadata().name = "DivineRPG";
-		event.getModMetadata().logoFile = logo;
 		event.getModMetadata().credits = "DivineRPG Team";
 		event.getModMetadata().url = "http://divinerpg.net/wiki/DivineRPG_Wiki";
 		event.getModMetadata().screenshots = screenShots;
+		event.getModMetadata().logoFile = logo;
 	}
 
 	@EventHandler

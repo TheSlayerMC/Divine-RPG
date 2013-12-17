@@ -59,39 +59,41 @@ public class VetheaConfigHelper extends HelperBase{
 	everbrightID, evernightID, eversightID, everfightID, everArrowID, teakerStaffID, amthirmisStaffID, cermileStaffID, pardimalStaffID, 
 	quadroticStaffID, karosStaffID, heliosisStaffID, arksianeStaffID, dreamPowderID, dreamflintID, darvenStaffID;
 	
+	
+	public static int gen, block, item;
 	public static int addBlock(String Name){
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getBlock(Name, vetheaBlockID++).getInt();
+		block = config.getBlock(Name, 1100).getInt();
 		config.save();
-		return vetheaBlockID++;
+		return block++;
 	}
 	
 	 public static int addTerrainBlock(String Cat, String Name){
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getTerrainBlock(Cat, Name, genBlockID++, Cat).getInt();
+		gen = config.getTerrainBlock(Cat, Name, 180, Cat).getInt();
 		config.save();
-		return genBlockID++;
+		return gen++;
 	}
 	
 	 public static int addItem(String name){
 		File file = new File(Event.getModConfigurationDirectory(), "DivineRPG.cfg");
 		Configuration config = new Configuration(file);
 		config.load();
-		config.getItem(name, vetheaItemID++).getInt();
+		item = config.getItem(name, 8888).getInt();
 		config.save();
-		return vetheaItemID++;
+		return item++;
 	}
 	
 	public static void blockConfig(){
 		DreamGrassID = addTerrainBlock("Vethea", "Dream Grass");
 		DreamDirtID = addTerrainBlock("Vethea", "Dream Dirt");
-        
-		dreamstoneID = addBlock("Dream Stone");
-		vetheaPortalID = addBlock("Vethea Portal");
+        dreamstoneID = addTerrainBlock("Vethea", "Dream Stone");
+		
+        vetheaPortalID = addBlock("Vethea Portal");
 		dreamwoodID = addBlock("Dreamwood Log");
 		dreamwoodLeavesID = addBlock("Dreamwood Leaves");
 		dreambricksID = addBlock("Dream Bricks");
@@ -152,7 +154,7 @@ public class VetheaConfigHelper extends HelperBase{
 		whiteEverstoneID = addBlock("White Everstone");
 		darkEverstoneID = addBlock("Dark Everstone");
 		karosBricksID = addBlock("Karos Bricks");
-		karosBricks2ID = addBlock("Karos Bricks");
+		karosBricks2ID = addBlock("Karos Bricks 2");
 		biphronSpawnerID = addBlock("Biphron Spawner");
 		gorgosionSpawnerID = addBlock("Gorgosin Spawner");
 		twinsSpawnerID = addBlock("Twins Spawner");

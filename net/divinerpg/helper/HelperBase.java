@@ -14,7 +14,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class HelperBase {
 
 	public static ConfigHelper x, y;
-	public static VetheaConfigHelper z;
+	public static VetheaConfigHelper z, b;
 	
 	public static String picPrefix = Reference.MOD_ID + ":" + "textures/images/";
 	
