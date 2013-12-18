@@ -30,8 +30,6 @@ import net.minecraftforge.common.EnumHelper;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class IceikaItemHelper extends HelperBase  {
-
-	public static Item iceikaDoorItem;
 	
 	public static final Item snowFlake = new ItemDivineRPG(y.SnowflakeID).registerTextures("SnowFlake").setUnlocalizedName("SF").setCreativeTab(DivineRPG.Raw);
 	public static final Item icicleBow = new ItemIceBow(y.IcicleBowID).setUnlocalizedName("IcicleBow").setCreativeTab(DivineRPG.Projectile);

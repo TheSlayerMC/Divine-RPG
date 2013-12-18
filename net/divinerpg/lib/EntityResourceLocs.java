@@ -201,7 +201,7 @@ public class EntityResourceLocs {
     public static ResourceLocation CYCLOPSE_SHOT = new ResourceLocation(projectilePrefix + "CyclopseEye.png");
     public static ResourceLocation SCYTHE = new ResourceLocation(projectilePrefix + "ScytheProjectile.png");
     public static ResourceLocation MUSIC = new ResourceLocation(projectilePrefix + "SoundOfMusicProjectile.png");
-    public static ResourceLocation CRAB_CANNON = new ResourceLocation(projectilePrefix + "CrabCannon.png");
+    public static ResourceLocation CRAB_CANNON = new ResourceLocation(projectilePrefix + "CoriShot.png");
     public static ResourceLocation FIRE_ARROW = new ResourceLocation(projectilePrefix + "FireArrow.png");
     public static ResourceLocation BLUEFIRE_ARROW = new ResourceLocation(projectilePrefix + "BlueFireArrow.png");
     public static ResourceLocation STROM_BALL = new ResourceLocation(projectilePrefix + "MaelstromProjectile.png");

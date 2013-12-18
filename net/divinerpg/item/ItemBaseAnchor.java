@@ -37,21 +37,21 @@ public class ItemBaseAnchor extends ItemsBase {
         {
 
             var2.playSoundAtEntity(var3, Sound.Blitz, 1.0F, 1.0F);
-            var2.spawnEntityInWorld(new EntityAnchor(var2));
+            var2.spawnEntityInWorld(new EntityAnchor(var2, var3, dmg));
             return var1;
         }
         
         else if (!var4 && !var3.inventory.hasItem(OverworldItemHelper.crabAnchor.itemID))
         {
             var2.playSoundAtEntity(var3, Sound.Blitz, 1.0F, 1.0F);
-            var2.spawnEntityInWorld(new EntityAnchor(var2));
+            var2.spawnEntityInWorld(new EntityAnchor(var2, var3, dmg));
             return var1;
         }  
         
         else if (!var4 && !var3.inventory.hasItem(OverworldItemHelper.bowHeadAnchor.itemID))
         {
             var2.playSoundAtEntity(var3, Sound.Blitz, 1.0F, 1.0F);
-            var2.spawnEntityInWorld(new EntityAnchor(var2));
+            var2.spawnEntityInWorld(new EntityAnchor(var2, var3, dmg));
             return var1;
         }  
         return var1;

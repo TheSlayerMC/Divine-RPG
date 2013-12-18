@@ -1,6 +1,6 @@
 package net.divinerpg.mob.entity.item;
 
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
@@ -11,21 +11,17 @@ import net.minecraft.world.World;
 public class EntityBatWing extends EntityThrowable
 {
 	public byte damage = 4;
+	
     public EntityBatWing(World var1)
     {
         super(var1);
     }
 
-    public EntityBatWing(World var1, EntityLiving var2)
+    public EntityBatWing(World var1, EntityPlayer var2)
     {
         super(var1, var2);
     }
-
-    public EntityBatWing(World var1, double var2, double var4, double var6)
-    {
-        super(var1, var2, var4, var6);
-    }
-
+    
     /**
      * Called when this EntityThrowable hits a block or entity.
      */
@@ -34,9 +30,9 @@ public class EntityBatWing extends EntityThrowable
         if (var1.entityHit != null)
         {
 
-            if (var1.entityHit instanceof EntityLiving)
+            if (var1.entityHit instanceof EntityPlayer)
             {
-                ((EntityLiving)var1.entityHit).addPotionEffect(new PotionEffect(Potion.confusion.id, this.damage * 20, 0));
+                ((EntityPlayer)var1.entityHit).addPotionEffect(new PotionEffect(Potion.confusion.id, this.damage * 20, 0));
             }
 
             var1.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), this.damage);

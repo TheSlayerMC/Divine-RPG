@@ -1,7 +1,6 @@
 package net.divinerpg.mob.entity.item;
 
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.monster.EntityBlaze;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
@@ -15,7 +14,7 @@ public class EntityAnchor extends EntityThrowable
         super(var1);
     }
 
-    public EntityAnchor(World var1, EntityLiving var2, int dmg)
+    public EntityAnchor(World var1, EntityPlayer var2, int dmg)
     {
         super(var1, var2);
         this.damage = dmg;

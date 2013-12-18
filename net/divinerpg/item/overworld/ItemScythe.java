@@ -29,7 +29,7 @@ public class ItemScythe extends ItemsBase
         if (var7 || var3.inventory.hasItem(OverworldItemHelper.scythe.itemID))
         {
             var2.playSoundEffect(var3.posX, var3.posY, var3.posZ, Sound.DeepLaugh, 5.0F, 1.0F);
-            EntityBatWing var8 = new EntityBatWing(var2);
+            EntityBatWing var8 = new EntityBatWing(var2, var3); 
             if (var3.inventory.armorInventory[0] != null
             	&& var3.inventory.armorInventory[1] != null
             	&& var3.inventory.armorInventory[2] != null
