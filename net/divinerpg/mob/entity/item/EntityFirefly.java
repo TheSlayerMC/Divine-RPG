@@ -61,12 +61,12 @@ public class EntityFirefly extends EntityThrowable implements IProjectile
         return par1 < var3 * var3;
     }
 
-    public EntityFirefly(World par1World, EntityLiving par2EntityLiving)
+    public EntityFirefly(World par1World, EntityLivingBase par3EntityPlayer)
     {
         super(par1World);
-        this.thrower = par2EntityLiving;
+        this.thrower = par3EntityPlayer;
         this.setSize(0.25F, 0.25F);
-        this.setLocationAndAngles(par2EntityLiving.posX, par2EntityLiving.posY + par2EntityLiving.getEyeHeight(), par2EntityLiving.posZ, par2EntityLiving.rotationYaw, par2EntityLiving.rotationPitch);
+        this.setLocationAndAngles(par3EntityPlayer.posX, par3EntityPlayer.posY + par3EntityPlayer.getEyeHeight(), par3EntityPlayer.posZ, par3EntityPlayer.rotationYaw, par3EntityPlayer.rotationPitch);
         this.posX -= MathHelper.cos(this.rotationYaw / 180.0F * (float)Math.PI) * 0.16F;
         this.posY -= 0.10000000149011612D;
         this.posZ -= MathHelper.sin(this.rotationYaw / 180.0F * (float)Math.PI) * 0.16F;

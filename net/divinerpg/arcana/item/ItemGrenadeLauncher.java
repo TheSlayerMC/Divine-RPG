@@ -45,7 +45,7 @@ public class ItemGrenadeLauncher extends ItemsBase
         {
         	var3.inventory.consumeInventoryItem(ArcanaItemHelper.grenade.itemID);
         	var2.playSoundAtEntity(var3, Sound.LaVekor, 2.0F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
-			var2.spawnEntityInWorld(new EntityGrenade(var2));
+			var2.spawnEntityInWorld(new EntityGrenade(var2, var3));
 			return var1;
 		}
 	}

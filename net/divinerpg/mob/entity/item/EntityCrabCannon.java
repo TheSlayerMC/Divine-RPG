@@ -1,7 +1,9 @@
 package net.divinerpg.mob.entity.item;
 
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityBlaze;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
@@ -14,9 +16,9 @@ public class EntityCrabCannon extends EntityThrowable
         super(var1);
     }
 
-    public EntityCrabCannon(World var1, EntityLiving var2)
+    public EntityCrabCannon(World var1, EntityLivingBase var3)
     {
-        super(var1, var2);
+        super(var1, var3);
     }
 
     public EntityCrabCannon(World var1, double var2, double var4, double var6)

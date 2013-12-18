@@ -1,6 +1,6 @@
 package net.divinerpg.mob.entity.item;
 
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.util.DamageSource;
@@ -14,7 +14,7 @@ public class EntityBowCannon extends EntityThrowable
         super(var1);
     }
 
-    public EntityBowCannon(World var1, EntityLiving var2)
+    public EntityBowCannon(World var1, EntityLivingBase var2)
     {
         super(var1, var2);
     }

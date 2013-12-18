@@ -5,7 +5,9 @@ import java.util.List;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityBlaze;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;
@@ -19,7 +21,7 @@ public class EntityVailStorm extends EntityThrowable
 {
     private int potionDamage;
 
-    public EntityVailStorm(World var1)
+    public EntityVailStorm(World var1, EntityLivingBase var3)
     {
         super(var1);
     }

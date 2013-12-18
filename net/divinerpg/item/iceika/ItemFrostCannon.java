@@ -36,7 +36,7 @@ public class ItemFrostCannon extends ItemsBase
         {
             var2.playSoundAtEntity(var3, Sound.FrostClawCannon, 1.0F, 1.0F);
             var3.inventory.consumeInventoryItem(Item.snowball.itemID);
-            var2.spawnEntityInWorld(new EntityFrostShard(var2));
+            var2.spawnEntityInWorld(new EntityFrostShard(var2, var3));
             var1.damageItem(1, var3);
         }
 

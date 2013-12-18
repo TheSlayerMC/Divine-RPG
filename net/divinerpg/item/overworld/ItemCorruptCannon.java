@@ -49,7 +49,7 @@ public class ItemCorruptCannon extends ItemsBase
                {
                	for (int i = 0; i < 4; i++)
                	{
-               		var2.spawnEntityInWorld(new EntityCorruptShot(var2));
+               		var2.spawnEntityInWorld(new EntityCorruptShot(var2, var3));
                	}
                	var2.playSoundAtEntity(var3, this.firesound, 1.0F, 1.0F);
                	if (!var5)

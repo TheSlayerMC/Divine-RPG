@@ -21,7 +21,7 @@ public class ItemInfernalFlame extends ItemDivineRPG {
 			if (!par3World.isRemote) {
 				while (var4 < 1) {
 					EntityKingOfScorchers var5 = new EntityKingOfScorchers(
-							par3World);
+							par3World, par2EntityPlayer);
 					var5.setPosition(par4, par5 + 1, par6);
 					par3World.spawnEntityInWorld(var5);
 					var4++;

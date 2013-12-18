@@ -40,9 +40,9 @@ public class EntityMerikMissile extends EntityThrowable implements IProjectile
     private int age = 500;
     private int damage;
 
-    public EntityMerikMissile(World par1World)
+    public EntityMerikMissile(World par1World, EntityLivingBase var2)
     {
-        super(par1World);
+        super(par1World, var2);
         this.setSize(0.25F, 0.25F);
     }
 

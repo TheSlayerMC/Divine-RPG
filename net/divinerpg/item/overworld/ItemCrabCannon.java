@@ -47,7 +47,7 @@ public class ItemCrabCannon extends ItemsBase
         {
             if (this.firetick == this.firemax && this.firemax != 0)
             {
-                var2.spawnEntityInWorld(new EntityCrabCannon(var2));
+                var2.spawnEntityInWorld(new EntityCrabCannon(var2, var3));
                 var2.playSoundAtEntity(var3, Sound.GhastCannon, 1.0F, 1.0F);
                 var3.inventory.consumeInventoryItem(Block.cactus.blockID);
                 var1.damageItem(1, var3);
@@ -60,7 +60,7 @@ public class ItemCrabCannon extends ItemsBase
 
             if (this.firemax == 0 && var3.inventory.hasItem(this.clipid))
             {
-                var2.spawnEntityInWorld(new EntityCrabCannon(var2));
+                var2.spawnEntityInWorld(new EntityCrabCannon(var2, var3));
                 var2.playSoundAtEntity(var3, this.firesound, 1.0F, 1.0F);
                 var1.damageItem(1, var3);
             }

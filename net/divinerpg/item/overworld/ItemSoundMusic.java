@@ -28,7 +28,7 @@ public class ItemSoundMusic extends ItemsBase
         if (!var2.isRemote)
         {
             var2.playSoundAtEntity(var3,  Sound.SoundOfCarols, 1.0F, 1.0F);
-            var2.spawnEntityInWorld(new EntityMusicBall(var2));
+            var2.spawnEntityInWorld(new EntityMusicBall(var2, var3));
             var1.damageItem(1, var3);
         }
 

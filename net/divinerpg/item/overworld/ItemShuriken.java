@@ -32,7 +32,7 @@ public class ItemShuriken extends ItemsBase
 
         if (!var2.isRemote)
         {
-            var2.spawnEntityInWorld(new EntityShuriken(var2));
+            var2.spawnEntityInWorld(new EntityShuriken(var2, var3));
         }
 
         return var1;

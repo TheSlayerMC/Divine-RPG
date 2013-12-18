@@ -34,7 +34,7 @@ public class ItemCaptiansSparkeler extends ItemsBase
     	if (!var2.isRemote && ArcanaHelper.useBar(var3, 15))
     	{
     		var2.playSoundAtEntity(var3, Sound.Sparkler, 1.0F, 1.0F); 
-    		var2.spawnEntityInWorld(new EntitySparkler(var2));
+    		var2.spawnEntityInWorld(new EntitySparkler(var2, var3));
     	}
     	return var1;
     }

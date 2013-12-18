@@ -28,7 +28,7 @@ public class ItemFirefly extends ItemsBase
         if (!par2World.isRemote && ArcanaHelper.useBar((EntityPlayer)par3EntityPlayer, 5))
         {
         	par2World.playSoundAtEntity(par3EntityPlayer, Sound.FireFly, 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
-            par2World.spawnEntityInWorld(new EntityFirefly(par2World));
+            par2World.spawnEntityInWorld(new EntityFirefly(par2World, par3EntityPlayer));
         }
 
         return par1ItemStack;

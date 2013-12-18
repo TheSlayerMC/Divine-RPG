@@ -9,6 +9,7 @@ import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAIArrowAttack;
 import net.minecraft.entity.boss.IBossDisplayData;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
@@ -17,7 +18,7 @@ public class EntityKingOfScorchers extends EntityModMob implements IBossDisplayD
 {
     private int special;
 
-	public EntityKingOfScorchers(World var1)
+	public EntityKingOfScorchers(World var1, EntityLivingBase par2EntityPlayer)
     {
         super(var1);
         double moveSpeed = 0.56D;

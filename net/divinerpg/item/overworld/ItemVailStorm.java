@@ -32,7 +32,7 @@ public class ItemVailStorm extends ItemsBase
 
         if (!var2.isRemote)
         {
-            var2.spawnEntityInWorld(new EntityVailStorm(var2));
+            var2.spawnEntityInWorld(new EntityVailStorm(var2, var3));
         }
 
         return var1;

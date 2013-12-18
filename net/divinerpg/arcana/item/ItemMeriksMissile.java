@@ -89,7 +89,7 @@ public class ItemMeriksMissile extends DivineBow
                 var7 = 1.0F;
             }
 
-            EntityMerikMissile var8 = new EntityMerikMissile(par2World);
+            EntityMerikMissile var8 = new EntityMerikMissile(par2World, par3EntityPlayer);
 
             int var9 = EnchantmentHelper.getEnchantmentLevel(Enchantment.power.effectId, par1ItemStack);
             
