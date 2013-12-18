@@ -8,13 +8,13 @@ The_Slayer,
 Mazetar,
 BossLetsPlays,
 TLHPoE,
-Joshenburg.
+GRAYZ16.
 
 Modelers:
 DeclanUK.
 
 Wiki devs:
-SoccorStudd,
+SoccorStud,
 Insanity414All.
 
 Links:
@@ -23,5 +23,5 @@ https://twitter.com/TheSlayerMC
 http://www.minecraftforum.net/user/1788459-the-slayer/
 
 DivineRPG Wiki:
-http://www.divinerpg.net
+http://divinerpg.net
 
