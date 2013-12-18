@@ -1,6 +1,6 @@
 package net.divinerpg.mob.entity.item;
 
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntitySnowball;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
@@ -12,7 +12,7 @@ public class EntityGrenade extends EntitySnowball
         super(var1);
     }
 
-    public EntityGrenade(World var1, EntityLiving var2)
+    public EntityGrenade(World var1, EntityLivingBase var2)
     {
         super(var1, var2);
     }
@@ -28,6 +28,7 @@ public class EntityGrenade extends EntitySnowball
     @Override
     protected void onImpact(MovingObjectPosition var1)
     {
+    	System.out.println("IMPACT YOOOOO!");
         if (!this.worldObj.isRemote)
         {
             this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, 3.0F, false);

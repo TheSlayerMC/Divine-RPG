@@ -6,6 +6,7 @@ import net.divinerpg.helper.base.ItemsBase;
 import net.divinerpg.helper.item.ArcanaItemHelper;
 import net.divinerpg.lib.Sound;
 import net.divinerpg.mob.entity.item.EntityGrenade;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemStack;
@@ -34,6 +35,7 @@ public class ItemGrenade extends ItemsBase
 	 */
 	public ItemStack onItemRightClick(ItemStack var1, World var2, EntityPlayer var3)
 	{ 
+		System.out.println("YO!");
 		boolean var5 = false;
 		if (var3.capabilities.isCreativeMode)
 		{
@@ -46,8 +48,9 @@ public class ItemGrenade extends ItemsBase
 			{
 				if (this.firetick == 0)
 				{
+					System.out.println("FIRING!");
 					var2.playSoundAtEntity(var3, Sound.LaVekor, 2.0F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
-					var2.spawnEntityInWorld(new EntityGrenade(var2));
+					var2.spawnEntityInWorld(new EntityGrenade(var2, var3));
 					if (!var5)
 					{
 						var3.inventory.consumeInventoryItem(ArcanaItemHelper.grenade.itemID);
@@ -76,6 +79,7 @@ public class ItemGrenade extends ItemsBase
 	/**
 	 * called when the player releases the use item button. Args: itemstack, world, entityplayer, itemInUseCount
 	 */
+    @Override
 	public void onPlayerStoppedUsing(ItemStack var1, World var2, EntityPlayer var3, int var4)
 	{
 		this.firetick = 0;
@@ -101,6 +105,5 @@ public class ItemGrenade extends ItemsBase
 	{
 		par3List.add("Explosive projectile");
 		par3List.add("Ammo: Grenade");
-		par3List.add("Infinite Uses");
 	}
 }
