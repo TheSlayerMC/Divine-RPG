@@ -1,7 +1,7 @@
 Divine-RPG
 ==========
 
-The official repository for Divine RPG
+The official repository for DivineRPG
 
 Coders:
 The_Slayer,
@@ -14,7 +14,7 @@ Modelers:
 DeclanUK.
 
 Wiki devs:
-SoccorStud,
+SoccerStud,
 Insanity414All.
 
 Links:
