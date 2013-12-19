@@ -29,34 +29,29 @@ public class ConfigHelper extends HelperBase {
 	public static void addBlock(String name) {
 		config.getBlock(name, block);
 		idMap.put(name, config.getBlock(name, block).getInt());
-		System.out.println("Adding block " + name + " with ID " + config.getBlock(name, block).getInt());
 		block++;
 	}
 
 	public static void addTerrainBlock(String cat, String name) {
 		config.get(cat, name, gen);
 		idMap.put(name, config.get(cat, name, gen).getInt());
-		System.out.println("Adding gen block " + name + " with ID " + config.get(cat, name, gen).getInt());
 		gen++;
 	}
 
 	public static void addItem(String name) {
 		config.getItem(name, item);
 		idMap.put(name, config.getItem(name, item).getInt());
-		System.out.println("Adding item " + name + " with ID " + config.getItem(name, item).getInt());
 		item++;
 	}
 
 	public static int getID(String name) {
 		if(idMap.containsKey(name)) {
-			System.out.println("Returning ID for " + name + ". ID: " + idMap.get(name));
 			return idMap.get(name);
 		} else {
 			System.out.println("Couldn't find ID for " + name + "!!!");
 			System.exit(1);
 			return 0;
 		}
-
 	}
 
 	public static void blockConfig(){
