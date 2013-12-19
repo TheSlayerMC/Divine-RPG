@@ -7,6 +7,9 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class DimensionConfigHelper {
 	
+	public static File file = new File(new File("./DivineRPG/"), "DivineRPG.cfg");
+	public static Configuration config = new Configuration(file);
+	
 	public static int draviteBiomeID;
 	public static int uviteBiomeID;
 	public static int azuriteBiomeID;
@@ -38,10 +41,7 @@ public class DimensionConfigHelper {
 	public static boolean KeepLoadedAugite;
 	public static boolean KeepLoadedAntiNether;
 
-	public static void configInit(FMLPreInitializationEvent event){
-		File file = new File(event.getModConfigurationDirectory(), "DivineRPG.cfg");
-		Configuration config = new Configuration(file);
-
+	public static void configInit(){
 		config.load();
 		
 		KeepLoadedDravite = config.get("Dimensions", "KeepLoaded Dravite", true).getBoolean(true);

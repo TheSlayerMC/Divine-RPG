@@ -1,7 +1,6 @@
 package net.divinerpg.helper;
 
 import net.divinerpg.helper.config.ConfigHelper;
-import net.divinerpg.helper.config.VetheaConfigHelper;
 import net.divinerpg.lib.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.item.EnumArmorMaterial;
@@ -14,7 +13,6 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class HelperBase {
 
 	public static ConfigHelper x, y;
-	public static VetheaConfigHelper z, b;
 	
 	public static String picPrefix = Reference.MOD_ID + ":" + "textures/images/";
 	
