@@ -26,24 +26,51 @@ public class ConfigHelper extends HelperBase {
 		config.save();
 	}
 
-	public static void addBlock(String name) {
-		config.getBlock(name, block);
-		idMap.put(name, config.getBlock(name, block).getInt());
+	public static int getAvailableBlockID() {
 		block++;
+		if(idMap.containsValue(block)) {
+			return getAvailableBlockID();
+		} else {
+			return block;
+		}
+	}
+	
+	public static void addBlock(String name) {
+		int id = getAvailableBlockID();
+		config.getBlock(name, id);
+		idMap.put(name, config.getBlock(name, id).getInt());
 	}
 
-	public static void addTerrainBlock(String cat, String name) {
-		config.get(cat, name, gen);
-		idMap.put(name, config.get(cat, name, gen).getInt());
+	public static int getAvailableTerrainBlockID() {
 		gen++;
+		if(idMap.containsValue(gen)) {
+			return getAvailableTerrainBlockID();
+		} else {
+			return gen;
+		}
+	}
+	
+	public static void addTerrainBlock(String cat, String name) {
+		int id = getAvailableTerrainBlockID();
+		config.get(cat, name, id);
+		idMap.put(name, config.get(cat, name, id).getInt());
 	}
 
-	public static void addItem(String name) {
-		config.getItem(name, item);
-		idMap.put(name, config.getItem(name, item).getInt());
+	public static int getAvailableItemID() {
 		item++;
+		if(idMap.containsValue(item)) {
+			return getAvailableItemID();
+		} else {
+			return item;
+		}
 	}
-
+	
+	public static void addItem(String name) {
+		int id = getAvailableItemID();
+		config.getItem(name, id);
+		idMap.put(name, config.getItem(name, id).getInt());
+	}
+	
 	public static int getID(String name) {
 		if(idMap.containsKey(name)) {
 			return idMap.get(name);
@@ -54,27 +81,27 @@ public class ConfigHelper extends HelperBase {
 		}
 	}
 
-	public static void blockConfig(){
-		addTerrainBlock("Dravite","DraviteGrass");
-		addTerrainBlock("Dravite","DraviteDirt");
-		addTerrainBlock("Azurite","AzuriteGrass");
-		addTerrainBlock("Azurite","AzuriteDirt");
-		addTerrainBlock("Uvite","UviteGrass");
-		addTerrainBlock("Uvite","UviteDirt");
-		addTerrainBlock("Mythril","MythrilGrass");
-		addTerrainBlock("Mythril","MythrilDirt");
-		addTerrainBlock("Augite","AugiteGrass");
-		addTerrainBlock("Augite","AugiteDirt");
-		addTerrainBlock("Iceika","IceikaGrass");
-		addTerrainBlock("Iceika","IceikaDirt");
-		addTerrainBlock("Iceika","IceikaStone");
-		addTerrainBlock("Twilight","TwilightStone");
-		addTerrainBlock("Arcana","ArcanaGrass");
-		addTerrainBlock("Arcana","ArcanaDirt");
+	public static void blockConfig() {
+		addTerrainBlock("Dravite", "DraviteGrass");
+		addTerrainBlock("Dravite", "DraviteDirt");
+		addTerrainBlock("Azurite", "AzuriteGrass");
+		addTerrainBlock("Azurite", "AzuriteDirt");
+		addTerrainBlock("Uvite", "UviteGrass");
+		addTerrainBlock("Uvite", "UviteDirt");
+		addTerrainBlock("Mythril", "MythrilGrass");
+		addTerrainBlock("Mythril", "MythrilDirt");
+		addTerrainBlock("Augite", "AugiteGrass");
+		addTerrainBlock("Augite", "AugiteDirt");
+		addTerrainBlock("Iceika", "IceikaGrass");
+		addTerrainBlock("Iceika", "IceikaDirt");
+		addTerrainBlock("Iceika", "IceikaStone");
+		addTerrainBlock("Twilight", "TwilightStone");
+		addTerrainBlock("Arcana", "ArcanaGrass");
+		addTerrainBlock("Arcana", "ArcanaDirt");
 
-		addTerrainBlock("Vethea","DreamGrass");
-		addTerrainBlock("Vethea","DreamDirt");
-		addTerrainBlock("Vethea","DreamStone");
+		addTerrainBlock("Vethea", "DreamGrass");
+		addTerrainBlock("Vethea", "DreamDirt");
+		addTerrainBlock("Vethea", "DreamStone");
 
 		addBlock("RupeeOre");
 		addBlock("ArlemiteOre");
@@ -380,7 +407,7 @@ public class ConfigHelper extends HelperBase {
 		addBlock("PurpleFire");
 	}
 
-	public static void itemConfig(){
+	public static void itemConfig() {
 		addItem("Tomato");
 		addItem("BedRockMaul");
 		addItem("SoundOfMusic");
