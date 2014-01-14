@@ -7,7 +7,6 @@ import net.divinerpg.helper.base.BreakableBase;
 import net.divinerpg.helper.block.OverworldBlockHelper;
 import net.divinerpg.helper.block.TwilightBlockHelper;
 import net.divinerpg.helper.config.DimensionConfigHelper;
-import net.divinerpg.lib.Sound;
 import net.divinerpg.render.portalFX.EntityDravitePortalFX;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
@@ -280,12 +279,6 @@ public class BlockDravitePortal extends BreakableBase
      */
     public void randomDisplayTick(World var1, int var2, int var3, int var4, Random var5)
     {
-
-    	if (var5.nextInt(100) == 0)
-        {
-            var1.playSound((double)var2 + 0.5D, (double)var3 + 0.5D, (double)var4 + 0.5D, Sound.DravitePortal, 0.5F, var5.nextFloat() * 0.4F + 0.8F, false);
-        }
-    	
         for (int var6 = 0; var6 < 4; ++var6)
         {
             double var7 = var2 + var5.nextFloat();

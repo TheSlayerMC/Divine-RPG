@@ -54,7 +54,7 @@ public class Registry {
 
 	public static void addMisc() {
 		harvestLevelHelper.init();
-		System.out.println("[DIVINE RPG] Registering Block Harvest Levels!");
+		System.out.println("[DIVINE RPG] Registering Block Breakable Levels!");
 	}
 
 	public static void addWorldGen() {

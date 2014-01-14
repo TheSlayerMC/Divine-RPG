@@ -1,7 +1,7 @@
 package net.divinerpg.mob.entity.item;
 import net.divinerpg.render.entity.RenderBlock.RenderBlock.IBlockRender;
 import net.minecraft.block.Block;
-import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
 public class EntityCrabclawProjectile extends EntityDamageProjectile implements IBlockRender {
@@ -10,7 +10,7 @@ public class EntityCrabclawProjectile extends EntityDamageProjectile implements 
         super(world);
     }
 
-    public EntityCrabclawProjectile(World var1, EntityLiving var2, int damage) {
+    public EntityCrabclawProjectile(World var1, EntityPlayer var2, int damage) {
         super(var1, var2, damage);
     }
 

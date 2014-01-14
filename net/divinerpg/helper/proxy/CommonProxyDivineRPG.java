@@ -21,7 +21,7 @@ public class CommonProxyDivineRPG {
 
 	//ClientProxyDivineRPG P.S this comment is just so i can easily get to the client proxy!
 	public void preInit(FMLPreInitializationEvent event) {         
-		ConfigHelper.initConfig();
+		ConfigHelper.initConfig(event);
 		DimensionConfigHelper.configInit();
 		tickRegistry();
 		Registry.init();

@@ -30,6 +30,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
 public class VetheaItemHelper extends HelperBase {
+	
 	public static final Item teakerDisk = new ItemTeakerDisk(x.getID("TeakerDisk"), 4).registerTextures("TeakerDisc").setUnlocalizedName("Teaker Disk");
 	public static final Item amthrimisDisk = new ItemAmthirmisDisk(x.getID("AmthrimisDisk"), 6).registerTextures("AmthirmisDisc").setUnlocalizedName("Amthirmis Disk");
 	public static final Item darvenDisk = new ItemDarvenDisk(x.getID("DarvenDisk"), 9).registerTextures("DarvenDisc").setUnlocalizedName("Darven Disk");
@@ -50,8 +51,7 @@ public class VetheaItemHelper extends HelperBase {
 	public static final Item karosHammer = new ItemVetheanHammerSword(x.getID("KarosHammer"), "karosHammer", 26).registerTextures("KarosWarHammer");
 	public static final Item heliosisHammer = new ItemVetheanHammerSword(x.getID("HeliosisHammer"), "heliosisHammer", 33).registerTextures("HeliosisWrathHammer");
 	public static final Item arksianeHammer = new ItemVetheanHammerSword(x.getID("ArksianeHammer"), "arksianeHammer", 39).registerTextures("ArksianeWrathHammer");
-	// public static final Item spinebackHammer = new
-	// ItemVetheanHammerSword(x.getID("SpinebackHammer, "spinebackHammer", 50).registerTextures("SpinebackHammer");
+	// public static final Item spinebackHammer = new ItemVetheanHammerSword(x.getID("SpinebackHammer, "spinebackHammer", 50).registerTextures("SpinebackHammer");
 
 	public static final Item teakerSword = new ItemVetheanHammerSword(x.getID("TeakerSword"), "teakerSword", 4).registerTextures("TeakerBacksword");
 	public static final Item amthrimisSword = new ItemVetheanHammerSword(x.getID("AmthrimisSword"), "amthirmisSword", 6).registerTextures("AmthirmisBacksword");
@@ -131,19 +131,15 @@ public class VetheaItemHelper extends HelperBase {
 
 	public static final Item honeychunk = new ItemDivineRPG(x.getID("HoneyChunk")).registerTextures("Honeysuckle").setUnlocalizedName("honeychunk");
 	public static final Item rockChunks = new ItemDivineRPG(x.getID("RockChunk")).registerTextures("RockChunks").setUnlocalizedName("rockChunks");
-	// public static final Item fyrossom = new
-	// ItemDivineRPG(x.getID("Fyrossom).registerTextures("Fyrossom").setUnlocalizedName("fyrossom");
+	// public static final Item fyrossom = new ItemDivineRPG(x.getID("Fyrossom).registerTextures("Fyrossom").setUnlocalizedName("fyrossom");
 	public static final Item heivaBelt = new ItemDivineRPG(x.getID("HeivaBelt")).registerTextures("BandOfHeviaHunting").setUnlocalizedName("heivaBelt");
 	public static final Item mooncloud = new ItemDivineRPG(x.getID("MoonCloud")).registerTextures("MoonCloud").setUnlocalizedName("mooncloud");
-	// public static final Item wormChunks = new
-	// ItemDivineRPG(x.getID("WormChunks).registerTextures("WormChunk").setUnlocalizedName("wormChunk");
-	// public static final Item vhraakTeeth = new
-	// ItemDivineRPG(x.getID("VhraakTeeth).registerTextures("VhraakTeeth").setUnlocalizedName("vhraakTeeth");
+	// public static final Item wormChunks = new ItemDivineRPG(x.getID("WormChunks).registerTextures("WormChunk").setUnlocalizedName("wormChunk");
+	// public static final Item vhraakTeeth = new ItemDivineRPG(x.getID("VhraakTeeth).registerTextures("VhraakTeeth").setUnlocalizedName("vhraakTeeth");
 
 	public static final Item dreamflint = new ItemDreamflint(x.getID("DreamFlint")).registerTextures("DreamFlint").setUnlocalizedName("dreamflint");
 	public static final Item moonclock = new ItemMoonclock(x.getID("MoonClock")).registerTextures("MoonClock").setUnlocalizedName("moonclock");
-	// public static final Item spinebackChunk = new
-	// ItemSpinebackChunk(x.getID("SpinebackChunk).registerTextures("SpinebackChunk").setUnlocalizedName("spinebackChunk");
+	// public static final Item spinebackChunk = new ItemSpinebackChunk(x.getID("SpinebackChunk).registerTextures("SpinebackChunk").setUnlocalizedName("spinebackChunk");
 
 	public static final Item teakerCannon = new ItemVetheanCannon(x.getID("TeakerCannon"), 3, "TeakerCannon").registerTextures("TeakerCannon");
 	public static final Item amthrimisCannon = new ItemVetheanCannon(x.getID("AmthrimisCannon"), 5, "amthirmisCannon").registerTextures("AmthirmisCannon");
@@ -182,7 +178,8 @@ public class VetheaItemHelper extends HelperBase {
 	 * degradedHelmetRanged = new ItemVetheanArmor(4454, degradedRender, "DMR",
 	 * 0, 15, "Ranged",
 	 * "").setUnlocalizedName("degradedHelmetRanged").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item degradedHelmetArcana = new
+	 * (DivineRPG.Armor);
+	 * public static final Item degradedHelmetArcana = new
 	 * ItemVetheanArmor(4456, degradedRender, "DHA", 0, 15, "Arcana",
 	 * "").setUnlocalizedName
 	 * ("degradedHelmetArcana").setCreativeTab(DivineRPG.Armor); public static
@@ -203,7 +200,8 @@ public class VetheaItemHelper extends HelperBase {
 	 * finishedHelmetRanged = new ItemVetheanArmor(4461, finishedRender, "", 0,
 	 * 30, "Ranged",
 	 * "").setUnlocalizedName("finishedHelmetRanged").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item finishedHelmetArcana = new
+	 * (DivineRPG.Armor); 
+	 * public static final Item finishedHelmetArcana = new
 	 * ItemVetheanArmor(4462, finishedRender, "", 0, 30, "Arcana",
 	 * "").setUnlocalizedName
 	 * ("finishedHelmetArcana").setCreativeTab(DivineRPG.Armor); public static
@@ -217,73 +215,26 @@ public class VetheaItemHelper extends HelperBase {
 	 * finishedRender, "", 3, 30, "",
 	 * "").setUnlocalizedName("finishedBoots").setCreativeTab(DivineRPG.Armor);
 	 * 
-	 * public static final Item glisteningHelmetMelee = new
-	 * ItemVetheanArmor(4466, glisteningRender, "", 0, 45, "Melee",
-	 * "+3 Melee Damage3"
-	 * ).setUnlocalizedName("glisteningHelmetMelee").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item glisteningHelmetRanged = new
-	 * ItemVetheanArmor(4467, glisteningRender, "", 0, 45, "Ranged",
-	 * "1.4x Movement Speed"
-	 * ).setUnlocalizedName("glisteningHelmetRanged").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item glisteningHelmetArcana = new
-	 * ItemVetheanArmor(4468, glisteningRender, "", 0, 45, "Arcana",
-	 * "2x Jump Height"
-	 * ).setUnlocalizedName("glisteningHelmetArcana").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item glisteningChest = new
-	 * ItemVetheanArmor(4469, glisteningRender, "", 1, 45, "",
-	 * "").setUnlocalizedName
-	 * ("glisteningChest").setCreativeTab(DivineRPG.Armor); public static final
-	 * Item glisteningLegs = new ItemVetheanArmor(4470, glisteningRender, "", 2,
-	 * 45, "",
-	 * "").setUnlocalizedName("glisteningLegs").setCreativeTab(DivineRPG.Armor);
-	 * public static final Item glisteningBoots = new ItemVetheanArmor(4471,
-	 * glisteningRender, "", 3, 45, "",
-	 * "").setUnlocalizedName("glisteningBoots")
-	 * .setCreativeTab(DivineRPG.Armor);
+	 * public static final Item glisteningHelmetMelee = new ItemVetheanArmor(4466, glisteningRender, "", 0, 45, "Melee", "+3 Melee Damage3").setUnlocalizedName("glisteningHelmetMelee").setCreativeTab(DivineRPG.Armor); 
+	 * public static final Item glisteningHelmetRanged = new ItemVetheanArmor(4467, glisteningRender, "", 0, 45, "Ranged", "1.4x Movement Speed").setUnlocalizedName("glisteningHelmetRanged").setCreativeTab(DivineRPG.Armor); 
+	 * public static final Item glisteningHelmetArcana = new ItemVetheanArmor(4468, glisteningRender, "", 0, 45, "Arcana", "2x Jump Height").setUnlocalizedName("glisteningHelmetArcana").setCreativeTab(DivineRPG.Armor); 
+	 * public static final Item glisteningChest = new ItemVetheanArmor(4469, glisteningRender, "", 1, 45, "", "").setUnlocalizedName("glisteningChest").setCreativeTab(DivineRPG.Armor); 
+	 * public static final Item glisteningLegs = new ItemVetheanArmor(4470, glisteningRender, "", 2, 45, "", "").setUnlocalizedName("glisteningLegs").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item glisteningBoots = new ItemVetheanArmor(4471, glisteningRender, "", 3, 45, "", "").setUnlocalizedName("glisteningBoots").setCreativeTab(DivineRPG.Armor);
 	 * 
-	 * public static final Item demonizedHelmetMelee = new
-	 * ItemVetheanArmor(4472, demonizedRender, "", 0, 55, "Melee",
-	 * "+6 Melee Damage"
-	 * ).setUnlocalizedName("demonizedHelmetMelee").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item demonizedHelmetRanged = new
-	 * ItemVetheanArmor(4473, demonizedRender, "", 0, 55, "Ranged",
-	 * "1.8X Movement Speed"
-	 * ).setUnlocalizedName("demonizedHelmetRanged").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item demonizedHelmetArcana = new
-	 * ItemVetheanArmor(4474, demonizedRender, "", 0, 55, "Arcana",
-	 * "3x Jump Height"
-	 * ).setUnlocalizedName("demonizedHelmetArcana").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item demonizedChest = new
-	 * ItemVetheanArmor(4475, demonizedRender, "", 1, 55, "",
-	 * "").setUnlocalizedName("demonizedChest").setCreativeTab(DivineRPG.Armor);
-	 * public static final Item demonizedLegs = new ItemVetheanArmor(4476,
-	 * demonizedRender, "", 2, 55, "",
-	 * "").setUnlocalizedName("demonizedLegs").setCreativeTab(DivineRPG.Armor);
-	 * public static final Item demonizedBoots = new ItemVetheanArmor(4477,
-	 * demonizedRender, "", 3, 55, "",
-	 * "").setUnlocalizedName("demonizedBoots").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item demonizedHelmetMelee = new ItemVetheanArmor(4472, demonizedRender, "", 0, 55, "Melee", "+6 Melee Damage").setUnlocalizedName("demonizedHelmetMelee").setCreativeTab(DivineRPG.Armor); 
+	 * public static final Item demonizedHelmetRanged = new ItemVetheanArmor(4473, demonizedRender, "", 0, 55, "Ranged", "1.8X Movement Speed").setUnlocalizedName("demonizedHelmetRanged").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item demonizedHelmetArcana = new ItemVetheanArmor(4474, demonizedRender, "", 0, 55, "Arcana", "3x Jump Height").setUnlocalizedName("demonizedHelmetArcana").setCreativeTab(DivineRPG.Armor); 
+	 * public static final Item demonizedChest = new ItemVetheanArmor(4475, demonizedRender, "", 1, 55, "", "").setUnlocalizedName("demonizedChest").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item demonizedLegs = new ItemVetheanArmor(4476, demonizedRender, "", 2, 55, "", "").setUnlocalizedName("demonizedLegs").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item demonizedBoots = new ItemVetheanArmor(4477, demonizedRender, "", 3, 55, "", "").setUnlocalizedName("demonizedBoots").setCreativeTab(DivineRPG.Armor);
 	 * 
-	 * public static final Item tormentedHelmetMelee = new
-	 * ItemVetheanArmor(4478, tormentedRender, "", 0, 70, "Melee",
-	 * "+9 Melee Damage"
-	 * ).setUnlocalizedName("tormentedHelmetMelee").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item tormentedHelmetRanged = new
-	 * ItemVetheanArmor(4479, tormentedRender, "", 0, 70, "Ranged",
-	 * "2x Movement Speed"
-	 * ).setUnlocalizedName("tormentedHelmetRanged").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item tormentedHelmetArcana = new
-	 * ItemVetheanArmor(4480, tormentedRender, "", 0, 70, "Arcana",
-	 * "4x Jump Height"
-	 * ).setUnlocalizedName("tormentedHelmetArcana").setCreativeTab
-	 * (DivineRPG.Armor); public static final Item tormentedChest = new
-	 * ItemVetheanArmor(4481, tormentedRender, "", 1, 70, "",
-	 * "").setUnlocalizedName("tormentedChest").setCreativeTab(DivineRPG.Armor);
-	 * public static final Item tormentedLegs = new ItemVetheanArmor(4482,
-	 * tormentedRender, "", 2, 70, "",
-	 * "").setUnlocalizedName("tormentedLegs").setCreativeTab(DivineRPG.Armor);
-	 * public static final Item tormentedBoots = new ItemVetheanArmor(4483,
-	 * tormentedRender, "", 3, 70, "",
-	 * "").setUnlocalizedName("tormentedBoots").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item tormentedHelmetMelee = new ItemVetheanArmor(4478, tormentedRender, "", 0, 70, "Melee", "+9 Melee Damage").setUnlocalizedName("tormentedHelmetMelee").setCreativeTab(DivineRPG.Armor); 
+	 * public static final Item tormentedHelmetRanged = new ItemVetheanArmor(4479, tormentedRender, "", 0, 70, "Ranged", "2x Movement Speed").setUnlocalizedName("tormentedHelmetRanged").setCreativeTab(DivineRPG.Armor); 
+	 * public static final Item tormentedHelmetArcana = new ItemVetheanArmor(4480, tormentedRender, "", 0, 70, "Arcana", "4x Jump Height" ).setUnlocalizedName("tormentedHelmetArcana").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item tormentedChest = new ItemVetheanArmor(4481, tormentedRender, "", 1, 70, "", "").setUnlocalizedName("tormentedChest").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item tormentedLegs = new ItemVetheanArmor(4482, tormentedRender, "", 2, 70, "", "").setUnlocalizedName("tormentedLegs").setCreativeTab(DivineRPG.Armor);
+	 * public static final Item tormentedBoots = new ItemVetheanArmor(4483,  tormentedRender, "", 3, 70, "", "").setUnlocalizedName("tormentedBoots").setCreativeTab(DivineRPG.Armor);
 	 */
 
 	public static void addNames() {

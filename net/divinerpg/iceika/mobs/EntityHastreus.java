@@ -160,7 +160,7 @@ public class EntityHastreus extends EntityModMob implements IRangedAttackMob
     @Override
     public void attackEntityWithRangedAttack(EntityLivingBase par1EntityLiving, float f)
     {
-        EntityIce var2 = new EntityIce(this.worldObj, this);
+        EntityIce var2 = new EntityIce(this.worldObj);
         var2.rotationPitch -= -20.0F;
         double var3 = par1EntityLiving.posX + par1EntityLiving.motionX - this.posX;
         double var5 = par1EntityLiving.posY + par1EntityLiving.getEyeHeight() - 1.100000023841858D - this.posY;

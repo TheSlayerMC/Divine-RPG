@@ -90,8 +90,6 @@ public class OverworldItemHelper extends HelperBase {
 	public static final Item maelstrom = new ItemMaelstrom(x.getID("Maelstrom"), 14, 1, "", "").registerTextures("MaelStrom").setUnlocalizedName("MaelStrom").setCreativeTab(DivineRPG.Projectile);
 	public static final Item scythe = new ItemScythe(x.getID("Scythe")).registerTextures("Scythe").setUnlocalizedName("Scythe").setCreativeTab(DivineRPG.Projectile);
 
-	public static final Item twilightClock = new ItemTwilightClock(x.getID("TwilightClock")).registerTextures("TwilightClock").setUnlocalizedName("TwilightClock").setCreativeTab(DivineRPG.Misc);
-
 	public static final Item infernoBow = new ItemInfernoBow(x.getID("InfernoBow")).setUnlocalizedName("InfernoBow").setCreativeTab(DivineRPG.Projectile);
 	public static final Item shadowBow = new ItemShadowBow(x.getID("ShadowBow")).setUnlocalizedName("ShadowBow").setCreativeTab(DivineRPG.Projectile);
 	public static final Item bluefirebow = new ItemBlueBow(x.getID("BlueFireBow")).setUnlocalizedName("BluefireBow").setCreativeTab(DivineRPG.Projectile);
@@ -135,6 +133,7 @@ public class OverworldItemHelper extends HelperBase {
 	public static final Item mysteriousClock = new ItemMysteriousClock(x.getID("MysteriousClock")).registerTextures("MysteriousClock").setUnlocalizedName("Mysterious").setCreativeTab(DivineRPG.Spawn);
 	public static final Item callOfTheWatcher = new ItemWatcher(x.getID("CallOfTheWatcher")).registerTextures("CallOfTheWatcher").setUnlocalizedName("CallOfTheWatcher").setCreativeTab(DivineRPG.Spawn);
 	public static final Item infernalFlame = new ItemInfernalFlame(x.getID("InfernalFlame")).registerTextures("InfernalFlame").setUnlocalizedName("Infernal").setCreativeTab(DivineRPG.Spawn);
+	public static final Item twilightClock = new ItemTwilightClock(x.getID("TwilightClock")).registerTextures("TwilightClock").setUnlocalizedName("TwilightClock").setCreativeTab(DivineRPG.Misc);
 
 	public static final Item watchingEye = new ItemDivineRPG(x.getID("WatchingEye")).registerTextures("WatchingEye").setUnlocalizedName("WatchingEye").setCreativeTab(DivineRPG.Raw);
 	public static final Item furyFire = new ItemDivineRPG(x.getID("FuryFire")).registerTextures("FuryFire").setUnlocalizedName("FuryFire").setCreativeTab(DivineRPG.Raw);

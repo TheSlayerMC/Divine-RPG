@@ -28,7 +28,7 @@ public class ItemDivineRPGBow extends ItemBow implements IItemDivineRPG {
     }
 
     public ItemDivineRPGBow(int par1, int maxDamage, int damage, int maxUseDuraction, boolean unbreakable) {
-        super(par1 - 256);
+        super(par1);
         setMaxDamage(maxDamage);
         this.damage = damage;
         this.maxUseDuraction = maxUseDuraction;

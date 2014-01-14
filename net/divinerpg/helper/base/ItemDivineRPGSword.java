@@ -26,13 +26,13 @@ public class ItemDivineRPGSword extends SwordBase{
     }
 
     public ItemDivineRPGSword(int par1, EnumToolMaterial enumToolMaterial, boolean unbreakable) {
-        super(par1 - 256, enumToolMaterial);
+        super(par1, enumToolMaterial);
         this.unbreakable = unbreakable;
         dmg = (int) enumToolMaterial.getDamageVsEntity();
     }
 
     public ItemDivineRPGSword(int par1, int img, EnumToolMaterial par2EnumToolMaterial, boolean unbreakable) {
-        super(par1 - 256, par2EnumToolMaterial);
+        super(par1, par2EnumToolMaterial);
         this.unbreakable = unbreakable;
         dmg = (int)par2EnumToolMaterial.getDamageVsEntity();
 

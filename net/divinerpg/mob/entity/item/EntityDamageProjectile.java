@@ -1,6 +1,6 @@
 package net.divinerpg.mob.entity.item;
 
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
@@ -20,7 +20,7 @@ public class EntityDamageProjectile extends EntityThrowable {
         this.damage = damage;
     }
 
-    public EntityDamageProjectile(World var1, EntityLivingBase var2, int damage) {
+    public EntityDamageProjectile(World var1, EntityPlayer var2, int damage) {
         super(var1, var2);
         this.damage = damage;
     }

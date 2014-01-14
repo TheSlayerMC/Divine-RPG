@@ -1,11 +1,11 @@
 package net.divinerpg.mob.entity.item;
 
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
 public class EntityNoteProjectile extends EntityDamageProjectile {
 
-    public EntityNoteProjectile(World var1, EntityLivingBase var2) {
+    public EntityNoteProjectile(World var1, EntityPlayer var2) {
         super(var1, var2, 16);
     }
 
