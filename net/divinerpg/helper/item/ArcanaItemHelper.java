@@ -85,15 +85,15 @@ public class ArcanaItemHelper extends HelperBase  {
 	public static final Item orbOfLight = new ItemOrbOfLight(x.getID("OrbOfLight")).registerTextures("OrbOfLight");
 	public static final Item wizardBook = new ItemWizardBook(x.getID("WizardBook")).registerTextures("WizardBook").setUnlocalizedName("WizardBook").setCreativeTab(DivineRPG.Misc);
 
-	public static final Item kormaHead = new ItemBaseArmor(x.getID("KormaHelmet"), korma, 0, HEAD, true).setUnlocalizedName("KormaHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item kormaBody = new ItemBaseArmor(x.getID("KormaBody"), korma, 1, BODY, true).setUnlocalizedName("KormaBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item kormaLegs = new ItemBaseArmor(x.getID("KormaLegs"), korma, 2, LEGS, true).setUnlocalizedName("KormaLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item kormaBoots = new ItemBaseArmor(x.getID("KormaBoots"), korma, 3, BOOTS, true).setUnlocalizedName("KormaBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item kormaHead = new ItemBaseArmor(x.getID("KormaHelmet"), korma, 0, 0, "Korma");
+	public static final Item kormaBody = new ItemBaseArmor(x.getID("KormaBody"), korma, 1, 1, "Korma");
+	public static final Item kormaLegs = new ItemBaseArmor(x.getID("KormaLegs"), korma, 2, 2, "Korma");
+	public static final Item kormaBoots = new ItemBaseArmor(x.getID("KormaBoots"), korma, 3, 3, "Korma");
  
-	public static final Item vemosHead = new ItemBaseArmor(x.getID("VemosHelmet"), korma, 0, HEAD, true).setUnlocalizedName("VemosHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item vemosBody = new ItemBaseArmor(x.getID("VemosBody"), korma, 1, BODY, true).setUnlocalizedName("VemosBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item vemosLegs = new ItemBaseArmor(x.getID("VemosLegs"), korma, 2, LEGS, true).setUnlocalizedName("VemosLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item vemosBoots = new ItemBaseArmor(x.getID("VemosBoots"), korma, 3, BOOTS, true).setUnlocalizedName("VemosBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item vemosHead = new ItemBaseArmor(x.getID("VemosHelmet"), korma, 0, 0, "Vemos");
+	public static final Item vemosBody = new ItemBaseArmor(x.getID("VemosBody"), korma, 1, 1, "Vemos");
+	public static final Item vemosLegs = new ItemBaseArmor(x.getID("VemosLegs"), korma, 2, 2, "Vemos");
+	public static final Item vemosBoots = new ItemBaseArmor(x.getID("VemosBoots"), korma, 3, 3, "Vemos");
 
     public static final Item tarBucket = new ItemTarBucket(x.getID("TarBucket"), x.getID("Tar")).registerTextures("BucketOfTar").setUnlocalizedName("tarBucket").setCreativeTab(DivineRPG.Misc);
 	public static final Item arcaniumBucket = new ItemTarBucket(x.getID("ArcaniumBucket"), 0).registerTextures("ArcaniumBucket").setUnlocalizedName("arcaniumBucket").setCreativeTab(DivineRPG.Misc);

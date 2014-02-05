@@ -51,7 +51,15 @@ public class ClientTickHandler implements ITickHandler
 		if (!var1.equals(EnumSet.of(TickType.RENDER)) && var1.equals(EnumSet.of(TickType.CLIENT)) && FMLClientHandler.instance().getClient().currentScreen == null && !initialized)
 		{
 			initialized = true;
-			FMLClientHandler.instance().getClient().ingameGUI.getChatGUI().printChatMessage(EnumChatFormatting.GREEN + "Thank you " + player.username + " for downloading and playing DivineRPG!");
+			if (player.username.equals("sheenrox82")) {
+				player.addChatMessage(EnumChatFormatting.RED + "Wait, your actually playing DivineRPG?!");
+			}
+			else if (player.username.equals("deathman12e3") || player.username.equals("The_SlayerMC") || player.username.equals("Mazetar") || player.username.equals("itzakillshot") || player.username.equals("geekclb") || player.username.equals("Instanity414all")) {
+				player.addChatMessage(EnumChatFormatting.DARK_PURPLE + "Oh hey! A DivineRPG Developer!");
+			}
+			else {
+				player.addChatMessage(EnumChatFormatting.AQUA + "Thank you "  + player.username + ", for downloading and playing" + EnumChatFormatting.GREEN + " DivineRPG!");
+			}
 		}
 		else if (var1.equals(EnumSet.of(TickType.RENDER)))
 		{

@@ -270,7 +270,7 @@ public class ArmorEffectHandler  {
 		}
 
 		//Divine
-		else if (bootID == TwilightItemHelper.divineBoots.itemID
+		/*else if (bootID == TwilightItemHelper.divineBoots.itemID
 					&& legID == TwilightItemHelper.divineLegs.itemID
 					&& chestID == TwilightItemHelper.divineBody.itemID
 					&& helmID == TwilightItemHelper.divineHelmet.itemID)
@@ -279,7 +279,7 @@ public class ArmorEffectHandler  {
 				{
 					e.setCanceled(true);
 				}
-			}
+			}*/
 
 		//Divine
 		else if (bootID == TwilightItemHelper.MythrilBoots.itemID
@@ -691,7 +691,7 @@ public class ArmorEffectHandler  {
 				}
 	
 			//Divine
-			else if (bootID == TwilightItemHelper.divineBoots.itemID
+		        else if (bootID == TwilightItemHelper.divineBoots.itemID
 						&& legID == TwilightItemHelper.divineLegs.itemID
 						&& chestID == TwilightItemHelper.divineBody.itemID
 						&& helmID == TwilightItemHelper.divineHelmet.itemID)
