@@ -94,27 +94,27 @@ public class HelperBase {
 	public static EnumToolMaterial arcanaSword = EnumHelper.addToolMaterial("Arcana", 1, -1, 1, 1, 22);
 
 	
-	public static EnumArmorMaterial angelicArmor = EnumHelper.addArmorMaterial("Angelic", -1, new int[] { 3, 4, 3, 2 }, 10);
-	public static EnumArmorMaterial realmiteArmor = EnumHelper.addArmorMaterial("Realmite", -1, new int[] { 2, 3, 2, 1 }, 10);
-	public static EnumArmorMaterial arlemiteArmor = EnumHelper.addArmorMaterial("arlemite", -1, new int[] {3, 4, 4, 2}, 22);
-	public static EnumArmorMaterial rupeeArmor = EnumHelper.addArmorMaterial("RupeeArmor", -1, new int[] { 3, 4, 4, 2 }, 10);
-	public static EnumArmorMaterial shadow = EnumHelper.addArmorMaterial("Shadow", -1, new int[] { 3, 5, 4, 3 }, 10);
-	public static EnumArmorMaterial aquatic = EnumHelper.addArmorMaterial("Aquastrive", -1, new int[] { 3, 4, 4, 3 }, 10);
-	public static EnumArmorMaterial angelic = EnumHelper.addArmorMaterial("Angelic", -1, new int[] { 3, 4, 4, 2 }, 22);
-	public static EnumArmorMaterial eliteRealmite = EnumHelper.addArmorMaterial("Elite Realmite", -1, new int[] { 3, 4, 4, 2 }, 10);
-	public static EnumArmorMaterial diamond = EnumHelper.addArmorMaterial("Diamond", 33, new int[]{ 2, 3, 3, 2 }, 10);
-	public static EnumArmorMaterial iron = EnumHelper.addArmorMaterial("Iron", 15, new int[]{ 2, 2, 2, 1 }, 9);
-	public static EnumArmorMaterial grim = EnumHelper.addArmorMaterial("grim", -1, new int[] { 0, 0, 0, 0 }, 22);
-	public static EnumArmorMaterial jack = EnumHelper.addArmorMaterial("jack", -1, new int[] { 0, 0, 0, 0 }, 22);
-	public static EnumArmorMaterial ender = EnumHelper.addArmorMaterial("Ender", -1, new int[] { 4, 5, 4, 3 }, 10);
-	public static EnumArmorMaterial energyRealmiteArmor = EnumHelper.addArmorMaterial("Energy", -1, new int[] { 3, 4, 3, 2 }, 10);
-	public static EnumArmorMaterial costumes = EnumHelper.addArmorMaterial("Costumes", -1, new int[] { 0, 0, 0, 0 }, 0);
-	public static EnumArmorMaterial kraken = EnumHelper.addArmorMaterial("Kraken", -1, new int[] { 2, 3, 2, 1 }, 10);
-	public static EnumArmorMaterial netherite = EnumHelper.addArmorMaterial("Neterite", -1, new int[] { 3, 4, 4, 2 }, 10);
-	public static EnumArmorMaterial inferno = EnumHelper.addArmorMaterial("Inferno", -1, new int[] { 3, 5, 4, 3 }, 10);
-	public static EnumArmorMaterial bedrockArmor = EnumHelper.addArmorMaterial("Bedrock", -1, new int[] { 4, 5, 5, 4 }, 10);
-	public static EnumArmorMaterial santa = EnumHelper.addArmorMaterial("santa", -1, new int[] { 0, 0, 0, 0 }, 22);
-	public static EnumArmorMaterial korma = EnumHelper.addArmorMaterial("korma", -1, new int[] { 2, 4, 3, 2 }, 22);
+	public static EnumArmorMaterial angelicArmor = EnumHelper.addArmorMaterial("Angelic", 200, new int[] { 3, 4, 3, 2 }, 10);
+	public static EnumArmorMaterial realmiteArmor = EnumHelper.addArmorMaterial("Realmite", 200, new int[] { 1, 2, 1, 1 }, 10);
+	public static EnumArmorMaterial arlemiteArmor = EnumHelper.addArmorMaterial("arlemite", 200, new int[] {3, 4, 3, 2}, 22);
+	public static EnumArmorMaterial rupeeArmor = EnumHelper.addArmorMaterial("RupeeArmor", 200, new int[] { 9, 9, 9, 8 }, 10);
+	public static EnumArmorMaterial shadow = EnumHelper.addArmorMaterial("Shadow", 200, new int[] { 3, 4, 3, 2 }, 10);
+	public static EnumArmorMaterial aquatic = EnumHelper.addArmorMaterial("Aquastrive", 200, new int[] { 6, 7, 6, 6 }, 10);
+	public static EnumArmorMaterial angelic = EnumHelper.addArmorMaterial("Angelic", 200, new int[] {3, 4, 3, 2}, 22);
+	public static EnumArmorMaterial eliteRealmite = EnumHelper.addArmorMaterial("Elite Realmite", 200, new int[] { 4, 4, 4, 3 }, 10);
+	public static EnumArmorMaterial diamond = EnumHelper.addArmorMaterial("Diamond", 33, new int[]{3, 8, 6, 3}, 10);
+	public static EnumArmorMaterial iron = EnumHelper.addArmorMaterial("Iron", 15, new int[]{2, 6, 5, 2}, 9);
+	public static EnumArmorMaterial grim = EnumHelper.addArmorMaterial("grim", 200, new int[] {3, 5, 3, 2}, 22);
+	public static EnumArmorMaterial jack = EnumHelper.addArmorMaterial("jack", 200, new int[] {3, 5, 3, 2}, 22);
+	public static EnumArmorMaterial ender = EnumHelper.addArmorMaterial("Ender", 200, new int[] { 7, 7, 6, 6 }, 10);
+	public static EnumArmorMaterial energyRealmiteArmor = EnumHelper.addArmorMaterial("Energy", 200, new int[] { 3, 4, 3, 2 }, 10);
+	public static EnumArmorMaterial costumes = EnumHelper.addArmorMaterial("Costumes", 0, new int[] { 0, 0, 0, 0 }, 0);
+	public static EnumArmorMaterial kraken = EnumHelper.addArmorMaterial("Kraken", 200, new int[] { 2, 4, 2, 2 }, 10);
+	public static EnumArmorMaterial netherite = EnumHelper.addArmorMaterial("Neterite", 200, new int[] { 2, 4, 3, 2 }, 10);
+	public static EnumArmorMaterial inferno = EnumHelper.addArmorMaterial("Inferno", 200, new int[] { 2, 6, 5, 2 }, 10);
+	public static EnumArmorMaterial bedrockArmor = EnumHelper.addArmorMaterial("Bedrock", 200, new int[] { 9, 9, 9, 8 }, 10);
+	public static EnumArmorMaterial santa = EnumHelper.addArmorMaterial("santa", 200, new int[] {1, 1, 1, 1}, 22);
+	public static EnumArmorMaterial korma = EnumHelper.addArmorMaterial("korma", 200, new int[] {9, 9, 9, 9}, 22);
 
 	public static EnumToolMaterial halite = EnumHelper.addToolMaterial("halite", 10, 2000, 0, 86, 22);
 	public static EnumToolMaterial mythril = EnumHelper.addToolMaterial("mythril", 100, 6000, 48.0F, 55, 22);
@@ -139,12 +139,12 @@ public class HelperBase {
 	public static EnumToolMaterial augiteShick = EnumHelper.addToolMaterial("dense", 100, 40000, 55.0F, 0, 22);
 	public static EnumToolMaterial divineShick = EnumHelper.addToolMaterial("Divine", 8, -1, 20.0F, 0, 10);
 	
- 	public static EnumArmorMaterial divineArmor = EnumHelper.addArmorMaterial("divine", -1, new int[] { 4, 5, 5, 4 }, 10);
- 	public static EnumArmorMaterial UviteArmor = EnumHelper.addArmorMaterial("uvite", -1, new int[] {4, 5, 5, 4 }, 10);
- 	public static EnumArmorMaterial draviteArmor = EnumHelper.addArmorMaterial("Serenity", -1, new int[] { 3, 5, 4, 3 }, 10);
- 	public static EnumArmorMaterial azuriteArmor = EnumHelper.addArmorMaterial("Azurite", -1, new int[] { 4, 5, 4, 3 }, 10);
- 	public static EnumArmorMaterial mythrilArmor = EnumHelper.addArmorMaterial("Mythril", -1, new int[] { 4, 6, 5, 4 }, 10);
- 	public static EnumArmorMaterial augiteArmor = EnumHelper.addArmorMaterial("dense", -1, new int[] { 4, 6, 6, 4 }, 10);
- 	public static EnumArmorMaterial haliteArmor = EnumHelper.addArmorMaterial("ultima", -1, new int[] { 5, 6, 5, 5 }, 12);
+ 	public static EnumArmorMaterial divineArmor = EnumHelper.addArmorMaterial("divine", 200, new int[] { 9, 9, 9, 8 }, 10);
+ 	public static EnumArmorMaterial UviteArmor = EnumHelper.addArmorMaterial("uvite", 200, new int[] {3,  4, 3, 2 }, 10);
+ 	public static EnumArmorMaterial draviteArmor = EnumHelper.addArmorMaterial("Serenity", 200, new int[] { 3, 4, 3, 2 }, 10);
+ 	public static EnumArmorMaterial azuriteArmor = EnumHelper.addArmorMaterial("Azurite", 200, new int[] { 3, 4, 3, 2 }, 10);
+ 	public static EnumArmorMaterial mythrilArmor = EnumHelper.addArmorMaterial("Mythril", 200, new int[] { 3, 4, 3, 2 }, 10);
+ 	public static EnumArmorMaterial augiteArmor = EnumHelper.addArmorMaterial("dense", 200, new int[] { 3, 4, 3, 2 }, 10);
+ 	public static EnumArmorMaterial haliteArmor = EnumHelper.addArmorMaterial("ultima", 500, new int[] { 4, 5, 4, 3 }, 12);
 
 }

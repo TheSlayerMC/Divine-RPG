@@ -181,13 +181,13 @@ public class ServerTickHandler implements ITickHandler
 			{
 				var5.addPotionEffect(new PotionEffect(Potion.nightVision.id, 1, 1));
 			}*/
-			/*else if (bootID == TwilightItemHelper.divineBoots.itemID
+			else if (bootID == TwilightItemHelper.divineBoots.itemID
 					&& legID == TwilightItemHelper.divineLegs.itemID
 					&& chestID == TwilightItemHelper.divineBody.itemID
 					&& helmID == TwilightItemHelper.divineHelmet.itemID)
 			{
 				var5.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 1, 2));
-			}*/
+			}
 			/*else if (bootID == DivineRPG.ultimaBoots.itemID
 					&& legID == DivineRPG.ultimaLegs.itemID
 					&& chestID == DivineRPG.ultimaBody.itemID

@@ -36,10 +36,10 @@ public class TwilightItemHelper extends HelperBase  {
 	public static final Item DivineShickaxe = new ItemBaseTwilightShickaxe(x.getID("DivineShickaxe"), divineShick).registerShickaxeTextures("DivineShickaxe").setUnlocalizedName("DivineShickaxe");
 
 	//Halite
-	public static final Item haliteHelmet = new ItemBaseArmor(x.getID("HaliteHelmet"), haliteArmor, 0, HEAD, "Halite");
-	public static final Item haliteBody = new ItemBaseArmor(x.getID("HaliteBody"), haliteArmor, 1, BODY, "Halite");
-	public static final Item haliteLegs = new ItemBaseArmor(x.getID("HaliteLegs"), haliteArmor, 2, LEGS, "Halite");
-	public static final Item haliteBoots = new ItemBaseArmor(x.getID("HaliteBoots"), haliteArmor, 3, BOOTS, "Halite");
+	public static final Item haliteHelmet = new ItemBaseArmor(x.getID("HaliteHelmet"), haliteArmor, 0, HEAD, true).setDescriptors(haliteDesc).setUnlocalizedName("HaliteHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item haliteBody = new ItemBaseArmor(x.getID("HaliteBody"), haliteArmor, 1, BODY, true).setDescriptors(haliteDesc).setUnlocalizedName("HaliteBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item haliteLegs = new ItemBaseArmor(x.getID("HaliteLegs"), haliteArmor, 2, LEGS, true).setDescriptors(haliteDesc).setUnlocalizedName("HaliteLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item haliteBoots = new ItemBaseArmor(x.getID("HaliteBoots"), haliteArmor, 3, BOOTS, true).setDescriptors(haliteDesc).setUnlocalizedName("HaliteBoots").setCreativeTab(DivineRPG.Armor);
 	public static final Item haliteBow = new ItemHaliteBow(x.getID("HaliteBow")).setUnlocalizedName("HaliteBow").setCreativeTab(DivineRPG.Projectile);
 	public static final Item halitePhaser = new ItemPhaser(x.getID("HalitePhaser"), 0, 1, 2).registerTextures("HalitePhaser").setUnlocalizedName("HalitePhaser").setCreativeTab(DivineRPG.Projectile);
 	public static final Item HaliteBlade = new ToolSword(x.getID("HaliteBlade"), halite).registerItemTexture("HaliteBlade").setCreativeTab(DivineRPG.Swords).setUnlocalizedName("HaliteBlade");
@@ -56,20 +56,20 @@ public class TwilightItemHelper extends HelperBase  {
 	public static final Item MythrilPhaser = new ItemPhaser(x.getID("MythrilPhaser"), 0, 1, 2).registerTextures("MythrilPhaser").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("MythrilPhaser");
 	public static final Item MythrilBlitz = new ItemBlitz(x.getID("MythrilBlitz")).registerTextures("MythrilBlitz").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("MythrilBlitz");
 	public static final Item MythrilBow = new ItemBowCore(x.getID("MythrilBow")).registerTextures("MythrilBow_0").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("MythrilBow");
-	public static final Item MythrilHelmet = new ItemBaseArmor(x.getID("MythrilHelmet"), mythrilArmor, 0, HEAD, "Mythril");
-	public static final Item MythrilBoots = new ItemBaseArmor(x.getID("MythrilBoots"), mythrilArmor, 3, BOOTS, "Mythril");
-	public static final Item Mythrillegs = new ItemBaseArmor(x.getID("MythrilLegs"), mythrilArmor, 2, LEGS, "Mythril");
-	public static final Item MythrilChest = new ItemBaseArmor(x.getID("MythrilBody"), mythrilArmor, 1, BODY, "Mythril");
+	public static final Item MythrilHelmet = new ItemBaseArmor(x.getID("MythrilHelmet"), mythrilArmor, 0, HEAD, true).setDescriptors(mythrilDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("MythrilHelmet");
+	public static final Item MythrilBoots = new ItemBaseArmor(x.getID("MythrilBoots"), mythrilArmor, 3, BOOTS, true).setDescriptors(mythrilDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("MythrilBoots");
+	public static final Item Mythrillegs = new ItemBaseArmor(x.getID("MythrilLegs"), mythrilArmor, 2, LEGS, true).setDescriptors(mythrilDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("MythrilLegs");
+	public static final Item MythrilChest = new ItemBaseArmor(x.getID("MythrilBody"), mythrilArmor, 1, BODY, true).setDescriptors(mythrilDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("MythrilBody");
 	public static final Item MythrilSlicer = new ItemSlicer(x.getID("MythrilSlicer")).registerTextures("MythrilSlicer").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("MythrilSlicer");
 	public static final Item MythrilPickaxe = new ToolPickaxe(x.getID("MythrilPickaxe"), mythrilTools).registerItemTexture("MythrilPickaxe").setCreativeTab(DivineRPG.Tools).setUnlocalizedName("MythrilPick");
 	public static final Item MythrilShovel = new ToolShovel(x.getID("MythrilShovel"), mythrilTools).registerItemTexture("MythrilShovel").setCreativeTab(DivineRPG.Tools).setUnlocalizedName("MythrilShovel");
 	public static final Item MythrilAxe = new ToolAxe(x.getID("MythrilAxe"), mythrilTools).registerItemTexture("MythrilAxe").setCreativeTab(DivineRPG.Tools).setUnlocalizedName("MythrilAxe");
 	
 	//Divine
-	public static final Item divineHelmet = new ItemBaseArmor(x.getID("DivineHelmet"), divineArmor, 0, HEAD, "Divine");
-	public static final Item divineBody = new ItemBaseArmor(x.getID("DivineBody"), divineArmor, 1, BODY, "Divine");
-	public static final Item divineLegs = new ItemBaseArmor(x.getID("DivineLegs"), divineArmor, 2, LEGS, "Divine");
-	public static final Item divineBoots = new ItemBaseArmor(x.getID("DivineBoots"), divineArmor, 3, BOOTS, "Divine");
+	public static final Item divineHelmet = new ItemBaseArmor(x.getID("DivineHelmet"), divineArmor, 0, HEAD, true).setDescriptors(divineDesc).setUnlocalizedName("DivineHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item divineBody = new ItemBaseArmor(x.getID("DivineBody"), divineArmor, 1, BODY, true).setDescriptors(divineDesc).setUnlocalizedName("DivineBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item divineLegs = new ItemBaseArmor(x.getID("DivineLegs"), divineArmor, 2, LEGS, true).setDescriptors(divineDesc).setUnlocalizedName("DivineLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item divineBoots = new ItemBaseArmor(x.getID("DivineBoots"), divineArmor, 3, BOOTS, true).setDescriptors(divineDesc).setUnlocalizedName("DivineBoots").setCreativeTab(DivineRPG.Armor);
 	public static final Item DivinePickaxe = new ToolPickaxe(x.getID("DivinePickaxe"), Divine).registerItemTexture("DivinePickaxe").setUnlocalizedName("DivinePickaxe");
 	public static final Item DivineShovel = new ToolShovel(x.getID("DivineShovel"), Divine).registerItemTexture("DivineShovel").setUnlocalizedName("DivineShovel");
 	public static final Item DivineAxe = new ToolAxe(x.getID("DivineAxe"), Divine).registerItemTexture("DivineAxe").setUnlocalizedName("DivineAxe");
@@ -83,10 +83,10 @@ public class TwilightItemHelper extends HelperBase  {
 	public static final Item DravitePhaser = new ItemPhaser(x.getID("DravitePhaser"), 0, 1, 2).registerTextures("DravitePhaser").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("DravitePhaser");
 	public static final Item DraviteBlitz = new ItemBlitz(x.getID("DraviteBlitz")).registerTextures("DraviteBlitz").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("DraviteBlitz");
 	public static final Item DraviteBow = new ItemBowCore(x.getID("DraviteBow")).registerTextures("DraviteBow0").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("DraviteBow");
-	public static final Item DraviteHelmet = new ItemBaseArmor(x.getID("DraviteHelmet"), draviteArmor, 0, HEAD, "Dravite");
-	public static final Item DraviteChest = new ItemBaseArmor(x.getID("DraviteBody"), draviteArmor, 1, BODY, "Dravite");
-	public static final Item Dravitelegs = new ItemBaseArmor(x.getID("DraviteLegs"), draviteArmor, 2, LEGS, "Dravite");
-	public static final Item DraviteBoots = new ItemBaseArmor(x.getID("DraviteBoots"), draviteArmor, 3, BOOTS, "Dravite");
+	public static final Item DraviteHelmet = new ItemBaseArmor(x.getID("DraviteHelmet"), draviteArmor, 0, HEAD, true).setDescriptors(draviteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("DraviteHelmet");
+	public static final Item DraviteChest = new ItemBaseArmor(x.getID("DraviteBody"), draviteArmor, 1, BODY, true).setDescriptors(draviteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("DraviteChest");
+	public static final Item Dravitelegs = new ItemBaseArmor(x.getID("DraviteLegs"), draviteArmor, 2, LEGS, true).setDescriptors(draviteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("Dravitelegs");
+	public static final Item DraviteBoots = new ItemBaseArmor(x.getID("DraviteBoots"), draviteArmor, 3, BOOTS, true).setDescriptors(draviteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("DraviteBoots");
 	public static final Item DraviteSlicer = new ItemSlicer(x.getID("DraviteSlicer")).registerTextures("DraviteSlicer").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("DraviteSlicer");
 	public static final Item draviteSoul = new ItemDivineRPG(x.getID("DraviteSoul")).registerTextures("DraviteSoul").setUnlocalizedName("DraviteSoul").setCreativeTab(DivineRPG.Raw);
 	public static final Item DravitePickaxe = new ToolPickaxe(x.getID("DravitePickaxe"), draviteTools).registerItemTexture("DravitePickaxe").setUnlocalizedName("DravitePick").setCreativeTab(DivineRPG.Tools);
@@ -103,10 +103,10 @@ public class TwilightItemHelper extends HelperBase  {
 	public static final Item AzuritePhaser = new ItemPhaser(x.getID("AzuritePhaser"), 0, 1, 2).registerTextures("AzuritePhaser").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("AzuritePhaser");
 	public static final Item AzuriteBlitz = new ItemBlitz(x.getID("AzuriteBlitz")).registerTextures("AzuriteBlitz").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("AzuriteBlitz");
 	public static final Item AzuriteBow = new ItemBowCore(x.getID("AzuriteBow")).registerTextures("AzuriteBow_0").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("AzuriteBow");
-	public static final Item AzuriteHelmet = new ItemBaseArmor(x.getID("AzuriteHelmet"), azuriteArmor, 0, HEAD, "Azurite");
-	public static final Item AzuriteBoots = new ItemBaseArmor(x.getID("AzuriteBoots"), azuriteArmor, 3, BOOTS, "Azurite");
-	public static final Item Azuritelegs = new ItemBaseArmor(x.getID("AzuriteLegs"), azuriteArmor, 2, LEGS, "Azurite");
-	public static final Item AzuriteChest = new ItemBaseArmor(x.getID("AzuriteBody"), azuriteArmor, 1, BODY, "Azurite");
+	public static final Item AzuriteHelmet = new ItemBaseArmor(x.getID("AzuriteHelmet"), azuriteArmor, 0, HEAD, true).setDescriptors(azuriteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("AzuriteHelmet");
+	public static final Item AzuriteBoots = new ItemBaseArmor(x.getID("AzuriteBoots"), azuriteArmor, 3, BOOTS, true).setDescriptors(azuriteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("AzuriteBoots");
+	public static final Item Azuritelegs = new ItemBaseArmor(x.getID("AzuriteLegs"), azuriteArmor, 2, LEGS, true).setDescriptors(azuriteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("Azuritelegs");
+	public static final Item AzuriteChest = new ItemBaseArmor(x.getID("AzuriteBody"), azuriteArmor, 1, BODY, true).setDescriptors(azuriteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("AzuriteBody");
 	public static final Item AzuriteSlicer = new ItemSlicer(x.getID("AzuriteSlicer")).registerTextures("AzuriteSlicer").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("AzuriteSlicer");
 	public static final Item AzuriteArrow = new ItemDivineRPG(x.getID("AzuriteArrow")).registerTextures("AzuriteArrow").setCreativeTab(DivineRPG.Misc).setUnlocalizedName("AzuriteArrow");
 	public static final Item AzuritePickaxe = new ToolPickaxe(x.getID("AzuritePickaxe"), azuriteTools).registerItemTexture("AzuritePickaxe").setUnlocalizedName("AzuritePick").setCreativeTab(DivineRPG.Tools);
@@ -123,10 +123,10 @@ public class TwilightItemHelper extends HelperBase  {
 	public static final Item AugitePhaser = new ItemPhaser(x.getID("AugitePhaser"), 0, 1, 2).registerTextures("AugitePhaser").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("AugitePhaser");
 	public static final Item AugiteBlitz = new ItemBlitz(x.getID("AugiteBlitz")).registerTextures("AugiteBlitz").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("AugiteBlitz");
 	public static final Item AugiteBow = new ItemBowCore(x.getID("AugiteBow")).registerTextures("AugiteBow_0").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("AugiteBow");
-	public static final Item AugiteHelmet = new ItemBaseArmor(x.getID("AugiteHelmet"), HelperBase.augiteArmor, 0, HEAD, "Augite");
-	public static final Item AugiteBoots = new ItemBaseArmor(x.getID("AugiteBoots"), HelperBase.augiteArmor, 3, BOOTS, "Augite");
-	public static final Item Augitelegs = new ItemBaseArmor(x.getID("AugiteLegs"), HelperBase.augiteArmor, 2, LEGS, "Augite");
-	public static final Item AugiteChest = new ItemBaseArmor(x.getID("AugiteBody"), HelperBase.augiteArmor, 1, BODY, "Augite");
+	public static final Item AugiteHelmet = new ItemBaseArmor(x.getID("AugiteHelmet"), augiteArmor, 0, HEAD, true).setDescriptors(augiteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("AugiteHelmet");
+	public static final Item AugiteBoots = new ItemBaseArmor(x.getID("AugiteBoots"), augiteArmor, 3, BOOTS, true).setDescriptors(augiteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("AugiteBoots");
+	public static final Item Augitelegs = new ItemBaseArmor(x.getID("AugiteLegs"), augiteArmor, 2, LEGS, true).setDescriptors(augiteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("AugiteLegs");
+	public static final Item AugiteChest = new ItemBaseArmor(x.getID("AugiteBody"), augiteArmor, 1, BODY, true).setDescriptors(augiteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("AugiteBody");
 	public static final Item AugiteSlicer = new ItemSlicer(x.getID("AugiteSlicer")).registerTextures("AugiteSlicer").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("AugiteSlicer");
 	public static final Item AugitePickaxe = new ToolPickaxe(x.getID("AugitePickaxe"), augiteTools).registerItemTexture("AugitePickaxe").setUnlocalizedName("AugitePickaxe").setCreativeTab(DivineRPG.Tools);
 	public static final Item AugiteShovel = new ToolShovel(x.getID("AugiteShovel"), augiteTools).registerItemTexture("AugiteShovel").setUnlocalizedName("AugiteShovel").setCreativeTab(DivineRPG.Tools);
@@ -142,10 +142,10 @@ public class TwilightItemHelper extends HelperBase  {
 	public static final Item UvitePhaser = new ItemPhaser(x.getID("UvitePhaser"), 0, 1, 2).registerTextures("UvitePhaser").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("UvitePhaser");
 	public static final Item UviteBlitz = new ItemBlitz(x.getID("UviteBlitz")).registerTextures("UviteBlitz").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("UviteBlitz");
 	public static final Item UviteBow = new ItemBowCore(x.getID("UviteBow")).registerTextures("UviteBow0").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("UviteBow");
-	public static final Item UviteHelmet = new ItemBaseArmor(x.getID("UviteHelmet"), UviteArmor, 0, HEAD, "Uvite");
-	public static final Item UviteBoots = new ItemBaseArmor(x.getID("UviteBoots"), UviteArmor, 3, BOOTS, "Uvite");
-	public static final Item Uvitelegs = new ItemBaseArmor(x.getID("UviteLegs"), UviteArmor, 2, LEGS, "Uvite");
-	public static final Item UviteChest = new ItemBaseArmor(x.getID("UviteBody"), UviteArmor, 1, BODY, "Uvite");
+	public static final Item UviteHelmet = new ItemBaseArmor(x.getID("UviteHelmet"), UviteArmor, 0, HEAD, true).setDescriptors(uviteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("UviteHelmet");
+	public static final Item UviteBoots = new ItemBaseArmor(x.getID("UviteBoots"), UviteArmor, 3, BOOTS, true).setDescriptors(uviteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("UviteBoots");
+	public static final Item Uvitelegs = new ItemBaseArmor(x.getID("UviteLegs"), UviteArmor, 2, LEGS, true).setDescriptors(uviteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("UviteLegs");
+	public static final Item UviteChest = new ItemBaseArmor(x.getID("UviteBody"), UviteArmor, 1, BODY, true).setDescriptors(uviteDesc).setCreativeTab(DivineRPG.Armor).setUnlocalizedName("UviteBody");
 	public static final Item UviteSlicer = new ItemSlicer(x.getID("UviteSlicer")).registerTextures("UviteSlicer").setCreativeTab(DivineRPG.Projectile).setUnlocalizedName("UviteSlicer");
 	public static final Item UvitePickaxe = new ToolPickaxe(x.getID("UvitePickaxe"), uviteTools).registerItemTexture("UvitePickaxe").setUnlocalizedName("UvitePick").setCreativeTab(DivineRPG.Tools);
 	public static final Item UviteShovel = new ToolShovel(x.getID("UviteShovel"), uviteTools).registerItemTexture("UviteShovel").setUnlocalizedName("UviteShovel").setCreativeTab(DivineRPG.Tools);

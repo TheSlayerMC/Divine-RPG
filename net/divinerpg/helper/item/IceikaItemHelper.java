@@ -49,10 +49,10 @@ public class IceikaItemHelper extends HelperBase  {
 	public static final Item snowCones = new ItemDivineRPGFood(x.getID("SnowCone"), 2, 0.3F, false).registerTextures("SnowCones").setUnlocalizedName("snowCones").setCreativeTab(DivineRPG.Misc);
 	public static final Item fruitCake = new ItemDivineRPGFood(x.getID("FruitCake"), 16, 2.0F, false).registerTextures("FruitCake").setUnlocalizedName("fruitCake").setCreativeTab(DivineRPG.Misc);
 
-	public static final Item santaHead = new ItemBaseArmor(x.getID("SantaHelmet"), santa, 0, 0, "Santa");
-	public static final Item santaBody = new ItemBaseArmor(x.getID("SantaBody"), santa, 1, 1, "Santa");
-	public static final Item santaLegs = new ItemBaseArmor(x.getID("SantaLegs"), santa, 2, 2, "Santa");
-	public static final Item santaBoots = new ItemBaseArmor(x.getID("SantaBoots"), santa, 3, 3, "Santa");
+	public static final Item santaHead = new ItemBaseArmor(x.getID("SantaHelmet"), santa, HEAD, 0, true).setDescriptors(santaDesc).setUnlocalizedName("SantaHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item santaBody = new ItemBaseArmor(x.getID("SantaBody"), santa, BODY, 1, true).setDescriptors(santaDesc).setUnlocalizedName("SantaBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item santaLegs = new ItemBaseArmor(x.getID("SantaLegs"), santa, LEGS, 2, true).setDescriptors(santaDesc).setUnlocalizedName("SantaLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item santaBoots = new ItemBaseArmor(x.getID("SantaBoots"), santa, BOOTS, 3, true).setDescriptors(santaDesc).setUnlocalizedName("SantaBoots").setCreativeTab(DivineRPG.Armor);
  
 	public static final Item frossivence = new ItemMassivence(x.getID("Frossivence"), EnumToolMaterial.WOOD).registerTextures("Frossivence").setUnlocalizedName("frossivence").setCreativeTab(DivineRPG.Swords);
 	public static final Item IceDoorItem = new ItemIceikaDoor(x.getID("IceDoorItem")).setCreativeTab(DivineRPG.Blocks);
