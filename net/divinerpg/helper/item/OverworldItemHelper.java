@@ -171,10 +171,10 @@ public class OverworldItemHelper extends HelperBase {
 	public static final Item cyclopseBow = new ItemCyclopseBow(x.getID("CyclopseBow")).setUnlocalizedName("CyclopianBow").setCreativeTab(DivineRPG.Projectile);
 	public static final Item cyclopseSword = new ItemDivineRPGSword(x.getID("CyclopseSword"), Cyclopse).registerTextures("CyclopianSword").setUnlocalizedName("CyclopianSword").setCreativeTab(DivineRPG.Swords);
 
-	public static final Item shadowHelmet = new ItemBaseArmor(x.getID("ShadowHelmet"), shadow, 0, HEAD, true).setDamageReduction(0.150D).setDescriptors(shadowDesc).setUnlocalizedName("ShadowHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item shadowBody = new ItemBaseArmor(x.getID("ShadowBody"), shadow, 1, BODY, true).setDamageReduction(0.150D).setDescriptors(shadowDesc).setUnlocalizedName("ShadowBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item shadowLegs = new ItemBaseArmor(x.getID("ShadowLegs"), shadow, 2, LEGS, true).setDamageReduction(0.150D).setDescriptors(shadowDesc).setUnlocalizedName("ShadowLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item shadowBoots = new ItemBaseArmor(x.getID("ShadowBoots"), shadow, 3, BOOTS, true).setDamageReduction(0.150D).setDescriptors(shadowDesc).setUnlocalizedName("ShadowBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item shadowHelmet = new ItemBaseArmor(x.getID("ShadowHelmet"), shadow, 0, HEAD, true).setDamageReduction(0.15D).setDescriptors(shadowDesc).setUnlocalizedName("ShadowHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item shadowBody = new ItemBaseArmor(x.getID("ShadowBody"), shadow, 1, BODY, true).setDamageReduction(0.15D).setDescriptors(shadowDesc).setUnlocalizedName("ShadowBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item shadowLegs = new ItemBaseArmor(x.getID("ShadowLegs"), shadow, 2, LEGS, true).setDamageReduction(0.15D).setDescriptors(shadowDesc).setUnlocalizedName("ShadowLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item shadowBoots = new ItemBaseArmor(x.getID("ShadowBoots"), shadow, 3, BOOTS, true).setDamageReduction(0.15D).setDescriptors(shadowDesc).setUnlocalizedName("ShadowBoots").setCreativeTab(DivineRPG.Armor);
 
 	public static final Item aquaticHelmet = new ItemBaseArmor(x.getID("AquaticHelmet"), aquatic, 0, HEAD, true).setDamageReduction(0.135D).setDescriptors(aquaticDesc).setUnlocalizedName("AquastriveHelmet").setCreativeTab(DivineRPG.Armor);
 	public static final Item aquaticBody = new ItemBaseArmor(x.getID("AquaticBody"), aquatic, 1, BODY, true).setDamageReduction(0.135D).setDescriptors(aquaticDesc).setUnlocalizedName("AquastriveBody").setCreativeTab(DivineRPG.Armor);
@@ -186,30 +186,30 @@ public class OverworldItemHelper extends HelperBase {
 	public static final Item eliteRealmiteLegs = new ItemBaseArmor(x.getID("EliteRealLegs"), eliteRealmite, 2, LEGS, true).setDamageReduction(0.125D).setDescriptors(eliteRealmiteDesc).setUnlocalizedName("EliteRealmiteLegs").setCreativeTab(DivineRPG.Armor);
 	public static final Item eliteRealmiteBoots = new ItemBaseArmor(x.getID("EliteRealBoots"), eliteRealmite, 3, BOOTS, true).setDamageReduction(0.125D).setDescriptors(eliteRealmiteDesc).setUnlocalizedName("EliteRealmiteBoots").setCreativeTab(DivineRPG.Armor);
 
-	public static final Item angelicHelmet = new ItemBaseArmor(x.getID("AngelicHelmet"), angelicArmor, 0, HEAD, true).setDescriptors(angelicDesc).setUnlocalizedName("AngelicHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item angelicBody = new ItemBaseArmor(x.getID("AngelicBody"), angelicArmor, 1, BODY, true).setDescriptors(angelicDesc).setUnlocalizedName("AngelicBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item angelicLegs = new ItemBaseArmor(x.getID("AngelicLegs"), angelicArmor, 2, LEGS, true).setDescriptors(angelicDesc).setUnlocalizedName("AngelicLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item angelicBoots = new ItemBaseArmor(x.getID("AngelicBoots"), angelicArmor, 3, BOOTS, true).setDescriptors(angelicDesc).setUnlocalizedName("AngelicBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item angelicHelmet = new ItemBaseArmor(x.getID("AngelicHelmet"), angelicArmor, 0, HEAD, true).setDamageReduction(0.125D).setDescriptors(angelicDesc).setUnlocalizedName("AngelicHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item angelicBody = new ItemBaseArmor(x.getID("AngelicBody"), angelicArmor, 1, BODY, true).setDamageReduction(0.125D).setDescriptors(angelicDesc).setUnlocalizedName("AngelicBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item angelicLegs = new ItemBaseArmor(x.getID("AngelicLegs"), angelicArmor, 2, LEGS, true).setDamageReduction(0.125D).setDescriptors(angelicDesc).setUnlocalizedName("AngelicLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item angelicBoots = new ItemBaseArmor(x.getID("AngelicBoots"), angelicArmor, 3, BOOTS, true).setDamageReduction(0.125D).setDescriptors(angelicDesc).setUnlocalizedName("AngelicBoots").setCreativeTab(DivineRPG.Armor);
 
-	public static final Item realmiteHelmet = new ItemBaseArmor(x.getID("RealmiteHelmet"), realmiteArmor, 0, HEAD, true).setDamageReduction(0.85D).setDescriptors(realmiteDesc).setUnlocalizedName("RealmiteHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item realmiteBody = new ItemBaseArmor(x.getID("RealmiteBody"), realmiteArmor, 1, BODY, true).setDamageReduction(0.85D).setDescriptors(realmiteDesc).setUnlocalizedName("RealmiteBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item realmiteLegs = new ItemBaseArmor(x.getID("RealmiteLegs"), realmiteArmor, 2, LEGS, true).setDamageReduction(0.85D).setDescriptors(realmiteDesc).setUnlocalizedName("RealmiteLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item realmiteBoots = new ItemBaseArmor(x.getID("RealmiteBoots"), realmiteArmor, 3, BOOTS, true).setDamageReduction(0.85D).setDescriptors(realmiteDesc).setUnlocalizedName("RealmiteBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item realmiteHelmet = new ItemBaseArmor(x.getID("RealmiteHelmet"), realmiteArmor, 0, HEAD, true).setDamageReduction(0.085D).setDescriptors(realmiteDesc).setUnlocalizedName("RealmiteHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item realmiteBody = new ItemBaseArmor(x.getID("RealmiteBody"), realmiteArmor, 1, BODY, true).setDamageReduction(0.085D).setDescriptors(realmiteDesc).setUnlocalizedName("RealmiteBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item realmiteLegs = new ItemBaseArmor(x.getID("RealmiteLegs"), realmiteArmor, 2, LEGS, true).setDamageReduction(0.085D).setDescriptors(realmiteDesc).setUnlocalizedName("RealmiteLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item realmiteBoots = new ItemBaseArmor(x.getID("RealmiteBoots"), realmiteArmor, 3, BOOTS, true).setDamageReduction(0.085D).setDescriptors(realmiteDesc).setUnlocalizedName("RealmiteBoots").setCreativeTab(DivineRPG.Armor);
 
-	public static final Item arlemiteHelmet = new ItemBaseArmor(x.getID("ArlemiteHelmet"), arlemiteArmor, 0, HEAD, true).setDescriptors(arlemiteDesc).setUnlocalizedName("ArlemiteHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item arlemiteBody = new ItemBaseArmor(x.getID("ArlemiteBody"), arlemiteArmor, 1, BODY, true).setDescriptors(arlemiteDesc).setUnlocalizedName("ArlemiteBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item arlemiteLegs = new ItemBaseArmor(x.getID("ArlemiteLegs"), arlemiteArmor, 2, LEGS, true).setDescriptors(arlemiteDesc).setUnlocalizedName("ArlemiteLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item arlemiteBoots = new ItemBaseArmor(x.getID("ArlemiteBoots"), arlemiteArmor, 3, BOOTS, true).setDescriptors(arlemiteDesc).setUnlocalizedName("ArlemiteBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item arlemiteHelmet = new ItemBaseArmor(x.getID("ArlemiteHelmet"), arlemiteArmor, 0, HEAD, true).setDamageReduction(0.125D).setDescriptors(arlemiteDesc).setUnlocalizedName("ArlemiteHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item arlemiteBody = new ItemBaseArmor(x.getID("ArlemiteBody"), arlemiteArmor, 1, BODY, true).setDamageReduction(0.125D).setDescriptors(arlemiteDesc).setUnlocalizedName("ArlemiteBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item arlemiteLegs = new ItemBaseArmor(x.getID("ArlemiteLegs"), arlemiteArmor, 2, LEGS, true).setDamageReduction(0.125D).setDescriptors(arlemiteDesc).setUnlocalizedName("ArlemiteLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item arlemiteBoots = new ItemBaseArmor(x.getID("ArlemiteBoots"), arlemiteArmor, 3, BOOTS, true).setDamageReduction(0.125D).setDescriptors(arlemiteDesc).setUnlocalizedName("ArlemiteBoots").setCreativeTab(DivineRPG.Armor);
 
-	public static final Item rupeeHelmet = new ItemBaseArmor(x.getID("RupeeHelmet"), rupeeArmor, 0, HEAD, true).setDamageReduction(0.135D).setDescriptors(rupeeDesc).setUnlocalizedName("RupeeHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item rupeeBody = new ItemBaseArmor(x.getID("RupeeBody"), rupeeArmor, 1, BODY, true).setDamageReduction(0.135D).setDescriptors(rupeeDesc).setUnlocalizedName("RupeeBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item rupeeLegs = new ItemBaseArmor(x.getID("RupeeLegs"), rupeeArmor, 2, LEGS, true).setDamageReduction(0.135D).setDescriptors(rupeeDesc).setUnlocalizedName("RupeeLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item rupeeBoots = new ItemBaseArmor(x.getID("RupeeBoots"), rupeeArmor, 3, BOOTS, true).setDamageReduction(0.135D).setDescriptors(rupeeDesc).setUnlocalizedName("RupeeBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item rupeeHelmet = new ItemBaseArmor(x.getID("RupeeHelmet"), rupeeArmor, 0, HEAD, true).setDamageReduction(0.125D).setDescriptors(rupeeDesc).setUnlocalizedName("RupeeHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item rupeeBody = new ItemBaseArmor(x.getID("RupeeBody"), rupeeArmor, 1, BODY, true).setDamageReduction(0.125D).setDescriptors(rupeeDesc).setUnlocalizedName("RupeeBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item rupeeLegs = new ItemBaseArmor(x.getID("RupeeLegs"), rupeeArmor, 2, LEGS, true).setDamageReduction(0.125D).setDescriptors(rupeeDesc).setUnlocalizedName("RupeeLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item rupeeBoots = new ItemBaseArmor(x.getID("RupeeBoots"), rupeeArmor, 3, BOOTS, true).setDamageReduction(0.125D).setDescriptors(rupeeDesc).setUnlocalizedName("RupeeBoots").setCreativeTab(DivineRPG.Armor);
 
-	public static final Item krakenHelmet = new ItemBaseArmor(x.getID("KrakenHelmet"), kraken, 0, HEAD, true).setDamageReduction(0.75D).setDescriptors(krakenDesc).setUnlocalizedName("KrakenHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item krakenBody = new ItemBaseArmor(x.getID("KrakenBody"), kraken, 1, BODY, true).setDamageReduction(0.75D).setDescriptors(krakenDesc).setUnlocalizedName("KrakenBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item krakenLegs = new ItemBaseArmor(x.getID("KrakenLegs"), kraken, 2, LEGS, true).setDamageReduction(0.75D).setDescriptors(krakenDesc).setUnlocalizedName("KrakenLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item krakenBoots = new ItemBaseArmor(x.getID("KrakenBoots"), kraken, 3, BOOTS, true).setDamageReduction(0.75D).setDescriptors(krakenDesc).setUnlocalizedName("KrakenBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item krakenHelmet = new ItemBaseArmor(x.getID("KrakenHelmet"), kraken, 0, HEAD, true).setDamageReduction(0.075D).setDescriptors(krakenDesc).setUnlocalizedName("KrakenHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item krakenBody = new ItemBaseArmor(x.getID("KrakenBody"), kraken, 1, BODY, true).setDamageReduction(0.075D).setDescriptors(krakenDesc).setUnlocalizedName("KrakenBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item krakenLegs = new ItemBaseArmor(x.getID("KrakenLegs"), kraken, 2, LEGS, true).setDamageReduction(0.075D).setDescriptors(krakenDesc).setUnlocalizedName("KrakenLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item krakenBoots = new ItemBaseArmor(x.getID("KrakenBoots"), kraken, 3, BOOTS, true).setDamageReduction(0.075D).setDescriptors(krakenDesc).setUnlocalizedName("KrakenBoots").setCreativeTab(DivineRPG.Armor);
 
 	public static final Item grimReaperHead = new ItemBaseArmor(x.getID("GrimReaperHelmet"), grim, 0, HEAD, true).setDescriptors(skeletonDesc).setUnlocalizedName("SkelemanHelmet").setCreativeTab(DivineRPG.Armor);
 	public static final Item grimReaperBody = new ItemBaseArmor(x.getID("GrimReaperBody"), grim, 1, BODY, true).setDescriptors(skeletonDesc).setUnlocalizedName("SkelemanBody").setCreativeTab(DivineRPG.Armor);
@@ -221,15 +221,15 @@ public class OverworldItemHelper extends HelperBase {
 	public static final Item jackOManBody = new ItemBaseArmor(x.getID("JackOManBody"), jack, 2, LEGS, true).setDescriptors(jackDesc).setUnlocalizedName("JackOManBody").setCreativeTab(DivineRPG.Armor);
 	public static final Item jackOManHead = new ItemBaseArmor(x.getID("JackOManHelmet"), jack, 3, BOOTS, true).setDescriptors(jackDesc).setUnlocalizedName("JackOManHelmet").setCreativeTab(DivineRPG.Armor);
 
-	public static final Item ironHelmet = new ItemBaseArmor(x.getID("IronHelmet"), iron, 0, HEAD, false).setUnlocalizedName("IronHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item ironBody = new ItemBaseArmor(x.getID("IronBody"), iron, 1, BODY, false).setUnlocalizedName("IronBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item ironLegs = new ItemBaseArmor(x.getID("IronLegs"), iron, 2, LEGS, false).setUnlocalizedName("IronLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item ironBoots = new ItemBaseArmor(x.getID("IronBoots"), iron, 3, BOOTS, false).setUnlocalizedName("IronBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item ironHelmet = new ItemBaseArmor(x.getID("IronHelmet"), iron, 0, HEAD, false).setDamageReduction(0.065D).setUnlocalizedName("IronHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item ironBody = new ItemBaseArmor(x.getID("IronBody"), iron, 1, BODY, false).setDamageReduction(0.065D).setUnlocalizedName("IronBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item ironLegs = new ItemBaseArmor(x.getID("IronLegs"), iron, 2, LEGS, false).setDamageReduction(0.065D).setUnlocalizedName("IronLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item ironBoots = new ItemBaseArmor(x.getID("IronBoots"), iron, 3, BOOTS, false).setDamageReduction(0.065D).setUnlocalizedName("IronBoots").setCreativeTab(DivineRPG.Armor);
 
-	public static final Item diamondHelmet = new ItemBaseArmor(x.getID("DiamondHelmet"), diamond, 0, HEAD, false).setUnlocalizedName("DiamondHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item diamondBody = new ItemBaseArmor(x.getID("DiamondBody"), diamond, 1, BODY, false).setUnlocalizedName("DiamondBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item diamondLegs = new ItemBaseArmor(x.getID("DiamondLegs"), diamond, 2, LEGS, false).setUnlocalizedName("DiamondLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item diamondBoots = new ItemBaseArmor(x.getID("DiamondBoots"), diamond, 3, BOOTS, false).setUnlocalizedName("DiamondBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item diamondHelmet = new ItemBaseArmor(x.getID("DiamondHelmet"), diamond, 0, HEAD, false).setDamageReduction(0.1D).setUnlocalizedName("DiamondHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item diamondBody = new ItemBaseArmor(x.getID("DiamondBody"), diamond, 1, BODY, false).setDamageReduction(0.1D).setUnlocalizedName("DiamondBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item diamondLegs = new ItemBaseArmor(x.getID("DiamondLegs"), diamond, 2, LEGS, false).setDamageReduction(0.1D).setUnlocalizedName("DiamondLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item diamondBoots = new ItemBaseArmor(x.getID("DiamondBoots"), diamond, 3, BOOTS, false).setDamageReduction(0.1D).setUnlocalizedName("DiamondBoots").setCreativeTab(DivineRPG.Armor);
 
 	public static final Item rupeeShovel = new ToolShovel(x.getID("RupeeShovel"), Rupee).registerItemTexture("RupeeShovel").setUnlocalizedName("RupeeShovel").setCreativeTab(DivineRPG.Tools);
 	public static final Item rupeeAxe = new ToolAxe(x.getID("RupeeAxe"), Rupee).registerItemTexture("RupeeAxe").setUnlocalizedName("RupeeAxe").setCreativeTab(DivineRPG.Tools);
@@ -237,25 +237,25 @@ public class OverworldItemHelper extends HelperBase {
 	public static final Item rupeePickaxe = new ToolPickaxe(x.getID("RupeePickaxe"), Rupee).registerItemTexture("RupeePickaxe").setUnlocalizedName("RupeePickaxe").setCreativeTab(DivineRPG.Tools);
 	public static final Item rupeeSword = new ToolSword(x.getID("RupeeRapier"), Rupee).registerItemTexture("RupeeSword").setUnlocalizedName("RupeeSword").setCreativeTab(DivineRPG.Swords);
 	
-	public static final Item netheriteHelmet = new ItemBaseArmor(x.getID("NetheriteHelmet"), netherite, 0, HEAD, true).setDescriptors(netheriteDesc).setUnlocalizedName("NetheriteHelmet");
-	public static final Item netheriteBody = new ItemBaseArmor(x.getID("NetheriteBody"), netherite, 1, BODY, true).setDescriptors(netheriteDesc).setUnlocalizedName("NetheriteBody");
-	public static final Item netheriteLegs = new ItemBaseArmor(x.getID("NetheriteLegs"), netherite, 2, LEGS, true).setDescriptors(netheriteDesc).setUnlocalizedName("NetheriteLegs");
-	public static final Item netheriteBoots = new ItemBaseArmor(x.getID("NetheriteBoots"), netherite, 3, BOOTS, true).setDescriptors(netheriteDesc).setUnlocalizedName("NetheriteBoots");
+	public static final Item netheriteHelmet = new ItemBaseArmor(x.getID("NetheriteHelmet"), netherite, 0, HEAD, true).setDamageReduction(0.125D).setDescriptors(netheriteDesc).setUnlocalizedName("NetheriteHelmet");
+	public static final Item netheriteBody = new ItemBaseArmor(x.getID("NetheriteBody"), netherite, 1, BODY, true).setDamageReduction(0.125D).setDescriptors(netheriteDesc).setUnlocalizedName("NetheriteBody");
+	public static final Item netheriteLegs = new ItemBaseArmor(x.getID("NetheriteLegs"), netherite, 2, LEGS, true).setDamageReduction(0.125D).setDescriptors(netheriteDesc).setUnlocalizedName("NetheriteLegs");
+	public static final Item netheriteBoots = new ItemBaseArmor(x.getID("NetheriteBoots"), netherite, 3, BOOTS, true).setDamageReduction(0.125D).setDescriptors(netheriteDesc).setUnlocalizedName("NetheriteBoots");
 	
-	public static final Item infernoHelmet = new ItemBaseArmor(x.getID("InfernoHelmet"), inferno, 0, HEAD, true).setDescriptors(infernoDesc).setUnlocalizedName("InfernoHelmet");
-	public static final Item infernoBody = new ItemBaseArmor(x.getID("InfernoBody"), inferno, 1, BODY, true).setDescriptors(infernoDesc).setUnlocalizedName("InfernoBody");
-	public static final Item infernoLegs = new ItemBaseArmor(x.getID("InfernoLegs"), inferno, 2, LEGS, true).setDescriptors(infernoDesc).setUnlocalizedName("InfernoLegs");
-	public static final Item infernoBoots = new ItemBaseArmor(x.getID("InfernoBoots"), inferno, 3, BOOTS, true).setDescriptors(infernoDesc).setUnlocalizedName("InfernoBoots");
+	public static final Item infernoHelmet = new ItemBaseArmor(x.getID("InfernoHelmet"), inferno, 0, HEAD, true).setDamageReduction(0.15D).setDescriptors(infernoDesc).setUnlocalizedName("InfernoHelmet");
+	public static final Item infernoBody = new ItemBaseArmor(x.getID("InfernoBody"), inferno, 1, BODY, true).setDamageReduction(0.15D).setDescriptors(infernoDesc).setUnlocalizedName("InfernoBody");
+	public static final Item infernoLegs = new ItemBaseArmor(x.getID("InfernoLegs"), inferno, 2, LEGS, true).setDamageReduction(0.15D).setDescriptors(infernoDesc).setUnlocalizedName("InfernoLegs");
+	public static final Item infernoBoots = new ItemBaseArmor(x.getID("InfernoBoots"), inferno, 3, BOOTS, true).setDamageReduction(0.15D).setDescriptors(infernoDesc).setUnlocalizedName("InfernoBoots");
 	
-	public static final Item enderHelmet = new ItemBaseArmor(x.getID("EnderHelmet"), ender, 0, HEAD, true).setDescriptors(enderDesc).setUnlocalizedName("EnderHelmet");
-	public static final Item enderBody = new ItemBaseArmor(x.getID("EnderBody"), ender, 1, BODY, true).setDescriptors(enderDesc).setUnlocalizedName("EnderBody");
-	public static final Item enderLegs = new ItemBaseArmor(x.getID("EnderLegs"), ender, 2, LEGS, true).setDescriptors(enderDesc).setUnlocalizedName("EnderLegs");
-	public static final Item enderBoots = new ItemBaseArmor(x.getID("EnderBoots"), ender, 3, BOOTS, true).setDescriptors(enderDesc).setUnlocalizedName("EnderBoots");
+	public static final Item enderHelmet = new ItemBaseArmor(x.getID("EnderHelmet"), ender, 0, HEAD, true).setDamageReduction(0.1625D).setDescriptors(enderDesc).setUnlocalizedName("EnderHelmet");
+	public static final Item enderBody = new ItemBaseArmor(x.getID("EnderBody"), ender, 1, BODY, true).setDamageReduction(0.1625D).setDescriptors(enderDesc).setUnlocalizedName("EnderBody");
+	public static final Item enderLegs = new ItemBaseArmor(x.getID("EnderLegs"), ender, 2, LEGS, true).setDamageReduction(0.1625D).setDescriptors(enderDesc).setUnlocalizedName("EnderLegs");
+	public static final Item enderBoots = new ItemBaseArmor(x.getID("EnderBoots"), ender, 3, BOOTS, true).setDamageReduction(0.1625D).setDescriptors(enderDesc).setUnlocalizedName("EnderBoots");
 	
-	public static final Item bedrockHelmet = new ItemBaseArmor(x.getID("BedRockHelmet"), bedrockArmor , 0, HEAD, true).setDescriptors(bedrockDesc).setUnlocalizedName("BedrockHelmet");
-	public static final Item bedrockBody = new ItemBaseArmor(x.getID("BedRockBody"), bedrockArmor, 1, BODY, true).setDescriptors(bedrockDesc).setUnlocalizedName("BedrockBody");
-	public static final Item bedrockLegs = new ItemBaseArmor(x.getID("BedRockLegs"), bedrockArmor, 2, LEGS, true).setDescriptors(bedrockDesc).setUnlocalizedName("BedrockLegs");
-	public static final Item bedrockBoots = new ItemBaseArmor(x.getID("BedRockBoots"), bedrockArmor, 3, BOOTS, true).setDescriptors(bedrockDesc).setUnlocalizedName("BedrockBoots");
+	public static final Item bedrockHelmet = new ItemBaseArmor(x.getID("BedRockHelmet"), bedrockArmor , 0, HEAD, true).setDamageReduction(0.1875D).setDescriptors(bedrockDesc).setUnlocalizedName("BedrockHelmet");
+	public static final Item bedrockBody = new ItemBaseArmor(x.getID("BedRockBody"), bedrockArmor, 1, BODY, true).setDamageReduction(0.1875D).setDescriptors(bedrockDesc).setUnlocalizedName("BedrockBody");
+	public static final Item bedrockLegs = new ItemBaseArmor(x.getID("BedRockLegs"), bedrockArmor, 2, LEGS, true).setDamageReduction(0.1875D).setDescriptors(bedrockDesc).setUnlocalizedName("BedrockLegs");
+	public static final Item bedrockBoots = new ItemBaseArmor(x.getID("BedRockBoots"), bedrockArmor, 3, BOOTS, true).setDamageReduction(0.1875D).setDescriptors(bedrockDesc).setUnlocalizedName("BedrockBoots");
 	
 	public static final Item arlemiteShovel = new ToolShovel(x.getID("ArlemiteShovel"), Arlemite).registerItemTexture("ArlemiteShovel").setUnlocalizedName("ArlemiteShovel").setCreativeTab(DivineRPG.Tools);
 	public static final Item arlemiteAxe = new ToolAxe(x.getID("ArlemiteAxe"), Arlemite).registerItemTexture("ArlemiteAxe").setUnlocalizedName("ArlemiteAxe").setCreativeTab(DivineRPG.Tools);

@@ -125,8 +125,6 @@ public class ItemBaseArmor extends ItemArmor implements ISpecialArmor{
 		if (itemstack.itemID == TwilightItemHelper.divineHelmet.itemID || itemstack.itemID == TwilightItemHelper.divineBody.itemID || itemstack.itemID == TwilightItemHelper.divineBoots.itemID){
 			return armorPrefix + "Divine_1.png";
 		}
-
-
 		if (itemstack.itemID == OverworldItemHelper.ironLegs.itemID){
 			return armorPrefix + "Iron_2.png";       
 		}       
@@ -225,18 +223,18 @@ public class ItemBaseArmor extends ItemArmor implements ISpecialArmor{
 
     @Override
     public int getArmorDisplay(EntityPlayer player, ItemStack armor, int slot) {
-        return 20;
+    	int damRe = (int) Math.round((damageReduction*100)/4); 
+		return slot = damRe;
     }
 
     @Override
     public void addInformation(ItemStack itemstack,	EntityPlayer par2EntityPlayer, List list, boolean par4) {
         //addDamageReductionString(itemstack, par2EntityPlayer, list, par4);
         list.add(!unbreakable ? (itemstack.getMaxDamage() - itemstack.getItemDamage() + " Uses Remaining") : "Unbreakable");
-        
+		list.add(damageReduction == 0.0 ? ("No Protection") : "Damage Reduction: " + damageReduction*100 + "%");
         if (itemstack.itemID == TwilightItemHelper.divineHelmet.itemID || itemstack.itemID == TwilightItemHelper.divineBody.itemID || itemstack.itemID == TwilightItemHelper.divineBoots.itemID || itemstack.itemID == TwilightItemHelper.divineLegs.itemID){
-        	list.add("18.75% Damage reduction"); list.add("6x Melee damage"); list.add("2x Jump height"); list.add("No fall damage");
+        	list.add("6x Melee damage"); list.add("2x Jump height"); list.add("No fall damage");
 		}
-        
         if (itemstack.itemID == OverworldItemHelper.grimReaperHead.itemID || itemstack.itemID == OverworldItemHelper.grimReaperBody.itemID || itemstack.itemID == OverworldItemHelper.grimReaperBoots.itemID || itemstack.itemID == OverworldItemHelper.grimReaperLegs.itemID){
 			list.add("4x Scythe damage");
 		}     
@@ -244,61 +242,61 @@ public class ItemBaseArmor extends ItemArmor implements ISpecialArmor{
         	list.add("Replenishes hunger");
         }
 		if (itemstack.itemID == OverworldItemHelper.eliteRealmiteHelmet.itemID || itemstack.itemID == OverworldItemHelper.eliteRealmiteBody.itemID || itemstack.itemID == OverworldItemHelper.eliteRealmiteBoots.itemID || itemstack.itemID == OverworldItemHelper.eliteRealmiteLegs.itemID){
-			list.add("12.5% Damage reduction"); list.add("Full Set: No fall damage");
+			list.add("Full Set: No fall damage");
 		}
 		if (itemstack.itemID == OverworldItemHelper.krakenHelmet.itemID || itemstack.itemID == OverworldItemHelper.krakenBody.itemID || itemstack.itemID == OverworldItemHelper.krakenBoots.itemID || itemstack.itemID == OverworldItemHelper.krakenLegs.itemID){
-			list.add("7.5% Damage reduction"); list.add("Full Set: Breathe underwater");
+			list.add("Full Set: Breathe underwater");
 		}
 		if (itemstack.itemID == OverworldItemHelper.rupeeHelmet.itemID || itemstack.itemID == OverworldItemHelper.rupeeBody.itemID || itemstack.itemID == OverworldItemHelper.rupeeBoots.itemID || itemstack.itemID == OverworldItemHelper.rupeeLegs.itemID){
-			list.add("13.75% Damage reduction"); list.add("Full Set: 80% Melee damage protection");
+			list.add("Full Set: 80% Melee damage protection");
 		}
 		if (itemstack.itemID == OverworldItemHelper.arlemiteHelmet.itemID || itemstack.itemID == OverworldItemHelper.arlemiteBody.itemID || itemstack.itemID == OverworldItemHelper.arlemiteBoots.itemID || itemstack.itemID == OverworldItemHelper.arlemiteLegs.itemID){
-			list.add("12.5% Damage reduction"); list.add("Full Set: 80% Ranged damage protection");
+			list.add("Full Set: 80% Ranged damage protection");
 		}
 		if (itemstack.itemID == OverworldItemHelper.realmiteHelmet.itemID || itemstack.itemID == OverworldItemHelper.realmiteBody.itemID || itemstack.itemID == OverworldItemHelper.realmiteBoots.itemID || itemstack.itemID == OverworldItemHelper.realmiteLegs.itemID){
-			list.add("8.25% Damage reduction");
+			
 		}
 		if (itemstack.itemID == OverworldItemHelper.angelicHelmet.itemID || itemstack.itemID == OverworldItemHelper.angelicBody.itemID || itemstack.itemID == OverworldItemHelper.angelicBoots.itemID || itemstack.itemID == OverworldItemHelper.angelicLegs.itemID){
-			list.add("12.5% Damage reduction"); list.add("Full Set: Allows flight"); list.add("Full Set: No fall damage");
+			list.add("Full Set: Allows flight"); list.add("Full Set: No fall damage");
 		}
 		if (itemstack.itemID == OverworldItemHelper.aquaticHelmet.itemID || itemstack.itemID == OverworldItemHelper.aquaticBody.itemID || itemstack.itemID == OverworldItemHelper.aquaticBoots.itemID || itemstack.itemID == OverworldItemHelper.aquaticLegs.itemID){
-			list.add("13.75% Damage reduction"); list.add("Full Set: Breathe underwater"); list.add("Full Set: Swim faster");;
+			list.add("Full Set: Breathe underwater"); list.add("Full Set: Swim faster");;
 		}
 		if (itemstack.itemID == OverworldItemHelper.shadowHelmet.itemID || itemstack.itemID == OverworldItemHelper.shadowBody.itemID || itemstack.itemID == OverworldItemHelper.shadowBoots.itemID || itemstack.itemID == OverworldItemHelper.shadowLegs.itemID){
-			list.add("15% Damage reduction"); list.add("Full Set: Move faster");;
+			list.add("Full Set: Move faster");
 		}
 		if (itemstack.itemID == IceikaItemHelper.santaHead.itemID || itemstack.itemID == IceikaItemHelper.santaBody.itemID || itemstack.itemID == IceikaItemHelper.santaBoots.itemID || itemstack.itemID == IceikaItemHelper.santaLegs.itemID){
 			list.add("Massive buff in Iceika"); list.add("Iceika: Speeds up player"); list.add("Iceika: Adds 6x melee damage"); list.add("Iceika: Refills hunger"); list.add("Iceika: 80% Damage reduction");
 		}
 		if (itemstack.itemID == TwilightItemHelper.haliteHelmet.itemID || itemstack.itemID == TwilightItemHelper.haliteBody.itemID || itemstack.itemID == TwilightItemHelper.haliteBoots.itemID || itemstack.itemID == TwilightItemHelper.haliteLegs.itemID){
-			list.add("20.75% Damage reduction"); list.add("24+ Melee damage");
+			list.add("24+ Melee damage");
 		}
 		if (itemstack.itemID == TwilightItemHelper.UviteHelmet.itemID || itemstack.itemID == TwilightItemHelper.UviteChest.itemID || itemstack.itemID == TwilightItemHelper.UviteBoots.itemID || itemstack.itemID == TwilightItemHelper.Uvitelegs.itemID){
-			list.add("18% Damage reduction"); list.add("Block damage protection");
+			list.add("Block damage protection");
 		}
 		if (itemstack.itemID == TwilightItemHelper.AugiteHelmet.itemID || itemstack.itemID == TwilightItemHelper.AugiteChest.itemID || itemstack.itemID == TwilightItemHelper.AugiteBoots.itemID || itemstack.itemID == TwilightItemHelper.Augitelegs.itemID){
-			list.add("20% Damage reduction"); list.add("Night vision");
+			list.add("Night vision");
 		}
 		if (itemstack.itemID == TwilightItemHelper.AzuriteHelmet.itemID || itemstack.itemID == TwilightItemHelper.AzuriteChest.itemID || itemstack.itemID == TwilightItemHelper.AzuriteBoots.itemID || itemstack.itemID == TwilightItemHelper.Azuritelegs.itemID){
-			list.add("16.25% Damage reduction"); list.add("Fast heath regen under water");
+			list.add("Fast heath regen under water");
 		}
 		if (itemstack.itemID == TwilightItemHelper.DraviteHelmet.itemID || itemstack.itemID == TwilightItemHelper.DraviteChest.itemID || itemstack.itemID == TwilightItemHelper.DraviteBoots.itemID || itemstack.itemID == TwilightItemHelper.Dravitelegs.itemID){
-			list.add("15% Damage reduction"); list.add("3+ Twilight ore drops");
+			list.add("3+ Twilight ore drops");
 		}
 		if (itemstack.itemID == TwilightItemHelper.MythrilHelmet.itemID || itemstack.itemID == TwilightItemHelper.MythrilChest.itemID || itemstack.itemID == TwilightItemHelper.MythrilBoots.itemID || itemstack.itemID == TwilightItemHelper.Mythrillegs.itemID){
-			list.add("18.75% Damage reduction"); list.add("5x Jump height"); list.add("No fall damage");
+			list.add("5x Jump height"); list.add("No fall damage");
 		}
 		if (itemstack.itemID == OverworldItemHelper.netheriteHelmet.itemID || itemstack.itemID == OverworldItemHelper.netheriteBody.itemID || itemstack.itemID == OverworldItemHelper.netheriteBoots.itemID || itemstack.itemID == OverworldItemHelper.netheriteLegs.itemID){
-			list.add("1.25% Damage reduction"); list.add("Fire protection");
+			list.add("Fire protection");
 		}
 		if (itemstack.itemID == OverworldItemHelper.infernoHelmet.itemID || itemstack.itemID == OverworldItemHelper.infernoBody.itemID || itemstack.itemID == OverworldItemHelper.infernoBoots.itemID || itemstack.itemID == OverworldItemHelper.infernoLegs.itemID){
-			list.add("15% Damage reduction"); list.add("Fire protection"); list.add("Lava protection");
+			list.add("Fire protection"); list.add("Lava protection");
 		}
 		if (itemstack.itemID == OverworldItemHelper.enderHelmet.itemID || itemstack.itemID == OverworldItemHelper.enderBody.itemID || itemstack.itemID == OverworldItemHelper.enderBoots.itemID || itemstack.itemID == OverworldItemHelper.enderBoots.itemID){
-			list.add("16.25% Damage reduction"); list.add("Explosion protection");
+			list.add("Explosion protection");
 		}
 		if (itemstack.itemID == OverworldItemHelper.bedrockHelmet.itemID || itemstack.itemID == OverworldItemHelper.bedrockBody.itemID || itemstack.itemID == OverworldItemHelper.bedrockBoots.itemID || itemstack.itemID == OverworldItemHelper.bedrockLegs.itemID){
-			list.add("18.25% Damage reduction"); list.add("Explosion protection"); list.add("Fire protection"); list.add("Lava protection");
+			list.add("Explosion protection"); list.add("Fire protection"); list.add("Lava protection");
 		}
     }
 
@@ -307,8 +305,8 @@ public class ItemBaseArmor extends ItemArmor implements ISpecialArmor{
     }
 
     @Override
-    public ArmorProperties getProperties(EntityLivingBase player, ItemStack armor, DamageSource source, double damage, int slot) {
-        return new ArmorProperties(0, damageReduction, durability);
+    public ArmorProperties getProperties(EntityLivingBase arg0, ItemStack arg1, DamageSource arg2, double arg3, int arg4) {
+        return new ISpecialArmor.ArmorProperties(0, damageReduction, 50000);
     }
 
     @Override

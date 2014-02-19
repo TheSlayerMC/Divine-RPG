@@ -90,10 +90,10 @@ public class ArcanaItemHelper extends HelperBase  {
 	public static final Item kormaLegs = new ItemBaseArmor(x.getID("KormaLegs"), korma, 2, LEGS, true).setUnlocalizedName("KormaLegs").setCreativeTab(DivineRPG.Armor);
 	public static final Item kormaBoots = new ItemBaseArmor(x.getID("KormaBoots"), korma, 3, BOOTS, true).setUnlocalizedName("KormaBoots").setCreativeTab(DivineRPG.Armor);
  
-	public static final Item vemosHead = new ItemBaseArmor(x.getID("VemosHelmet"), korma, 0, HEAD, true).setUnlocalizedName("VemosHelmet").setCreativeTab(DivineRPG.Armor);
-	public static final Item vemosBody = new ItemBaseArmor(x.getID("VemosBody"), korma, 1, BODY, true).setUnlocalizedName("VemosBody").setCreativeTab(DivineRPG.Armor);
-	public static final Item vemosLegs = new ItemBaseArmor(x.getID("VemosLegs"), korma, 2, LEGS, true).setUnlocalizedName("VemosLegs").setCreativeTab(DivineRPG.Armor);
-	public static final Item vemosBoots = new ItemBaseArmor(x.getID("VemosBoots"), korma, 3, BOOTS, true).setUnlocalizedName("VemosBoots").setCreativeTab(DivineRPG.Armor);
+	public static final Item vemosHead = new ItemBaseArmor(x.getID("VemosHelmet"), korma, 0, HEAD, true).setDamageReduction(0.1125D).setUnlocalizedName("VemosHelmet").setCreativeTab(DivineRPG.Armor);
+	public static final Item vemosBody = new ItemBaseArmor(x.getID("VemosBody"), korma, 1, BODY, true).setDamageReduction(0.1125D).setUnlocalizedName("VemosBody").setCreativeTab(DivineRPG.Armor);
+	public static final Item vemosLegs = new ItemBaseArmor(x.getID("VemosLegs"), korma, 2, LEGS, true).setDamageReduction(0.1125D).setUnlocalizedName("VemosLegs").setCreativeTab(DivineRPG.Armor);
+	public static final Item vemosBoots = new ItemBaseArmor(x.getID("VemosBoots"), korma, 3, BOOTS, true).setDamageReduction(0.1125D).setUnlocalizedName("VemosBoots").setCreativeTab(DivineRPG.Armor);
 
     public static final Item tarBucket = new ItemTarBucket(x.getID("TarBucket"), x.getID("Tar")).registerTextures("BucketOfTar").setUnlocalizedName("tarBucket").setCreativeTab(DivineRPG.Misc);
 	public static final Item arcaniumBucket = new ItemTarBucket(x.getID("ArcaniumBucket"), 0).registerTextures("ArcaniumBucket").setUnlocalizedName("arcaniumBucket").setCreativeTab(DivineRPG.Misc);
