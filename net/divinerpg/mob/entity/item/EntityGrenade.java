@@ -28,7 +28,6 @@ public class EntityGrenade extends EntitySnowball
     @Override
     protected void onImpact(MovingObjectPosition var1)
     {
-    	System.out.println("IMPACT YOOOOO!");
         if (!this.worldObj.isRemote)
         {
             this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, 3.0F, false);
