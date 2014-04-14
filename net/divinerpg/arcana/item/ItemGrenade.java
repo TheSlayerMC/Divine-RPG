@@ -35,7 +35,6 @@ public class ItemGrenade extends ItemsBase
 	 */
 	public ItemStack onItemRightClick(ItemStack var1, World var2, EntityPlayer var3)
 	{ 
-		System.out.println("YO!");
 		boolean var5 = false;
 		if (var3.capabilities.isCreativeMode)
 		{
@@ -48,7 +47,6 @@ public class ItemGrenade extends ItemsBase
 			{
 				if (this.firetick == 0)
 				{
-					System.out.println("FIRING!");
 					var2.playSoundAtEntity(var3, Sound.LaVekor, 2.0F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 					var2.spawnEntityInWorld(new EntityGrenade(var2, var3));
 					if (!var5)
